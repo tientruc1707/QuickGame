@@ -35,7 +35,7 @@ public class HealthPresnter : MonoBehaviour
 
     public void Reset()
     {
-        health?.Restore();
+        health?.Regen();
     }
 
     public void UpdateView()
@@ -43,9 +43,9 @@ public class HealthPresnter : MonoBehaviour
         if (health == null)
             return;
 
-        if (healthSlider !=null && health.MaxHealth != 0)
+        if (healthSlider != null && health.MaxHealth != 0)
         {
-            healthSlider.value = (float) health.CurrentHealth / (float)health.MaxHealth;
+            healthSlider.value = (float)health.CurrentHealth / (float)health.MaxHealth;
         }
     }
 

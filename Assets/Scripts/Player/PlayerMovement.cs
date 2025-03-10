@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
-
     [Header("Movement")]
     [SerializeField] private float _moveSpeed = 250f;
     [SerializeField] private float _inputHorizontal;

@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire",
+                    "name": "Normal Attack",
                     "type": "Button",
                     "id": "d309ef21-8880-43f4-81c5-beed91968015",
                     "expectedControlType": "Button",
@@ -103,7 +103,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "Normal Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

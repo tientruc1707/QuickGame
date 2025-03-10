@@ -13,10 +13,12 @@ public class PlayerHealth : MonoBehaviour
         health = GetComponent<Health>();
         health.MinHealth = 0;
         health.MaxHealth = StringConstant.PLAYER_DETAIL.HEALTH;
+        health.CurrentHealth = health.MaxHealth;
         if (health != null)
         {
             health.HealthChanged += OnHealthChanged;
         }
+        Debug.Log("Player Health: " + health.CurrentHealth);
         UpdateView();
     }
 
@@ -40,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Reset()
     {
-        health?.Restore();
+        health?.Regen();
     }
 
     public void UpdateView()
@@ -50,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (healthSlider != null && health.MaxHealth != 0)
         {
-            healthSlider.value = (float)health.CurrentHealth / (float)health.MaxHealth;
+            healthSlider.value = (float)health.CurrentHealth;
         }
     }
 

@@ -24,7 +24,7 @@ public class Health : MonoBehaviour
         UpdateHealth();
     }
 
-    public void Restore()
+    public void Regen()
     {
         currentHealth = MaxHealth;
         UpdateHealth();
