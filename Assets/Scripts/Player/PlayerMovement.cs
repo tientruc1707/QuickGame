@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    [SerializeField] private ParticleSystem _smokeEffect;
     [Header("Movement")]
     [SerializeField] private float _moveSpeed = 250f;
     [SerializeField] private float _inputHorizontal;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         _onGrounded = true;
+        _smokeEffect = GetComponentInChildren<ParticleSystem>();
     }
     private void Update()
     {
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputHorizontal = context.ReadValue<Vector2>().x;
+        _smokeEffect.Play();
     }
     public void Jump(InputAction.CallbackContext context)
     {
@@ -57,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //Hold the jump button to jump higher
                 rb.velocity = new Vector2(rb.velocity.x, _jumpForce * Time.deltaTime);
+                _smokeEffect.Play();
             }
             else if (context.canceled)
             {
@@ -73,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             this.transform.position += new Vector3(_dashForce, 0, 0);
             animator.SetBool("Dash", true);
             _nextDashTime = Time.time + _dashCooldown;
+            _smokeEffect.Play();
         }
         else
         {
