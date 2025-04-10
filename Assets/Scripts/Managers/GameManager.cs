@@ -1,31 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private PlayerHealth playerHealth;
+
     private void Start()
     {
-        if (playerHealth != null)
-        {
-            playerHealth.PlayerDeath += PlayerDead;
-        }
+        EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
+        EventManager.Instance.StartListening(StringConstant.EVENT.ENEMY_DEAD, OnEnemyDead);
     }
     private void OnDestroy()
     {
-        if (playerHealth != null)
-        {
-            playerHealth.PlayerDeath -= PlayerDead;
-        }
+        EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
+        EventManager.Instance.StopListening(StringConstant.EVENT.COIN_COLLECTED, OnEnemyDead);
     }
-    // Update is called once per frame
-    private void Update()
-    {
-
-    }
-    public void PlayerDead()
+    public void OnPlayerDead()
     {
         UIManager.Instance.GameOver();
+    }
+    public void OnEnemyDead()
+    {
+        UIManager.Instance.UpdateCoin(StringConstant.VALUE.COIN_VALUE);
+        UIManager.Instance.UpdateScore(StringConstant.ENEMY_DETAIL.VALUE);
+        AudioManager.Instance.PlaySound(AudioManager.Instance.CoinSound);
     }
 }
