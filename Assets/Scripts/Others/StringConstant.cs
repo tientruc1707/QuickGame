@@ -14,7 +14,7 @@ public class StringConstant : MonoBehaviour
     {
         public static int HEALTH = 60;
         public static int DAMAGE = 20;
-        public static int SPEED = 80;
+        public static int SPEED = 8;
         public static int VALUE = 10;
         public static int ATTACK_RANGE = 5;
     }

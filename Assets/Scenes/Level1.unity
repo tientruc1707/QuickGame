@@ -10810,6 +10810,9 @@ GameObject:
   - component: {fileID: 2031966243}
   - component: {fileID: 2031966242}
   - component: {fileID: 2031966247}
+  - component: {fileID: 2031966249}
+  - component: {fileID: 2031966248}
+  - component: {fileID: 2031966250}
   m_Layer: 0
   m_Name: hidan
   m_TagString: Enemy
@@ -10977,6 +10980,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.55}
   m_EdgeRadius: 0
+--- !u!114 &2031966248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031966239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ae0758863c39042a962597f5de24d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031966249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031966239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a041b77868f9ece4f91e4d238f8ef753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031966250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031966239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d8a26648cf3b84aa73261d575a3a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2086426250
 GameObject:
   m_ObjectHideFlags: 0
@@ -11494,7 +11533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859f7a38748f1d444afaa61a5ad3182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 534151449}
 --- !u!114 &8347243514713369490
 MonoBehaviour:
   m_ObjectHideFlags: 0

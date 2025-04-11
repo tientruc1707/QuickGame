@@ -17,4 +17,11 @@ public class AudioManager : Singleton<AudioManager>
             audioSource.PlayOneShot(clip);
         }
     }
+    public void StopSound()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+    }
 }
