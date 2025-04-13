@@ -24,6 +24,6 @@ public class GameManager : Singleton<GameManager>
     {
         UIManager.Instance.UpdateCoin(StringConstant.VALUE.COIN_VALUE);
         UIManager.Instance.UpdateScore(StringConstant.ENEMY_DETAIL.VALUE);
-        AudioManager.Instance.PlaySound(AudioManager.Instance.CoinSound);
+        //AudioManager.Instance.PlaySound(AudioManager.Instance.CoinSound);
     }
 }

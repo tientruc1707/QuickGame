@@ -60,4 +60,22 @@ public class StringConstant : MonoBehaviour
         public static int COIN_VALUE = 1;
         public static int CHECKPOINT_VALUE = 1;
     }
+    public static class ANIMATION
+    {
+        public static string IDLE = "Idle";
+        public static string RUN = "Run";
+        public static string JUMP = "Jump";
+        public static string ATTACK = "Attack";
+        public static string DIE = "Die";
+    }
+    public static class SOUND
+    {
+        public static string BACKGROUND_MUSIC = "BackgroundMusic";
+        public static string COIN_COLLECTED = "CoinCollected";
+        public static string PLAYER_HIT = "PlayerHit";
+        public static string GAME_OVER = "GameOver";
+        public static string GAME_WIN = "GameWin";
+        public static string PLAYER_RUN = "PlayerRun";
+        public static string SKILL1 = "KatonGokakyoNoJutsu";
+    }
 }
