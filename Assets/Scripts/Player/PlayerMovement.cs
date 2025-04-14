@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _inputHorizontal = context.ReadValue<Vector2>().x;
         _smokeEffect.Play();
+        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_RUN);
     }
     public void Jump(InputAction.CallbackContext context)
     {

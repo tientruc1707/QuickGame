@@ -344,7 +344,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundSounds:
   - {fileID: 1707642575}
-  soundEffects: []
+  soundEffects:
+  - {fileID: 943104617}
+  - {fileID: 625023190}
+  - {fileID: 1249293507}
+  - {fileID: 22407919}
 --- !u!4 &788244452
 Transform:
   m_ObjectHideFlags: 0
@@ -376,7 +380,7 @@ GameObject:
   - component: {fileID: 943104616}
   - component: {fileID: 943104617}
   m_Layer: 0
-  m_Name: PLayerRun
+  m_Name: PlayerRun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded6d89bd3e05eb40a7fecca723372fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: runEffect
+  _name: PlayerRun
   clip: {fileID: 8300000, guid: 5f49d46ae70609e4e82102fb421a7442, type: 3}
   volume: 1
   pitch: 1

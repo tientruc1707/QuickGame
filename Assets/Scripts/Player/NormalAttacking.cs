@@ -23,6 +23,7 @@ public class NormalAttacking : MonoBehaviour
         if (context.performed)
         {
             PerformAttack(_count);
+            AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
             _count++;
         }
     }
@@ -39,6 +40,10 @@ public class NormalAttacking : MonoBehaviour
             case 3:
                 _animator.SetTrigger("Attack3");
                 break;
+        }
+        if (count >= 3)
+        {
+            _count = 1;
         }
     }
 }
