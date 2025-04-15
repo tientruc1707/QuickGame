@@ -7,17 +7,17 @@ public class UIManager : Singleton<UIManager>
     private GameObject gameOverPanel;
     private GameObject gameWinPanel;
     private GameObject gamePausePanel;
-    private GameObject gameUIPanel;
+    private GameObject gamePlayPanel;
 
     [SerializeField] private Text _score;
     [SerializeField] private Text _coinText;
     [SerializeField] private Slider _playerHealthSlider;
     private void Start()
     {
-        gameOverPanel = GameObject.Find("GameOverPanel");
-        gameWinPanel = GameObject.Find("GameWinPanel");
-        gamePausePanel = GameObject.Find("GamePausePanel");
-        gameUIPanel = GameObject.Find("GameUIPanel");
+        gameOverPanel = GameObject.Find(StringConstant.UI.GAME_OVER);
+        gameWinPanel = GameObject.Find(StringConstant.UI.GAME_WIN);
+        gamePausePanel = GameObject.Find(StringConstant.UI.GAME_PAUSE);
+        gamePlayPanel = GameObject.Find(StringConstant.UI.GAME_PLAY);
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(false);
@@ -30,9 +30,9 @@ public class UIManager : Singleton<UIManager>
         {
             gamePausePanel.SetActive(false);
         }
-        if (gameUIPanel != null)
+        if (gamePlayPanel != null)
         {
-            gameUIPanel.SetActive(true);
+            gamePlayPanel.SetActive(true);
         }
         _playerHealthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
         _playerHealthSlider.value = StringConstant.PLAYER_DETAIL.HEALTH;
@@ -40,7 +40,7 @@ public class UIManager : Singleton<UIManager>
     }
     public void StartGame()
     {
-        gameUIPanel.SetActive(true);
+        gamePlayPanel.SetActive(true);
         gameOverPanel.SetActive(false);
         gameWinPanel.SetActive(false);
         gamePausePanel.SetActive(false);
@@ -48,7 +48,7 @@ public class UIManager : Singleton<UIManager>
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
-        gameUIPanel.SetActive(false);
+        gamePlayPanel.SetActive(false);
         gameWinPanel.SetActive(false);
         gamePausePanel.SetActive(false);
         Time.timeScale = 0;
@@ -56,14 +56,14 @@ public class UIManager : Singleton<UIManager>
     public void GameWin()
     {
         gameWinPanel.SetActive(true);
-        gameUIPanel.SetActive(false);
+        gamePlayPanel.SetActive(false);
         gameOverPanel.SetActive(false);
         gamePausePanel.SetActive(false);
     }
     public void GamePause()
     {
         gamePausePanel.SetActive(true);
-        gameUIPanel.SetActive(false);
+        gamePlayPanel.SetActive(false);
         gameOverPanel.SetActive(false);
         gameWinPanel.SetActive(false);
         Time.timeScale = 0;

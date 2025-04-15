@@ -9,7 +9,6 @@ public class StringConstant : MonoBehaviour
         public static int SPEED = 100;
         public static int JUMP_FORCE = 5;
     }
-
     public static class ENEMY_DETAIL
     {
         public static int HEALTH = 60;
@@ -23,7 +22,7 @@ public class StringConstant : MonoBehaviour
         public static string GAME_OVER = "Game Over";
         public static string GAME_WIN = "You Win";
         public static string GAME_PAUSE = "Game Pause";
-        public static string GAME_RESUME = "Game Resume";
+        public static string GAME_PLAY = "Game Play";
     }
     public static class TAGS
     {
@@ -40,13 +39,6 @@ public class StringConstant : MonoBehaviour
         public static string COIN = "Coin";
         public static string TRAP = "Trap";
         public static string CHECKPOINT = "Checkpoint";
-    }
-    public static class SCENE
-    {
-        public static string MAIN_MENU = "MainMenu";
-        public static string GAME = "Game";
-        public static string GAME_OVER = "GameOver";
-        public static string GAME_WIN = "GameWin";
     }
     public static class EVENT
     {

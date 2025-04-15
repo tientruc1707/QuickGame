@@ -1,0 +1,1799 @@
+fileFormatVersion: 2
+guid: ba2cd677e8a20a84b9a53cb24d0dab02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MissionAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2031
+        width: 546
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddb662810395c14da1790ed04005220
+      internalID: 1797443183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1820
+        width: 436
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dfa90d4f041814da2432c1600d3c39
+      internalID: 1797939054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2004
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e708d0285f6dd1049a0efb7d734819b4
+      internalID: -1783426575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1972
+        width: 108
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bf37a33a871e74ea9e35c147001071
+      internalID: 1699178769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1908
+        width: 103
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcf23bc4d2809543b20ced627fdf53d
+      internalID: -1503636349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1976
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef6a8b7c1e5ea541b6373a55bb99b2d
+      internalID: 1552421403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1912
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4953c787d64f8a48b212acfe2bfa599
+      internalID: -304110107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1876
+        width: 98
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c91304eee938284e96f7c2f3ae8dbe8
+      internalID: -1667366575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1885
+        width: 183
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d932ab7d8ca1bbc40ac3cfddc594a0d7
+      internalID: -1019755035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1924
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f54e21e3270a840a08d33124ccd999
+      internalID: -1893886216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1901
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b51187e221514f9d24cd02efa8f54
+      internalID: 569630111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1876
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cb85eba9a8f4442b0c08e45270ce06
+      internalID: 576478692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1832
+        width: 110
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62168b365c8e4f44b8c6413c48a6b935
+      internalID: -849009072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1784
+        width: 148
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716a2b3955ee1bf4bb2ff8029aafe49d
+      internalID: -35046256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1768
+        width: 103
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcc939a61fa4e747a18dbb5e1fffcd0
+      internalID: -1667771695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1812
+        width: 426
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4812c3f4bf8c4f0459ab327087b1f2de
+      internalID: -382136218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1749
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e7178b1a4f9eb4e8a962bc9d83af43
+      internalID: 446148488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1421
+        width: 340
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e2fd1562aaf484aa8b3f42db4c10a3
+      internalID: -340659711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1611
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecab97c8ddaa9034f8bea9cbfe2af62f
+      internalID: 1975467471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1468
+        width: 340
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e2f2c2cf79fdd48baac08e82eac683
+      internalID: -409845679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1756
+        width: 83
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f95c8590b9ecc54baaa57d122ed1ee8
+      internalID: -116370096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1711
+        width: 83
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b64a341a9cd84e8d9e8d7ac26f230
+      internalID: 154117855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1683
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7e97b9ba3d63c4293dd1952d53be68
+      internalID: -1427255092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1633
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd141ec63f0d4ac4d9c0d7345f2410cf
+      internalID: -621844628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1447
+        width: 64
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca6c71891b6cea4faa518441cda8cd7
+      internalID: -1959811176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1549
+        width: 157
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ec64162873733438435fcd15816535
+      internalID: 671192288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1395
+        width: 66
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d50a5a1d858b83488857fd539688651
+      internalID: -864443466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1283
+        width: 131
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab73c0b9deacd848b5cf2575b33b36d
+      internalID: -1747998635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1491
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d9bc5602a6b6c41982d18a7a897fac
+      internalID: 806521920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1435
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b3f14cc4267b4458435c6917c4122c
+      internalID: 476463147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1460
+        width: 296
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d9306609e87924b9a0091972f050ae
+      internalID: 1590141881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1424
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b6644bc40889c4f9d47ad86b61d8d0
+      internalID: -1933712340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1400
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c465c7661af7f44bf0a12584405c4c
+      internalID: -540930123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1414
+        width: 286
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142ae4f3550a3284a80a5f6010a03820
+      internalID: 880525451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1408
+        width: 75
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75b21c2100603a43964251ebee52a58
+      internalID: -973476513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1420
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7103a6f5b9ddcf4eb2659f02a11b8e2
+      internalID: 281938903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1408
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46401e20cb283e144a085730cb336560
+      internalID: 492764800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1428
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c945de9ad62ff045a72fe5f7dfec1be
+      internalID: 123119872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1108
+        width: 303
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270f90e0f2e308045a24f9019579fafd
+      internalID: -1815761683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1378
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea55418b4fc2a14bb021e8ddcde4f5a
+      internalID: 494323799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1375
+        width: 190
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f3a6df9c729a646a85d575f6aee0b3
+      internalID: 126384641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1308
+        width: 90
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be49b0555a40cac4cad616fbee8a6489
+      internalID: 1008994808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1372
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94192d739bd15a0438e3079d4b6d4ba1
+      internalID: 129833511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1157
+        width: 64
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1f1a133b5995142ac6fd7b380562a7
+      internalID: -1622586988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1320
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7895356d553c8541b5316defbbe319c
+      internalID: 370983172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1346
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af63bd6406e0bed4dadf06e06ae48af7
+      internalID: -1799326339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1279
+        width: 119
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfe627ccc95cb44fba1a15b3b583244
+      internalID: 1013944627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1229
+        width: 102
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8277ff81642336d449759de269904123
+      internalID: -1850999188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1332
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2e07890e81c1b46a33d50d6d4db0ad
+      internalID: 843724316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1314
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f5b9eba3845154287b79e91ef8d0f2
+      internalID: -1365781621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1292
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e0570919f44524594102e79d75287f
+      internalID: -872970501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1208
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df8ba03c53df764aa3837d335f4cb29
+      internalID: -1494227019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1163
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a972b74af4ceec499100d425446994f
+      internalID: 2116008375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1227
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bbdb458ca7c1548b79cdd1d2496f08
+      internalID: -768334127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1159
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3916291d32c1d142964ecf70f9f7e43
+      internalID: -840219228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1075
+        width: 63
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eab82c4412d584ab5739db7518007c
+      internalID: 42614547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1059
+        width: 64
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3f22b5a7fae23409184da59d68d56d
+      internalID: -503193977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1171
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0753f753bae084497170993a5a10c9
+      internalID: -1761247563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_58
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1175
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d747d1244c5435645a28321dbc4ac523
+      internalID: -1085480857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_59
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1151
+        width: 96
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02429d911c000444a8e554476213471
+      internalID: -1194782156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_60
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1041
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d144b5029bf996459895196c08a2740
+      internalID: -516807067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_61
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1115
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2169e312bc260214b8a4e98c385dc19c
+      internalID: -1272222483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_62
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1040
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416802b348914bf40b6c09bf33457d11
+      internalID: -2035871165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_63
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1123
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1d2c299fd06534fb53b31972c5fc83
+      internalID: 1883903547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_64
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 922
+        width: 63
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce10d03cbe5b014c945d42d0b310341
+      internalID: -457228012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_65
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1042
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2272987030618d64c82bfc2c2e0c303c
+      internalID: -1912152265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_66
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 991
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02de5eb12a9c82c43b90ad0c9c2ca4a4
+      internalID: -1168408612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_67
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1054
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd10fc426279604aa3221a0b52ffc40
+      internalID: -497847494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_68
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1054
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2654037127817a74dbdb6391e5b1e7a5
+      internalID: -1096139377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_69
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1059
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c117849ec1310740be63322d39540af
+      internalID: -775320194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_70
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1067
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d007b5887210ea0419bbf074b4133798
+      internalID: 1751725104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_71
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1005
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6833ace3caeefba47bc68a01e516f541
+      internalID: 1987645239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_72
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1015
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f875f69ef56b592418547b6cceb149db
+      internalID: 1363708133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_73
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 994
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ecb4196c0956142a989ad175f5a676
+      internalID: -557088187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_74
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 931
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bf20081a7a8174d883f97bae00937e
+      internalID: 363549005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionAtlas_75
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 844
+        width: 106
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d771d96c9dad66c4f9daa0e9d796c3bb
+      internalID: 94864622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MissionAtlas_0: 1797443183
+      MissionAtlas_1: 1797939054
+      MissionAtlas_10: 569630111
+      MissionAtlas_11: 576478692
+      MissionAtlas_12: -849009072
+      MissionAtlas_13: -35046256
+      MissionAtlas_14: -1667771695
+      MissionAtlas_15: -382136218
+      MissionAtlas_16: 446148488
+      MissionAtlas_17: -340659711
+      MissionAtlas_18: 1975467471
+      MissionAtlas_19: -409845679
+      MissionAtlas_2: -1783426575
+      MissionAtlas_20: -116370096
+      MissionAtlas_21: 154117855
+      MissionAtlas_22: -1427255092
+      MissionAtlas_23: -621844628
+      MissionAtlas_24: -1959811176
+      MissionAtlas_25: 671192288
+      MissionAtlas_26: -864443466
+      MissionAtlas_27: -1747998635
+      MissionAtlas_28: 806521920
+      MissionAtlas_29: 476463147
+      MissionAtlas_3: 1699178769
+      MissionAtlas_30: 1590141881
+      MissionAtlas_31: -1933712340
+      MissionAtlas_32: -540930123
+      MissionAtlas_33: 880525451
+      MissionAtlas_34: -973476513
+      MissionAtlas_35: 281938903
+      MissionAtlas_36: 492764800
+      MissionAtlas_37: 123119872
+      MissionAtlas_38: -1815761683
+      MissionAtlas_39: 494323799
+      MissionAtlas_4: -1503636349
+      MissionAtlas_40: 126384641
+      MissionAtlas_41: 1008994808
+      MissionAtlas_42: 129833511
+      MissionAtlas_43: -1622586988
+      MissionAtlas_44: 370983172
+      MissionAtlas_45: -1799326339
+      MissionAtlas_46: 1013944627
+      MissionAtlas_47: -1850999188
+      MissionAtlas_48: 843724316
+      MissionAtlas_49: -1365781621
+      MissionAtlas_5: 1552421403
+      MissionAtlas_50: -872970501
+      MissionAtlas_51: -1494227019
+      MissionAtlas_52: 2116008375
+      MissionAtlas_53: -768334127
+      MissionAtlas_54: -840219228
+      MissionAtlas_55: 42614547
+      MissionAtlas_56: -503193977
+      MissionAtlas_57: -1761247563
+      MissionAtlas_58: -1085480857
+      MissionAtlas_59: -1194782156
+      MissionAtlas_6: -304110107
+      MissionAtlas_60: -516807067
+      MissionAtlas_61: -1272222483
+      MissionAtlas_62: -2035871165
+      MissionAtlas_63: 1883903547
+      MissionAtlas_64: -457228012
+      MissionAtlas_65: -1912152265
+      MissionAtlas_66: -1168408612
+      MissionAtlas_67: -497847494
+      MissionAtlas_68: -1096139377
+      MissionAtlas_69: -775320194
+      MissionAtlas_7: -1667366575
+      MissionAtlas_70: 1751725104
+      MissionAtlas_71: 1987645239
+      MissionAtlas_72: 1363708133
+      MissionAtlas_73: -557088187
+      MissionAtlas_74: 363549005
+      MissionAtlas_75: 94864622
+      MissionAtlas_8: -1019755035
+      MissionAtlas_9: -1893886216
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
