@@ -64,6 +64,10 @@ public class DataManager : Singleton<DataManager>
         PlayerPrefs.SetInt(BestScoreKey, bestScore);
         PlayerPrefs.Save();
     }
+    public void SaveGameData()
+    {
+        PlayerPrefs.Save();
+    }
     public void ResetData()
     {
         //PlayerPrefs.SetInt(LevelKey, 1);

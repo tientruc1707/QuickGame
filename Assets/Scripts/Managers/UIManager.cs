@@ -80,4 +80,17 @@ public class UIManager : Singleton<UIManager>
     {
         _playerHealthSlider.value = healthValue;
     }
+    public void ResumeGame()
+    {
+        gamePausePanel.SetActive(false);
+        gamePlayPanel.SetActive(true);
+        Time.timeScale = 1;
+    }
+    public void RestartGame()
+    {
+        gameOverPanel.SetActive(false);
+        gamePlayPanel.SetActive(true);
+        Time.timeScale = 1;
+        //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
+    }
 }
