@@ -13,13 +13,6 @@ public class GameManager : Singleton<GameManager>
         EventManager.Instance.StartListening(StringConstant.EVENT.COIN_COLLECTED, OnCoinCollected);
         EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, OnCheckPointReached);
     }
-
-    private void OnCheckPointReached()
-    {
-        UIManager.Instance.GameWin();
-        DataManager.Instance.SaveGameData();
-    }
-
     private void OnDestroy()
     {
         EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
@@ -38,5 +31,14 @@ public class GameManager : Singleton<GameManager>
     public void OnCoinCollected()
     {
         UIManager.Instance.UpdateCoin(StringConstant.VALUE.COIN_VALUE);
+    }
+    private void OnCheckPointReached()
+    {
+        UIManager.Instance.GameWin();
+        DataManager.Instance.SaveGameData();
+    }
+    public void LoadNextLevel()
+    {
+        UIManager.Instance.LoadNextLevel();
     }
 }

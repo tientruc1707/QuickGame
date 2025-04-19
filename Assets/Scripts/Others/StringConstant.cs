@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class StringConstant : MonoBehaviour
+public static class StringConstant
 {
     public static class PLAYER_DETAIL
     {
@@ -20,7 +18,7 @@ public class StringConstant : MonoBehaviour
     public static class UI
     {
         public static string GAME_OVER = "Game Over";
-        public static string GAME_WIN = "You Win";
+        public static string GAME_WIN = "Game Win";
         public static string GAME_PAUSE = "Game Pause";
         public static string GAME_PLAY = "Game Play";
     }
@@ -69,5 +67,9 @@ public class StringConstant : MonoBehaviour
         public static string GAME_WIN = "GameWin";
         public static string PLAYER_RUN = "PlayerRun";
         public static string SKILL1 = "KatonGokakyoNoJutsu";
+    }
+    public static class SCENE
+    {
+        public static string MAIN_MENU = "MainMenu";
     }
 }

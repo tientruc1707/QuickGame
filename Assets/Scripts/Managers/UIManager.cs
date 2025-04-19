@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : Singleton<UIManager>
@@ -92,5 +93,16 @@ public class UIManager : Singleton<UIManager>
         gamePlayPanel.SetActive(true);
         Time.timeScale = 1;
         //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
+    }
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(StringConstant.SCENE.MAIN_MENU);
+    }
+    public void LoadNextLevel()
+    {
+        StartGame();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Level" + (SceneManager.GetActiveScene().buildIndex + 1));
     }
 }

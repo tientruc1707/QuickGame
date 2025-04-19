@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: 041719fa349c14449a451f7cb733a230
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HomeAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 710
+        width: 752
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b44635deb248bd4485ecefee3838170
+      internalID: -926965988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 2014
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b58aa0a1025f234081bf96bbdf385b9
+      internalID: -1340029286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1998
+        width: 208
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407b45570cb4ba34399dc51e104b05e7
+      internalID: 1979720714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1708
+        width: 507
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9a78e7f73facf47a95621b6027c775
+      internalID: 898433563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2008
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab997fd36183bc4eac5a33ed21f0fa1
+      internalID: 579439362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1688
+        width: 758
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b8306230249914f874d0c640c9e22a
+      internalID: -1389003583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1686
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e42c200326611c46b87ffc8a39b87d4
+      internalID: 413794706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1694
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eca7e7710cf6d14db53c4d073ae60ea
+      internalID: 844963211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1684
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce6859bac79ced46b2ddb748f2825be
+      internalID: -1400238267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1576
+        width: 123
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504fa4767bc8e2c4ba919970ac35413b
+      internalID: -1291249637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1630
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07923516c38c77f4d8aa79a24840208a
+      internalID: 1929320793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1346
+        width: 509
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1ab841054c19a49b448fca25f531a1
+      internalID: 194574086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1638
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6271459816efa4caa580b561a2e2b9
+      internalID: 503188379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1530
+        width: 375
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434c982d53c8f40469da8448e429c990
+      internalID: -738081023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1536
+        width: 193
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c498079a6ca43114bb6108991a54021d
+      internalID: -1199936780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1527
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227b44327cba3e34789698717ee5f2e0
+      internalID: 1804161825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 1544
+        width: 125
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355ec66c34420e84799e776fbc246806
+      internalID: 1123541020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1555
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca090ce655f52248b5a68d94caa1f25
+      internalID: 1960680465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1353
+        width: 112
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e11690cc291864485e5fa3837fe7ce
+      internalID: -1950210665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1370
+        width: 361
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e192092647a6b4aaa15abfde00b0ca
+      internalID: -256567615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1424
+        width: 310
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e083fb8814a51e47af6f313f0d16397
+      internalID: -107412662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1359
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9a1f4de8849324aaa179a128ad81c4
+      internalID: 995765621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1362
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930977ca422e8564496e1f7edf609c10
+      internalID: 990858488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1199
+        width: 558
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d2598f24e65f94d813beb567e9a6c0
+      internalID: 52800762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1014
+        width: 485
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691cfe5181557cb439c8d314d47f28cc
+      internalID: 1400119412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1262
+        width: 115
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8053cca0134ee1241b3e7cda10ece5c3
+      internalID: 342088997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 882
+        width: 497
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04eb06ccd7d1444d82da86b37b3f870
+      internalID: 1410355664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1152
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6919f89d710e45e459ce73a22117cecf
+      internalID: -1067019918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1158
+        width: 114
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899c697bb0c99ce4b92d4d1e5c9ed449
+      internalID: 1007943769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1073
+        width: 109
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897c121c767987489418a7c6cfd2f6c
+      internalID: 217632587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 911
+        width: 310
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653dad396401c1a46b42106011aab9a6
+      internalID: 405796647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 924
+        width: 114
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870ac4490c95f6e4fbde6f0a0d600c63
+      internalID: 994386123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 904
+        width: 111
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27c3cd09e2e36748bf41f2580732a06
+      internalID: 957590659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 751
+        width: 112
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be232c8e8ade1446be72fb1426ffec6
+      internalID: -889836256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 740
+        width: 102
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1934017ed8757498e0bb79b035fa90
+      internalID: -494074068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 548
+        width: 495
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ff4349888804141a2e86266f40187c
+      internalID: -191996822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 831
+        width: 265
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9bb8e43a503ad40ad1e93725cc14b1
+      internalID: 1596681479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 816
+        width: 102
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e300433175644844a6d0d6225e04c18
+      internalID: -799784330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 796
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5308e0cd78ab674c873d5e774454302
+      internalID: 701502480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 153
+        width: 1002
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccdaa467b82f424e93be46963553001
+      internalID: -1305501439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 219
+        width: 475
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33b49fec88de3545b065a56393b8037
+      internalID: 1019975224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 256
+        width: 441
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e965ec2245495c643a9c2489b2df414e
+      internalID: -1336609186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 28
+        width: 290
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186d640f753875f4e94bb86df194af52
+      internalID: -391658621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 98
+        width: 107
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9234a6acb25b934b9b84d8d2aea10cf
+      internalID: 814599671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 74
+        width: 435
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed224c6b6c5dc15488c3dd3d6515c96f
+      internalID: 561648702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 135
+        width: 110
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dfe5fda9e7a9c45a2dc1a5488d56ef
+      internalID: -696518518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 158
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070a4ce8d9d722a47aa7e50d60543e7c
+      internalID: -891066224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 12
+        width: 123
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca4212321381044e9efaa1ca235297f
+      internalID: -291434163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HomeAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 12
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c11b408d4872bc4582e04480d887de0
+      internalID: 1611204650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HomeAtlas_0: -926965988
+      HomeAtlas_1: -1340029286
+      HomeAtlas_10: 1929320793
+      HomeAtlas_11: 194574086
+      HomeAtlas_12: 503188379
+      HomeAtlas_13: -738081023
+      HomeAtlas_14: -1199936780
+      HomeAtlas_15: 1804161825
+      HomeAtlas_16: 1123541020
+      HomeAtlas_17: 1960680465
+      HomeAtlas_18: -1950210665
+      HomeAtlas_19: -256567615
+      HomeAtlas_2: 1979720714
+      HomeAtlas_20: -107412662
+      HomeAtlas_21: 995765621
+      HomeAtlas_22: 990858488
+      HomeAtlas_23: 52800762
+      HomeAtlas_24: 1400119412
+      HomeAtlas_25: 342088997
+      HomeAtlas_26: 1410355664
+      HomeAtlas_27: -1067019918
+      HomeAtlas_28: 1007943769
+      HomeAtlas_29: 217632587
+      HomeAtlas_3: 898433563
+      HomeAtlas_30: 405796647
+      HomeAtlas_31: 994386123
+      HomeAtlas_32: 957590659
+      HomeAtlas_33: -889836256
+      HomeAtlas_34: -494074068
+      HomeAtlas_35: -191996822
+      HomeAtlas_36: 1596681479
+      HomeAtlas_37: -799784330
+      HomeAtlas_38: 701502480
+      HomeAtlas_39: -1305501439
+      HomeAtlas_4: 579439362
+      HomeAtlas_40: 1019975224
+      HomeAtlas_41: -1336609186
+      HomeAtlas_42: -391658621
+      HomeAtlas_43: 814599671
+      HomeAtlas_44: 561648702
+      HomeAtlas_45: -696518518
+      HomeAtlas_46: -891066224
+      HomeAtlas_47: -291434163
+      HomeAtlas_48: 1611204650
+      HomeAtlas_5: -1389003583
+      HomeAtlas_6: 413794706
+      HomeAtlas_7: 844963211
+      HomeAtlas_8: -1400238267
+      HomeAtlas_9: -1291249637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

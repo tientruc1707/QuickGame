@@ -32,7 +32,7 @@ public class LevelSelectingPanel : MonoBehaviour
     {
         for (int i = 0; i < _levelButtons.Length; i++)
         {
-            int levelIndex = i; // Capture the current value of i
+            int levelIndex = i; 
             _levelButtons[i].onClick.RemoveListener(() => OnLevelButtonClicked(levelIndex));
         }
     }
