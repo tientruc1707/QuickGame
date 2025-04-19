@@ -1,27 +1,43 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CoinItem : MonoBehaviour, iItem
 {
+    private EnemyHealth _enemy;
+    private Vector3 _currentPosition;
     private void Start()
     {
-        EventManager.Instance.StartListening(StringConstant.EVENT.ENEMY_DEAD, Drop);
         this.gameObject.SetActive(false);
+        _enemy = GetComponentInParent<EnemyHealth>();
     }
-    private void OnDestroy()
+    private void Update()
     {
-        EventManager.Instance.StopListening(StringConstant.EVENT.ENEMY_DEAD, Drop);
+        _currentPosition = this.transform.position;
+        if (!_enemy.isActiveAndEnabled)
+        {
+            Drop();
+        }
     }
     public void Drop()
     {
         this.gameObject.SetActive(true);
-        this.transform.position = new Vector3(UnityEngine.Random.Range(-10, 10), 0.5f, UnityEngine.Random.Range(-10, 10));
+        this.transform.position = _currentPosition;
     }
     public void PickUp()
     {
         EventManager.Instance.TriggerEvent(StringConstant.EVENT.COIN_COLLECTED);
         this.gameObject.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(StringConstant.TAGS.PLAYER))
+        {
+            PickUp();
+            AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.COIN_PICKUP);
+        }
     }
 }

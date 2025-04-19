@@ -61,15 +61,15 @@ public static class StringConstant
     public static class SOUND
     {
         public static string BACKGROUND_MUSIC = "BackgroundMusic";
-        public static string COIN_COLLECTED = "CoinCollected";
+        public static string COIN_PICKUP = "CoinPickup";
         public static string PLAYER_HIT = "PlayerHit";
         public static string GAME_OVER = "GameOver";
         public static string GAME_WIN = "GameWin";
         public static string PLAYER_RUN = "PlayerRun";
         public static string SKILL1 = "KatonGokakyoNoJutsu";
     }
-    public static class SCENE
+    public static class SCENES
     {
-        public static string MAIN_MENU = "MainMenu";
+        public static string MAIN_MENU = "GameStart";
     }
 }

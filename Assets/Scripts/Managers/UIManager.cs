@@ -10,9 +10,6 @@ public class UIManager : Singleton<UIManager>
     private GameObject gamePausePanel;
     private GameObject gamePlayPanel;
 
-    [SerializeField] private Text _score;
-    [SerializeField] private Text _coinText;
-    [SerializeField] private Slider _playerHealthSlider;
     private void Start()
     {
         gameOverPanel = GameObject.Find(StringConstant.UI.GAME_OVER);
@@ -35,9 +32,6 @@ public class UIManager : Singleton<UIManager>
         {
             gamePlayPanel.SetActive(true);
         }
-        _playerHealthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
-        _playerHealthSlider.value = StringConstant.PLAYER_DETAIL.HEALTH;
-        UpdateCoin(0);
     }
     public void StartGame()
     {
@@ -69,18 +63,6 @@ public class UIManager : Singleton<UIManager>
         gameWinPanel.SetActive(false);
         Time.timeScale = 0;
     }
-    public void UpdateCoin(int coinValue)
-    {
-        _coinText.text = coinValue.ToString();
-    }
-    public void UpdateScore(int scoreValue)
-    {
-        _score.text = scoreValue.ToString();
-    }
-    public void UpdatePlayerHealth(int healthValue)
-    {
-        _playerHealthSlider.value = healthValue;
-    }
     public void ResumeGame()
     {
         gamePausePanel.SetActive(false);
@@ -97,7 +79,7 @@ public class UIManager : Singleton<UIManager>
     public void MainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(StringConstant.SCENE.MAIN_MENU);
+        SceneManager.LoadScene(StringConstant.SCENES.MAIN_MENU);
     }
     public void LoadNextLevel()
     {

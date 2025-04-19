@@ -12,11 +12,6 @@ public class EnemyHealth : MonoBehaviour
         health.MinHealth = 0;
         health.MaxHealth = StringConstant.ENEMY_DETAIL.HEALTH;
     }
-    public void OnDead()
-    {
-        gameObject.SetActive(false);
-        EventManager.Instance.TriggerEvent(StringConstant.EVENT.ENEMY_DEAD);
-    }
     //collision detection with player
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -27,16 +22,22 @@ public class EnemyHealth : MonoBehaviour
             {
                 player.TakeDamage(StringConstant.ENEMY_DETAIL.DAMAGE);
                 //add code here to check if player is attacking
+                AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
                 TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
             }
         }
     }
-    public void TakeDamage(int amount)
+    private void TakeDamage(int amount)
     {
         health?.Decrement(amount);
         if (health.CurrentHealth <= 0)
         {
             OnDead();
         }
+    }
+    private void OnDead()
+    {
+        gameObject.SetActive(false);
+        EventManager.Instance.TriggerEvent(StringConstant.EVENT.ENEMY_DEAD);
     }
 }

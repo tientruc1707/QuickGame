@@ -26,11 +26,11 @@ public class GameManager : Singleton<GameManager>
     }
     public void OnEnemyDead()
     {
-        UIManager.Instance.UpdateScore(StringConstant.ENEMY_DETAIL.VALUE);
+        DataManager.Instance.SetScore(DataManager.Instance.GetScore() + StringConstant.ENEMY_DETAIL.VALUE);
     }
     public void OnCoinCollected()
     {
-        UIManager.Instance.UpdateCoin(StringConstant.VALUE.COIN_VALUE);
+        DataManager.Instance.SetCoin(DataManager.Instance.GetCoin() + StringConstant.VALUE.COIN_VALUE);
     }
     private void OnCheckPointReached()
     {

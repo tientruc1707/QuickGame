@@ -12,11 +12,9 @@ public class SettingPanel : MonoBehaviour
         _soundSlider.value = 1f;
         _sfxToggle.isOn = true;
     }
-
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     AudioManager.Instance.SetBackgroundVolume(_soundSlider.value);
-    //     AudioManager.Instance.ToggleEffectVolume(_sfxToggle.isOn);
-    // }
+    void Update()
+    {
+        AudioManager.Instance.SetBackgroundVolume(_soundSlider.value);
+        AudioManager.Instance.ToggleEffectVolume(_sfxToggle.isOn);
+    }
 }
