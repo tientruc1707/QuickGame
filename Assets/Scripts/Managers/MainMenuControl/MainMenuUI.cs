@@ -37,6 +37,7 @@ public class MainMenuUI : MonoBehaviour
             quitPanel.SetActive(false);
         }
         AudioManager.Instance.PlayBackgroundSound(StringConstant.SOUND.BACKGROUND_MUSIC);
+        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.YOOOOO);
     }
     void Update()
     {

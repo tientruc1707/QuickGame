@@ -9,7 +9,7 @@ public class DataManager : Singleton<DataManager>
     private const string ScoreKey = "Score";
     private const string BestScoreKey = "BestScore";
 
-    private void Start()
+    override public void Awake()
     {
         if (!PlayerPrefs.HasKey(LevelKey))
         {

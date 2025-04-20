@@ -25,14 +25,13 @@ public class LevelSelectingPanel : MonoBehaviour
     }
     private void OnLevelButtonClicked(int levelIndex)
     {
-        Debug.Log("Level " + levelIndex + " button clicked.");
         SceneManager.LoadScene("Level" + levelIndex);
     }
     private void OnDestroy()
     {
         for (int i = 0; i < _levelButtons.Length; i++)
         {
-            int levelIndex = i; 
+            int levelIndex = i;
             _levelButtons[i].onClick.RemoveListener(() => OnLevelButtonClicked(levelIndex));
         }
     }

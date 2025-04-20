@@ -6,6 +6,10 @@ using UnityEngine.Events;
 public class EventManager : Singleton<EventManager>
 {
     public Dictionary<string, UnityEvent> eventDictionary;
+    override public void Awake()
+    {
+        Init();
+    }
     void Init()
     {
         if (eventDictionary == null)

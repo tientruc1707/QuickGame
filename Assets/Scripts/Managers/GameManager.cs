@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
 
-    private void Start()
+    override public void Awake() 
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
         EventManager.Instance.StartListening(StringConstant.EVENT.ENEMY_DEAD, OnEnemyDead);
@@ -22,7 +22,7 @@ public class GameManager : Singleton<GameManager>
     }
     public void OnPlayerDead()
     {
-        UIManager.Instance.GameOver();
+        DataManager.Instance.SaveGameData();
     }
     public void OnEnemyDead()
     {

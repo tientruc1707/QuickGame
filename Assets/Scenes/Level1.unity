@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 173986194}
   - component: {fileID: 173986193}
   - component: {fileID: 173986195}
+  - component: {fileID: 173986196}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -398,6 +399,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &173986196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173986192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb852bf2d7ff2f4ab6825fd25df00c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &222913739
 GameObject:
   m_ObjectHideFlags: 0
@@ -11373,7 +11386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859f7a38748f1d444afaa61a5ad3182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 8614685275593647157}
 --- !u!114 &8347243514713369490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11502,6 +11514,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7868517596536159666, guid: a89e7f8586fcebc43b05dc20d35962d3, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 8347243514713369489}
     - target: {fileID: 7957471185848881537, guid: a89e7f8586fcebc43b05dc20d35962d3, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -11515,17 +11531,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89e7f8586fcebc43b05dc20d35962d3, type: 3}
---- !u!114 &8614685275593647157 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2767021851109989137, guid: a89e7f8586fcebc43b05dc20d35962d3, type: 3}
-  m_PrefabInstance: {fileID: 8614685275593647156}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9021077329370777066
 GameObject:
   m_ObjectHideFlags: 0
