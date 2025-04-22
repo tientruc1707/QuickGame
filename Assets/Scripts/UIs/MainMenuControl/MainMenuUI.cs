@@ -74,8 +74,6 @@ public class MainMenuUI : MonoBehaviour
         }
         selectedPanel.SetActive(true);
         panelStack.Push(selectedPanel);
-        Debug.Log("number of panels in stack: " + panelStack.Count);
-        Debug.Log("Current Panel: " + panelStack.Peek().name);
     }
     public void Quit()
     {
@@ -84,11 +82,9 @@ public class MainMenuUI : MonoBehaviour
     private void GoBackToPreviousPanel()
     {
         panelStack.Pop().SetActive(false);
-        Debug.Log("number of panels in stack: " + panelStack.Count);
         if (panelStack.Count > 0)
         {
             panelStack.Peek().SetActive(true);
         }
-        Debug.Log("Current Panel: " + panelStack.Peek().name);
     }
 }

@@ -3489,3 +3489,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreText: {fileID: 3546380028922751213}
   _coinText: {fileID: 7842157940441631651}
+  _healthSlider: {fileID: 2767021851109989137}
+  _playerHealth: {fileID: 2103440424465529984, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}

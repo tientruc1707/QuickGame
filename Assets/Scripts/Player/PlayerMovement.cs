@@ -112,4 +112,13 @@ public class PlayerMovement : MonoBehaviour
             _onGrounded = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        iItem item = other.GetComponent<iItem>();
+        if (item != null)
+        {
+            item.OnItemPickup();
+            AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.ITEM_PICKUP);
+        }
+    }
 }

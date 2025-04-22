@@ -1,16 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth : PoolManager<EnemyHealth>
 {
     private Health health;
+    private int Rate ;
     void Start()
     {
         health = GetComponent<Health>();
-        health.MinHealth = 0;
-        health.MaxHealth = StringConstant.ENEMY_DETAIL.HEALTH;
+        health.CurrentHealth = StringConstant.ENEMY_DETAIL.HEALTH;
+        Rate = Random.Range(0, 100);
     }
     //collision detection with player
     void OnCollisionEnter2D(Collision2D other)
@@ -32,12 +31,14 @@ public class EnemyHealth : MonoBehaviour
         health?.Decrement(amount);
         if (health.CurrentHealth <= 0)
         {
+
             OnDead();
         }
     }
     private void OnDead()
     {
-        gameObject.SetActive(false);
         EventManager.Instance.TriggerEvent(StringConstant.EVENT.ENEMY_DEAD);
+
+        this.gameObject.SetActive(false);
     }
 }

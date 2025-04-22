@@ -42,7 +42,6 @@ public static class StringConstant
     {
         public static string PLAYER_DEAD = "PlayerDead";
         public static string ENEMY_DEAD = "EnemyDead";
-        public static string COIN_COLLECTED = "CoinCollected";
         public static string CHECKPOINT_REACHED = "CheckpointReached";
     }
     public static class VALUE
@@ -62,7 +61,7 @@ public static class StringConstant
     {
         public static string BACKGROUND_MUSIC = "BackgroundMusic";
         public static string YOOOOO = "Yooooo";
-        public static string COIN_PICKUP = "CoinPickup";
+        public static string ITEM_PICKUP = "CoinPickup";
         public static string PLAYER_HIT = "PlayerHit";
         public static string GAME_OVER = "GameOver";
         public static string GAME_WIN = "GameWin";

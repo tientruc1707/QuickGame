@@ -14,7 +14,8 @@ public class GamePlay : MonoBehaviour
     {
         UpdateScoreText();
         UpdateCoinText();
-        UpdateHealthSlider();
+        _healthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
+        _healthSlider.value = _healthSlider.maxValue;
         EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
     }
     private void Update()
