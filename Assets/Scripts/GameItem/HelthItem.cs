@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelthItem : MonoBehaviour
+public class HelthItem : PoolManager<HelthItem>, iItem
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private PlayerHealth _playerHealth;
+    private int HealthValue => 20;
+    public void OnItemPickup()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (_playerHealth.CurrentHealth < StringConstant.PLAYER_DETAIL.HEALTH)
+        {
+            _playerHealth.Heal(HealthValue);
+            //AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HEAL);
+            ReturnPoolObject(this);
+        }
     }
 }

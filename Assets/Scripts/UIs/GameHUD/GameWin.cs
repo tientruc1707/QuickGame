@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class GameWin : MonoBehaviour
 {
-    public void RestartGame()
-    {
-        UIManager.Instance.RestartGame();
-    }
+    
+    // public void RestartGame()
+    // {
+    //     UIManager.Instance.RestartGame();
+    // }
 
-    public void MainMenu()
-    {
-        UIManager.Instance.MainMenu();
-    }
-    public void NextLevel()
-    {
-        GameManager.Instance.LoadNextLevel();
-    }
+    // public void MainMenu()
+    // {
+    //     UIManager.Instance.MainMenu();
+    // }
+    // public void NextLevel()
+    // {
+    //     GameManager.Instance.LoadNextLevel();
+    // }
 }

@@ -10,6 +10,7 @@ public class GamePlay : MonoBehaviour
     [SerializeField] private Text _coinText;
     [SerializeField] private Slider _healthSlider;
     [SerializeField] private PlayerHealth _playerHealth;
+    [SerializeField] private UIManager _uiManager;
     private void Start()
     {
         UpdateScoreText();
@@ -17,6 +18,7 @@ public class GamePlay : MonoBehaviour
         _healthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
         _healthSlider.value = _healthSlider.maxValue;
         EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
+        EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
     }
     private void Update()
     {
@@ -45,19 +47,22 @@ public class GamePlay : MonoBehaviour
     }
     public void PauseGame()
     {
-        Time.timeScale = 0;
-        UIManager.Instance.GamePause();
+        _uiManager.GamePause();
+        //UIManager.Instance.GamePause();
     }
     public void GetCheckPoint()
     {
-        EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHECKPOINT_REACHED);
+        _uiManager.LoadNextLevel();
+        //UIManager.Instance.LoadNextLevel();
     }
     private void OnPlayerDead()
     {
-        UIManager.Instance.GameOver();
+        _uiManager.GameOver();
+        //UIManager.Instance.GameOver();
     }
     private void OnDestroy()
     {
         EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
+        EventManager.Instance.StopListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
     }
 }

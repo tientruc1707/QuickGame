@@ -25,11 +25,6 @@ public class GameManager : Singleton<GameManager>
     }
     private void OnCheckPointReached()
     {
-        UIManager.Instance.GameWin();
         DataManager.Instance.SaveGameData();
-    }
-    public void LoadNextLevel()
-    {
-        UIManager.Instance.LoadNextLevel();
     }
 }

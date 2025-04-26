@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class GamePause : MonoBehaviour
 {
-    public void ResumeGame()
-    {
-        UIManager.Instance.ResumeGame();
-    }
+    // public void ResumeGame()
+    // {
+    //     UIManager.Instance.ResumeGame();
+    // }
 
-    public void RestartGame()
-    {
-        UIManager.Instance.RestartGame();
-    }
+    // public void RestartGame()
+    // {
+    //     UIManager.Instance.RestartGame();
+    // }
 
-    public void MainMenu()
-    {
-        UIManager.Instance.MainMenu();
-    }
+    // public void MainMenu()
+    // {
+    //     UIManager.Instance.MainMenu();
+    // }
 }

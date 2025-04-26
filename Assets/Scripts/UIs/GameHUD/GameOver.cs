@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    public void RestartGame()
-    {
-        UIManager.Instance.RestartGame();
-    }
-    public void MainMenu()
-    {
-        UIManager.Instance.MainMenu();
-    }
+    // public void RestartGame()
+    // {
+    //     UIManager.Instance.RestartGame();
+    // }
+    // public void MainMenu()
+    // {
+    //     UIManager.Instance.MainMenu();
+    // }
 }
