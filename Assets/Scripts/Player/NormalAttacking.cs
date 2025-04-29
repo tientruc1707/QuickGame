@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 public class NormalAttacking : MonoBehaviour
 {
     private Animator _animator;
-    private PlayerHealth _playerHealth;
+    private float _comboTiming = 0.5f;
+    private float _lastHit = 0f;
     private int _count = 1;
     void Start()
     {
         _animator = GetComponent<Animator>();
-        _playerHealth = GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -22,8 +22,13 @@ public class NormalAttacking : MonoBehaviour
     {
         if (context.performed)
         {
+            if (Time.time - _lastHit > _comboTiming)
+            {
+                _count = 1;
+            }
             PerformAttack(_count);
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
+            _lastHit = Time.time;
             _count++;
         }
     }
@@ -40,10 +45,6 @@ public class NormalAttacking : MonoBehaviour
             case 3:
                 _animator.SetTrigger("Attack3");
                 break;
-        }
-        if (count >= 3)
-        {
-            _count = 1;
         }
     }
 }
