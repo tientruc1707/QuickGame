@@ -5,7 +5,7 @@ using UnityEngine.Pool;
 
 public class PoolManager<T> : MonoBehaviour where T : Component
 {
-    [SerializeField] private T _itemPrefab;
+    [SerializeField] private T _objectPrefab;
     [SerializeField] private ItemType _itemType;
     [SerializeField][Range(0, 100)] int _itemDropRate;
     private IObjectPool<T> _itemPool;
@@ -15,12 +15,12 @@ public class PoolManager<T> : MonoBehaviour where T : Component
 
     private void Awake()
     {
-        _itemPool = new ObjectPool<T>(CreateItem, OnGetFromPool, OnReturnToPool, OnDestroyItem, true, _defaultSize, _maxSize);
+        _itemPool = new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, _defaultSize, _maxSize);
     }
 
-    private T CreateItem()
+    private T CreateObject()
     {
-        T obj = Instantiate(_itemPrefab);
+        T obj = Instantiate(_objectPrefab);
         return obj;
     }
 
@@ -34,7 +34,7 @@ public class PoolManager<T> : MonoBehaviour where T : Component
         item.gameObject.SetActive(false);
     }
 
-    private void OnDestroyItem(T item)
+    private void OnDestroyObject(T item)
     {
         Destroy(item);
     }

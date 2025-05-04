@@ -7,20 +7,16 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    
     [SerializeField] private ParticleSystem _smokeEffect;
     [Header("Movement")]
     [SerializeField] private float _moveSpeed = 250f;
-    [SerializeField] private float _inputHorizontal;
+    private float _inputHorizontal;
 
     [Header("Jump")]
     [SerializeField] private float _jumpForce = 210f;
-    [SerializeField] private bool _onGrounded;
+    private bool _onGrounded;
 
-    [Header("Dash")]
-    [SerializeField] private float _dashForce = 2f;
-    [SerializeField] private float _dashCooldown = 2f;
-    [SerializeField] private float _nextDashTime = 0f;
-    [SerializeField] private Slider _dashSlider;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        _dashSlider.value = Mathf.Clamp(_nextDashTime - Time.time, 0, _dashCooldown) / _dashCooldown;
+
     }
     private void FixedUpdate()
     {
@@ -68,21 +64,6 @@ public class PlayerMovement : MonoBehaviour
                 //Light tap of jump button to jump lower (double jump)
                 rb.velocity = new Vector2(rb.velocity.x, _jumpForce * 0.5f * Time.deltaTime);
             }
-        }
-    }
-    public void Dash(InputAction.CallbackContext context)
-    {
-        if (context.performed && Time.time > _nextDashTime)
-        {
-            Debug.Log("Dash");
-            this.transform.position += new Vector3(_dashForce, 0, 0);
-            animator.SetBool("Dash", true);
-            _nextDashTime = Time.time + _dashCooldown;
-            _smokeEffect.Play();
-        }
-        else
-        {
-            animator.SetBool("Dash", false);
         }
     }
     // Check if the player is near the ground

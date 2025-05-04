@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b5162312528bc8418bd28159bd60bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 3885527018735953577}
+  _objectPrefab: {fileID: 3885527018735953577}
   _itemType: 1
   _itemDropRate: 37
   _playerHealth: {fileID: 2103440424465529984, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}

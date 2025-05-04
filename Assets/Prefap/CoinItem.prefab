@@ -161,6 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0a580e0b7cbe14ba05e0be77f51617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 1086655116914426639}
+  _objectPrefab: {fileID: 1086655116914426639}
   _itemType: 0
   _itemDropRate: 50

@@ -8,15 +8,24 @@ public class GamePlay : MonoBehaviour
 {
     [SerializeField] private Text _scoreText;
     [SerializeField] private Text _coinText;
-    [SerializeField] private Slider _healthSlider;
-    [SerializeField] private PlayerHealth _playerHealth;
+    [SerializeField] private Slider _healthSlider, _dashCooldownSlider, _gokakyoCooldownSlider;
     [SerializeField] private UIManager _uiManager;
+    [SerializeField] private PlayerHealth _playerHealth;
+    [SerializeField] private DashJutsu _dashJutsu;
+    [SerializeField] private GokakyoNoJutsu _gokakyoNoJutsu;
+
     private void Start()
     {
         UpdateScoreText();
         UpdateCoinText();
+
+        _dashCooldownSlider.maxValue = 1f;
+
+        _gokakyoCooldownSlider.maxValue = 1f;
+
         _healthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
         _healthSlider.value = _healthSlider.maxValue;
+
         EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
         EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
     }
@@ -32,6 +41,7 @@ public class GamePlay : MonoBehaviour
         UpdateScoreText();
         UpdateCoinText();
         UpdateHealthSlider();
+        UpdateSkillCooldown();
     }
     private void UpdateScoreText()
     {
@@ -44,6 +54,11 @@ public class GamePlay : MonoBehaviour
     private void UpdateHealthSlider()
     {
         _healthSlider.value = _playerHealth.CurrentHealth;
+    }
+    private void UpdateSkillCooldown()
+    {
+        _dashCooldownSlider.value = _dashJutsu.GetCoolDownTime();
+        _gokakyoCooldownSlider.value = _gokakyoNoJutsu.GetCoolDownTime();
     }
     public void PauseGame()
     {
