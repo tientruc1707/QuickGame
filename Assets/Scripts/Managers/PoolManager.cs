@@ -6,16 +6,14 @@ using UnityEngine.Pool;
 public class PoolManager<T> : MonoBehaviour where T : Component
 {
     [SerializeField] private T _objectPrefab;
-    [SerializeField] private ItemType _itemType;
-    [SerializeField][Range(0, 100)] int _itemDropRate;
-    private IObjectPool<T> _itemPool;
+    private IObjectPool<T> _objectPool;
     private int _defaultSize = 10;
     private int _maxSize = 20;
 
 
     private void Awake()
     {
-        _itemPool = new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, _defaultSize, _maxSize);
+        _objectPool = new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, _defaultSize, _maxSize);
     }
 
     private T CreateObject()
@@ -39,15 +37,13 @@ public class PoolManager<T> : MonoBehaviour where T : Component
         Destroy(item);
     }
     // This method is used to get the item from the pool and set its position
-    public T GetPoolObject()
+    public GameObject GetPoolObject()
     {
-        T item = _itemPool.Get();
-        item.transform.position = transform.position;
-        return item;
+        return _objectPool.Get().gameObject;
     }
     // This method is used to return the item to the pool when it is picked up by the player    
     public void ReturnPoolObject(T item)
     {
-        _itemPool.Release(item);
+        _objectPool.Release(item);
     }
 }

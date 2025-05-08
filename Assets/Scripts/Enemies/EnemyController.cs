@@ -5,15 +5,23 @@ using UnityEngine;
 //I need to add chasing and attacking player
 public class EnemyController : MonoBehaviour
 {
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
-    private Vector3 startPosition;
-    private float range = StringConstant.ENEMY_DETAIL.ATTACK_RANGE;
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+    private Vector3 _startPosition;
+    private EnemyHealth _enemyHealth;
+    
+    private float _speed;
+    private float _range;
+
     void Start()
     {
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        startPosition = transform.position;
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _startPosition = transform.position;
+        _enemyHealth = GetComponent<EnemyHealth>();
+
+        _speed = _enemyHealth._enemyDetail.Speed;
+        _range = _enemyHealth._enemyDetail.MovingRange;
     }
 
     void Update()
@@ -23,31 +31,36 @@ public class EnemyController : MonoBehaviour
     private void OnMoving()
     {
 
-        if (transform.position.x > startPosition.x + range)
+        if (transform.position.x > _startPosition.x + _range)
         {
             MoveLeft();
         }
-        else if (transform.position.x < startPosition.x - range)
+        else if (transform.position.x < _startPosition.x - _range)
         {
             MoveRight();
         }
         else
         {
-            if (spriteRenderer.flipX)
-                MoveLeft();
-            else
+            if (_spriteRenderer.flipX)
                 MoveRight();
+            else
+                MoveLeft();
         }
-        animator.SetBool("Run", true);
+        _animator.SetBool("Move", true);
     }
     private void MoveLeft()
     {
-        transform.Translate(Vector2.left * StringConstant.ENEMY_DETAIL.SPEED * Time.deltaTime);
-        spriteRenderer.flipX = true;
+        transform.Translate(Vector2.left * _speed * Time.deltaTime);
+        _spriteRenderer.flipX = false;
     }
     private void MoveRight()
     {
-        transform.Translate(Vector2.right * StringConstant.ENEMY_DETAIL.SPEED * Time.deltaTime);
-        spriteRenderer.flipX = false;
+        transform.Translate(Vector2.right * _speed * Time.deltaTime);
+        _spriteRenderer.flipX = true;
+    }
+    public void KnockBack(Vector3 currentPos, float knockBackForce)
+    {
+        Vector3 direction = (transform.position - currentPos).normalized;
+        transform.position += direction * knockBackForce * Time.deltaTime;
     }
 }

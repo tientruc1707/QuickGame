@@ -9,11 +9,23 @@ public static class StringConstant
     }
     public static class ENEMY_DETAIL
     {
-        public static int HEALTH = 60;
-        public static int DAMAGE = 20;
-        public static int SPEED = 8;
-        public static int VALUE = 10;
-        public static int ATTACK_RANGE = 5;
+        public static class BOAR
+        {
+            public static int HEALTH = 50;
+            public static int DAMAGE = 10;
+            public static int SPEED = 5;
+            public static int VALUE = 5;
+            public static int ATTACK_RANGE = 2;
+        }
+
+        public static class BEE
+        {
+            public static int HEALTH = 30;
+            public static int DAMAGE = 15;
+            public static int SPEED = 7;
+            public static int VALUE = 8;
+            public static int ATTACK_RANGE = 3;
+        }
     }
     public static class UI
     {
@@ -44,10 +56,11 @@ public static class StringConstant
         public static string ENEMY_DEAD = "EnemyDead";
         public static string CHECKPOINT_REACHED = "CheckpointReached";
     }
-    public static class VALUE
+    public static class ITEMTYPE
     {
-        public static int COIN_VALUE = 1;
-        public static int CHECKPOINT_VALUE = 1;
+        public static string COIN = "Coin";
+        public static string POTION = "Potion";
+        public static string WEAPON = "Weapon";
     }
     public static class ANIMATION
     {
@@ -72,5 +85,15 @@ public static class StringConstant
     public static class SCENES
     {
         public static string MAIN_MENU = "GameStart";
+    }
+    public static class ENEMYTYPE
+    {
+        public static string BOAR = "Boar";
+        public static string BEE = "Bee";
+    }
+    public static class WEAPONTYPE
+    {
+        public static string KUNAI = "Kunai";
+        public static string SHURIKEN = "Shuriken";
     }
 }

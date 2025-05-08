@@ -7,6 +7,9 @@ public class PlayerAction : MonoBehaviour
 {
     [SerializeField] private ISkill[] _skills;
     [SerializeField] private Animator _animator;
+
+    public bool IsAttacking { get; private set; } = false;
+
     private float _comboTiming = 0.5f;
     private float _lastHit = 0f;
     private int _count = 1;
@@ -28,9 +31,10 @@ public class PlayerAction : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
+            IsAttacking = true;
             Attack();
         }
-
+        IsAttacking = false;
     }
     public void Attack()
     {
@@ -62,9 +66,5 @@ public class PlayerAction : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         _skills = GetComponentsInChildren<ISkill>(true);
-    }
-    public ISkill[] GetSkills()
-    {
-        return _skills;
     }
 }

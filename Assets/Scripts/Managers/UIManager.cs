@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     }
     public void GameOver()
     {
+        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GAME_OVER);
         _gameOverPanel.SetActive(true);
         _gamePlayPanel.SetActive(false);
         _gameWinPanel.SetActive(false);
@@ -35,6 +36,7 @@ public class UIManager : MonoBehaviour
     }
     public void GameWin()
     {
+        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GAME_WIN);
         _gameWinPanel.SetActive(true);
         _gamePlayPanel.SetActive(false);
         _gameOverPanel.SetActive(false);

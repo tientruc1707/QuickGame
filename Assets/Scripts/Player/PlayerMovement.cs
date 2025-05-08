@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
-    
+
     [SerializeField] private ParticleSystem _smokeEffect;
     [Header("Movement")]
     [SerializeField] private float _moveSpeed = 250f;
@@ -57,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 //Hold the jump button to jump higher
                 rb.velocity = new Vector2(rb.velocity.x, _jumpForce * Time.deltaTime);
-                _smokeEffect.Play();
             }
             else if (context.canceled)
             {
@@ -70,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     private bool OnGrounded()
     {
         Color rayColor = Color.red;
-        float rayLenght = 1f;
+        float rayLenght = 2f;
         Vector2 rootPosition = transform.position;
         LayerMask layerMask = LayerMask.GetMask("Ground");
         RaycastHit2D hit = Physics2D.Raycast(rootPosition, Vector2.down, rayLenght, layerMask);
