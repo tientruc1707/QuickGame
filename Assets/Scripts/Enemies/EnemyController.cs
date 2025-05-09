@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,27 +8,31 @@ public class EnemyController : MonoBehaviour
 {
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
-    private Vector3 _startPosition;
     private EnemyHealth _enemyHealth;
-    
-    private float _speed;
-    private float _range;
+    private Vector3 _startPosition;
+
+    private int _speed;
+    private int _range;
+
+
 
     void Start()
     {
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _startPosition = transform.position;
-        _enemyHealth = GetComponent<EnemyHealth>();
 
+        _enemyHealth = GetComponent<EnemyHealth>();
         _speed = _enemyHealth._enemyDetail.Speed;
         _range = _enemyHealth._enemyDetail.MovingRange;
+
     }
 
     void Update()
     {
         OnMoving();
     }
+
     private void OnMoving()
     {
 
@@ -48,19 +53,31 @@ public class EnemyController : MonoBehaviour
         }
         _animator.SetBool("Move", true);
     }
+
     private void MoveLeft()
     {
         transform.Translate(Vector2.left * _speed * Time.deltaTime);
         _spriteRenderer.flipX = false;
     }
+
     private void MoveRight()
     {
         transform.Translate(Vector2.right * _speed * Time.deltaTime);
         _spriteRenderer.flipX = true;
     }
+
     public void KnockBack(Vector3 currentPos, float knockBackForce)
     {
         Vector3 direction = (transform.position - currentPos).normalized;
         transform.position += direction * knockBackForce * Time.deltaTime;
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
+        {
+            EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
+            enemyPosition?.KnockBack(transform.position, 2f);
+        }
     }
 }

@@ -11,13 +11,23 @@ public class EnemyHealth : MonoBehaviour
     private ItemDropingSystem _dropSystem;
     public EnemyType enemyType;
     public EnemyDetail _enemyDetail { get; set; }
-    void Start()
+
+
+
+
+    void Awake()
     {
         _health = GetComponent<Health>();
         _animator = GetComponent<Animator>();
-        _enemyPool = GetComponentInParent<EnemyPool>();
-        _dropSystem = GetComponent<ItemDropingSystem>();
 
+        _enemyPool = GetComponentInParent<EnemyPool>();
+        _dropSystem = GetComponentInParent<ItemDropingSystem>();
+
+        InitEnemyDeatial();
+    }
+
+    private void InitEnemyDeatial()
+    {
         if (enemyType == EnemyType.BOAR)
         {
             _enemyDetail = new EnemyDetail(
@@ -27,6 +37,7 @@ public class EnemyHealth : MonoBehaviour
                 StringConstant.ENEMY_DETAIL.BOAR.DAMAGE,
                 StringConstant.ENEMY_DETAIL.BOAR.VALUE
             );
+            Debug.Log("BOAR CREATED");
         }
         else if (enemyType == EnemyType.BEE)
         {
@@ -36,7 +47,8 @@ public class EnemyHealth : MonoBehaviour
                  StringConstant.ENEMY_DETAIL.BEE.HEALTH,
                  StringConstant.ENEMY_DETAIL.BEE.DAMAGE,
                  StringConstant.ENEMY_DETAIL.BEE.VALUE
-             );
+            );
+            Debug.Log("BEE CREATED");
         }
     }
     //collision detection with player
@@ -59,6 +71,7 @@ public class EnemyHealth : MonoBehaviour
             }
         }
     }
+
     public void TakeDamage(int amount)
     {
         _health?.Decrement(amount);
@@ -67,6 +80,7 @@ public class EnemyHealth : MonoBehaviour
             OnDead();
         }
     }
+
     private void OnDead()
     {
         DataManager.Instance.SetScore(DataManager.Instance.GetScore() + _enemyDetail.Value);
@@ -91,12 +105,16 @@ public class EnemyHealth : MonoBehaviour
         _animator.SetTrigger("Hit");
         StartCoroutine(OnDeadCoroutine());
     }
+
     IEnumerator OnDeadCoroutine()
     {
         yield return new WaitForSeconds(1f);
         _enemyPool.ReturnEnemy(enemyType, gameObject);
     }
 }
+
+
+[System.Serializable]
 public class EnemyDetail
 {
     public int Speed { get; set; }

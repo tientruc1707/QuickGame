@@ -13,8 +13,11 @@ public class GamePlay : MonoBehaviour
     [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private DashJutsu _dashJutsu;
     [SerializeField] private GokakyoNoJutsu _gokakyoNoJutsu;
-
     [SerializeField] private EnemyPool _enemyPool;
+    private List<Vector3> _enemySpawnPoints = new List<Vector3>();
+
+
+
     private void Start()
     {
         UpdateScoreText();
@@ -36,10 +39,12 @@ public class GamePlay : MonoBehaviour
             GenerateRandomEnemy();
         }
     }
+
     private void GenerateRandomEnemy()
     {
         int randomIndex = UnityEngine.Random.Range(0, 2);
-        Vector3 randomPosition = new Vector3(UnityEngine.Random.Range(40f, 50f), UnityEngine.Random.Range(-2, 5f), 0);
+        Vector3 randomPosition = new Vector3(UnityEngine.Random.Range(40f, 60f), UnityEngine.Random.Range(2, 5), 0);
+
         switch (randomIndex)
         {
             case 0:
@@ -51,6 +56,7 @@ public class GamePlay : MonoBehaviour
         }
 
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -65,38 +71,46 @@ public class GamePlay : MonoBehaviour
         UpdateHealthSlider();
         UpdateSkillCooldown();
     }
+
     private void UpdateScoreText()
     {
         _scoreText.text = DataManager.Instance.GetScore().ToString();
     }
+
     private void UpdateCoinText()
     {
         _coinText.text = DataManager.Instance.GetCoin().ToString();
     }
+
     private void UpdateHealthSlider()
     {
         _healthSlider.value = _playerHealth.CurrentHealth;
     }
+
     private void UpdateSkillCooldown()
     {
         _dashCooldownSlider.value = _dashJutsu.GetCoolDownTime();
         _gokakyoCooldownSlider.value = _gokakyoNoJutsu.GetCoolDownTime();
     }
+
     public void PauseGame()
     {
         _uiManager.GamePause();
         //UIManager.Instance.GamePause();
     }
+
     public void GetCheckPoint()
     {
         _uiManager.LoadNextLevel();
         //UIManager.Instance.LoadNextLevel();
     }
+
     private void OnPlayerDead()
     {
         _uiManager.GameOver();
         //UIManager.Instance.GameOver();
     }
+
     private void OnDestroy()
     {
         EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);

@@ -8,6 +8,8 @@ public enum EnemyType
     BOAR,
     BEE
 }
+
+
 public class EnemyPool : MonoBehaviour
 {
     [System.Serializable]
@@ -17,9 +19,13 @@ public class EnemyPool : MonoBehaviour
         public GameObject _enemyPrefab;
         [HideInInspector] public IObjectPool<GameObject> _pool;
     }
+
+
     [SerializeField] private List<EnemyTypeInfor> _enemyTypeList = new List<EnemyTypeInfor>();
     // Dictionary to hold the enemy pools for each enemy type
     private Dictionary<EnemyType, IObjectPool<GameObject>> _enemyPools = new Dictionary<EnemyType, IObjectPool<GameObject>>();
+    
+    
     private void Awake()
     {
         // Initialize the enemy pools based on the enemy type list
@@ -38,6 +44,7 @@ public class EnemyPool : MonoBehaviour
             _enemyPools.Add(enemyType._enemyType, pool);
         }
     }
+
     public void SpawnEnemy(EnemyType enemyType, Vector3 position, Quaternion rotation)
     {
         if (_enemyPools.ContainsKey(enemyType))
@@ -45,6 +52,7 @@ public class EnemyPool : MonoBehaviour
             GameObject enemy = _enemyPools[enemyType].Get();
             enemy.transform.position = position;
             enemy.transform.rotation = rotation;
+            enemy.transform.SetParent(this.transform);
             enemy.SetActive(true);
         }
         else
@@ -52,6 +60,7 @@ public class EnemyPool : MonoBehaviour
             Debug.LogError($"Enemy type {enemyType} not found in pool.");
         }
     }
+
     public void ReturnEnemy(EnemyType enemyType, GameObject enemy)
     {
         if (_enemyPools.ContainsKey(enemyType))
@@ -61,14 +70,6 @@ public class EnemyPool : MonoBehaviour
         else
         {
             Debug.LogError($"Enemy type {enemyType} not found in pool.");
-        }
-    }
-    private void OnDestroy()
-    {
-        // Clean up the pools when the object is destroyed
-        foreach (var pool in _enemyPools.Values)
-        {
-            pool.Clear();
         }
     }
     

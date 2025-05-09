@@ -86,11 +86,7 @@ public static class StringConstant
     {
         public static string MAIN_MENU = "GameStart";
     }
-    public static class ENEMYTYPE
-    {
-        public static string BOAR = "Boar";
-        public static string BEE = "Bee";
-    }
+    
     public static class WEAPONTYPE
     {
         public static string KUNAI = "Kunai";

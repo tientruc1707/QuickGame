@@ -137,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1342981853751046877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a041b77868f9ece4f91e4d238f8ef753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyHealth: {fileID: 5625168996556421347}
 --- !u!114 &5625168996556421347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ae0758863c39042a962597f5de24d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objectPrefab: {fileID: 5625168996556421347}
+  enemyType: 0
 --- !u!114 &3010112415066681464
 MonoBehaviour:
   m_ObjectHideFlags: 0

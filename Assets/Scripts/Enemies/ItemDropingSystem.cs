@@ -22,6 +22,9 @@ public class ItemDropingSystem : MonoBehaviour
     }
     [SerializeField] private List<DropItemInfor> _dropableList = new List<DropItemInfor>();
     private Dictionary<ItemType, IObjectPool<GameObject>> _dropableDictionary = new Dictionary<ItemType, IObjectPool<GameObject>>();
+    
+    
+    
     private void Awake()
     {
         foreach (var item in _dropableList)
@@ -39,6 +42,7 @@ public class ItemDropingSystem : MonoBehaviour
             _dropableDictionary.Add(item._itemInfor, pool);
         }
     }
+
     public void DropItem(ItemType itemType, Vector3 position)
     {
         if (!_dropableDictionary.ContainsKey(itemType))
@@ -51,6 +55,7 @@ public class ItemDropingSystem : MonoBehaviour
         item.transform.rotation = Quaternion.identity;
         item.SetActive(true);
     }
+
     public void ReturnItem(ItemType itemType, GameObject item)
     {
         if (_dropableDictionary.ContainsKey(itemType))
@@ -62,4 +67,5 @@ public class ItemDropingSystem : MonoBehaviour
             Debug.LogError($"Item type {itemType} not found in pool.");
         }
     }
+    
 }

@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1879678152749461851}
   - component: {fileID: 3553194767155224084}
   - component: {fileID: 2241263613463937200}
+  - component: {fileID: 66613772238174597}
   - component: {fileID: 8276980096386313530}
   - component: {fileID: 1247407487108415321}
-  - component: {fileID: 66613772238174597}
-  - component: {fileID: 2946212540661476503}
   m_Layer: 0
   m_Name: e_Bee
   m_TagString: Untagged
@@ -138,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2241263613463937200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -184,6 +183,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.625, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &66613772238174597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491608534063319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d8a26648cf3b84aa73261d575a3a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8276980096386313530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,32 +220,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a041b77868f9ece4f91e4d238f8ef753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &66613772238174597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7491608534063319896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d8a26648cf3b84aa73261d575a3a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2946212540661476503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7491608534063319896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdbacd6d5a197e04a9663ac39831993a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dropableList:
-  - _itemInfor: 0
-    _dropPrefab: {fileID: 8417654003730464372, guid: 50cfe1fb83f27a545b7aec674f9abefc, type: 3}
-  - _itemInfor: 1
-    _dropPrefab: {fileID: 2899061348366509033, guid: b9156a8c6e6028145b9bf9cd4252fd79, type: 3}
+  _enemyHealth: {fileID: 8276980096386313530}
