@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //I need to add chasing and attacking player
+
 public class EnemyController : MonoBehaviour
 {
     private Animator _animator;

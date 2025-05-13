@@ -7,15 +7,23 @@ public class PoolManager<T> : MonoBehaviour where T : Component
 {
     [SerializeField] private T _objectPrefab;
     private IObjectPool<T> _objectPool;
-    private int _defaultSize = 10;
-    private int _maxSize = 20;
+    protected int DefaultSize { get; set; }
+    protected int MaxSize { get; set; }
 
 
     private void Awake()
     {
-        _objectPool = new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, _defaultSize, _maxSize);
+        // _objectPool = new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, DefaultSize, MaxSize);
     }
 
+    public IObjectPool<T> ObjectPool
+    {
+        get
+        {
+            _objectPool ??= new ObjectPool<T>(CreateObject, OnGetFromPool, OnReturnToPool, OnDestroyObject, true, DefaultSize, MaxSize);
+            return _objectPool;
+        }
+    }
     private T CreateObject()
     {
         T obj = Instantiate(_objectPrefab);

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SimpleDynamicCollider : MonoBehaviour
+public class DynamicCollider : MonoBehaviour
 {
     private BoxCollider2D boxCollider;
     private SpriteRenderer spriteRenderer;

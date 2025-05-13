@@ -8,7 +8,7 @@ public class DashJutsu : ISkill
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform _playerTransform;
 
-    private float _dashForce = 25f;
+    private float _dashForce = 50f;
     private float _dashCooldown = 2f;
     private float _lastExecution = 0f;
     void Update()

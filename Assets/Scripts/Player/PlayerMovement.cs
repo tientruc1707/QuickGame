@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        iItem item = other.GetComponent<iItem>();
+        IIItem item = other.GetComponent<IIItem>();
         if (item != null)
         {
             item.OnItemPickup();

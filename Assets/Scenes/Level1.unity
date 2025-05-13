@@ -1865,8 +1865,12 @@ MonoBehaviour:
   _enemyTypeList:
   - _enemyType: 0
     _enemyPrefab: {fileID: 8235912395930395373, guid: 0b86a84c6395eae48bd53f30b7afd1fc, type: 3}
+    _defaultSize: 10
+    _maxSize: 20
   - _enemyType: 1
     _enemyPrefab: {fileID: 7491608534063319896, guid: 70248a6801c24d14cba554ccafd590de, type: 3}
+    _defaultSize: 10
+    _maxSize: 20
 --- !u!4 &1386623327
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,14 +1895,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386623325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdbacd6d5a197e04a9663ac39831993a, type: 3}
+  m_Script: {fileID: 11500000, guid: c8dee6f5ae5b7c445b0579def6fd1ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropableList:
-  - _itemInfor: 0
-    _dropPrefab: {fileID: 8417654003730464372, guid: 50cfe1fb83f27a545b7aec674f9abefc, type: 3}
-  - _itemInfor: 1
-    _dropPrefab: {fileID: 2899061348366509033, guid: b9156a8c6e6028145b9bf9cd4252fd79, type: 3}
+  _itemTypeList:
+  - _itemType: 0
+    _itemPrefab: {fileID: 8417654003730464372, guid: 50cfe1fb83f27a545b7aec674f9abefc, type: 3}
+    _defaultSize: 20
+    _maxSize: 50
+  - _itemType: 1
+    _itemPrefab: {fileID: 2899061348366509033, guid: b9156a8c6e6028145b9bf9cd4252fd79, type: 3}
+    _defaultSize: 5
+    _maxSize: 10
 --- !u!1 &1398515082
 GameObject:
   m_ObjectHideFlags: 0

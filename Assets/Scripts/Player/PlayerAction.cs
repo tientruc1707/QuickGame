@@ -63,8 +63,8 @@ public class PlayerAction : MonoBehaviour
                 break;
         }
     }
-    void OnDrawGizmosSelected()
+    public void pauseAnimation()
     {
-        _skills = GetComponentsInChildren<ISkill>(true);
+        _animator.speed = 0;
     }
 }

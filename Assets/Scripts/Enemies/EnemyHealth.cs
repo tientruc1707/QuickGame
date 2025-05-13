@@ -3,32 +3,39 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+
 public class EnemyHealth : MonoBehaviour
 {
     private Health _health;
     private Animator _animator;
-    private EnemyPool _enemyPool;
+    private PooledEnemy _pooledEnemy;
     private ItemDropingSystem _dropSystem;
-    public EnemyType enemyType;
     public EnemyDetail _enemyDetail { get; set; }
 
 
 
 
-    void Awake()
+    void OnEnable()
     {
         _health = GetComponent<Health>();
         _animator = GetComponent<Animator>();
 
-        _enemyPool = GetComponentInParent<EnemyPool>();
+        _pooledEnemy = GetComponentInParent<PooledEnemy>();
         _dropSystem = GetComponentInParent<ItemDropingSystem>();
-
+        if (_pooledEnemy == null)
+        {
+            Debug.LogError("EnemyPool not found in parent");
+        }
+        if (_dropSystem == null)
+        {
+            Debug.LogError("ItemDropingSystem not found in parent");
+        }
         InitEnemyDeatial();
     }
 
     private void InitEnemyDeatial()
     {
-        if (enemyType == EnemyType.BOAR)
+        if (_pooledEnemy._enemyType == EnemyType.BOAR)
         {
             _enemyDetail = new EnemyDetail(
                 StringConstant.ENEMY_DETAIL.BOAR.SPEED,
@@ -39,7 +46,7 @@ public class EnemyHealth : MonoBehaviour
             );
             Debug.Log("BOAR CREATED");
         }
-        else if (enemyType == EnemyType.BEE)
+        else if (_pooledEnemy._enemyType == EnemyType.BEE)
         {
             _enemyDetail = new EnemyDetail(
                  StringConstant.ENEMY_DETAIL.BEE.SPEED,
@@ -85,31 +92,9 @@ public class EnemyHealth : MonoBehaviour
     {
         DataManager.Instance.SetScore(DataManager.Instance.GetScore() + _enemyDetail.Value);
         //Edit Rating Here
-        int random = UnityEngine.Random.Range(0, 100);
-        if (random <= 100)
-        {
-            _dropSystem.DropItem(ItemType.COIN, transform.position);
-        }
-        // else if (random < 80 && random >= 50)
-        // {
-        //     _dropSystem.DropItem(ItemType.ARMOR, transform.position);
-        // }
-        // else if (random < 90 && random >= 80)
-        // {
-        //     _dropSystem.DropItem(ItemType.POTION, transform.position);
-        // }
-        // else 
-        // {
-        //     _dropSystem.DropItem(ItemType.WEAPON, transform.position);
-        // }
+        _dropSystem.DropItem();
         _animator.SetTrigger("Hit");
-        StartCoroutine(OnDeadCoroutine());
-    }
-
-    IEnumerator OnDeadCoroutine()
-    {
-        yield return new WaitForSeconds(1f);
-        _enemyPool.ReturnEnemy(enemyType, gameObject);
+        _pooledEnemy?.ReturnToPool();
     }
 }
 

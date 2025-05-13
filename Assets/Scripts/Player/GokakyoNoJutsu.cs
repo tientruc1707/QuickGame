@@ -47,7 +47,7 @@ public class GokakyoNoJutsu : ISkill
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
             enemyHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-            enemyPosition?.KnockBack(transform.position, 2f);
+            enemyPosition.KnockBack(enemyPosition.transform.position, 2f);
         }
     }
 }

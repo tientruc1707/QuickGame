@@ -1,5 +1,5 @@
 
-public interface iItem
+public interface IIItem
 {
     void OnItemPickup();
 
