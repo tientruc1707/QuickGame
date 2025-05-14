@@ -18,9 +18,10 @@ GameObject:
   - component: {fileID: 8276980096386313530}
   - component: {fileID: 1247407487108415321}
   - component: {fileID: 3965123511881011286}
+  - component: {fileID: 3087736184940835392}
   m_Layer: 0
   m_Name: e_Bee
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,6 +254,18 @@ MonoBehaviour:
     dropChance: 80
   - itemType: 1
     dropChance: 20
+--- !u!114 &3087736184940835392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491608534063319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2024ccf91454aeb47a1c84f2de419efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &421953280475026578
 PrefabInstance:
   m_ObjectHideFlags: 0

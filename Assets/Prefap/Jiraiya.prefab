@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9205925378908821930}
   - component: {fileID: 1262914664788847442}
   - component: {fileID: 8794645152898649693}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DashJutsu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 87879941368027044}
   - component: {fileID: 2729303101818945340}
   - component: {fileID: 3206605179995432687}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4938,17 +4938,17 @@ GameObject:
   - component: {fileID: 7570732687486686282}
   - component: {fileID: 8603289978770591430}
   - component: {fileID: 2349252340429283219}
-  - component: {fileID: 6731325456597165786}
-  - component: {fileID: 1713435368616696669}
   - component: {fileID: 2227955177395353712}
-  - component: {fileID: 1395929359897081417}
-  m_Layer: 3
+  - component: {fileID: 1713435368616696669}
+  - component: {fileID: 2017867893246374393}
+  - component: {fileID: 6731325456597165786}
+  m_Layer: 0
   m_Name: KatonGokakyoNoJutsu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7570732687486686282
 Transform:
   m_ObjectHideFlags: 0
@@ -4958,7 +4958,7 @@ Transform:
   m_GameObject: {fileID: 6761217526865222681}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9, y: 1.08, z: 0}
+  m_LocalPosition: {x: 1.25, y: 1.17, z: 0}
   m_LocalScale: {x: 5.106407, y: 2.9539, z: 2.9539}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5037,46 +5037,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6731325456597165786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761217526865222681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1098c55f3bf87f8418311bed9ae95972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 6609873930104359356}
---- !u!50 &1713435368616696669
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761217526865222681}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2227955177395353712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5122,7 +5082,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.225}
   m_EdgeRadius: 0
---- !u!114 &1395929359897081417
+--- !u!50 &1713435368616696669
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761217526865222681}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &2017867893246374393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5134,6 +5121,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2024ccf91454aeb47a1c84f2de419efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6731325456597165786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761217526865222681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1098c55f3bf87f8418311bed9ae95972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 6609873930104359356}
 --- !u!1 &8804549322441783151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 648151066103408137}
   - component: {fileID: 6034551006849157371}
   - component: {fileID: 9013856441715967859}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Jiraiya
   m_TagString: Player
   m_Icon: {fileID: 0}

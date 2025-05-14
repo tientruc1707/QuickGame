@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _onGrounded = true;
         }
-        if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
+        if (other.gameObject.CompareTag(StringConstant.TAGS.ITEM))
         {
             IIItem item = other.gameObject.GetComponent<IIItem>();
             if (item != null)

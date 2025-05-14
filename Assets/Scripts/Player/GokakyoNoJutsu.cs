@@ -35,10 +35,6 @@ public class GokakyoNoJutsu : ISkill
             _lastExecution = Time.time;
         }
     }
-    public void DisableGokakyoNoJutsu()
-    {
-        this.gameObject.SetActive(false);
-    }
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -47,7 +43,7 @@ public class GokakyoNoJutsu : ISkill
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
             enemyHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-            //enemyPosition.KnockBack(enemyPosition.transform.position, 2f);
+            enemyPosition.KnockBack(enemyPosition.transform.position, 2f);
         }
     }
 }
