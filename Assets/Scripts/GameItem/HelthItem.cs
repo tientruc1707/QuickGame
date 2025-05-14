@@ -12,6 +12,10 @@ public class PotionItem : PooledItem, IIItem
         {
             _playerHealth.Heal(HealthValue);
         }
+        else
+        {
+            Debug.Log("Health is full");
+        }
     }
     public void ReturnItemToPool()
     {

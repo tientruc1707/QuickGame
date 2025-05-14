@@ -13,11 +13,12 @@ public class PlayerAction : MonoBehaviour
     private float _comboTiming = 0.5f;
     private float _lastHit = 0f;
     private int _count = 1;
-
+    private GokakyoNoJutsu _gokakyoNoJutsu;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _gokakyoNoJutsu = GetComponentInChildren<GokakyoNoJutsu>(true);
     }
     void Update()
     {
@@ -66,5 +67,9 @@ public class PlayerAction : MonoBehaviour
     public void pauseAnimation()
     {
         _animator.speed = 0;
+    }
+    public void ActiveGokakyoNoJutsu()
+    {
+        _gokakyoNoJutsu.ActiveSkill();
     }
 }

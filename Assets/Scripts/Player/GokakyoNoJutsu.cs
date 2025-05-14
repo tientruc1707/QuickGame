@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,13 +7,8 @@ using UnityEngine.UI;
 public class GokakyoNoJutsu : ISkill
 {
     [SerializeField] private Animator _animator;
-    private float _cooldown = 5f;
+    private float _cooldown = 15f;
     private float _lastExecution = 0f;
-    void Start()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     void Update()
     {
         GetCoolDownTime();
@@ -31,9 +27,14 @@ public class GokakyoNoJutsu : ISkill
         {
             _animator.SetTrigger("KatonGokakyoNoJutsu");
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.SKILL1);
-            this.gameObject.SetActive(true);
             _lastExecution = Time.time;
         }
+    }
+    public void ActiveSkill()
+    {
+        Animator anim = GetComponent<Animator>();
+        this.gameObject.SetActive(true);
+        anim.SetTrigger("KatonGokakyoNoJutsu");
     }
 
     void OnCollisionEnter2D(Collision2D other)
