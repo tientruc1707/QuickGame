@@ -21,14 +21,14 @@ public class EnemyHealth : MonoBehaviour
         _animator = GetComponent<Animator>();
 
         _pooledEnemy = GetComponentInParent<PooledEnemy>();
-        _dropSystem = GetComponentInParent<ItemDropingSystem>();
+        _dropSystem = GetComponent<ItemDropingSystem>();
         if (_pooledEnemy == null)
         {
             Debug.LogError("EnemyPool not found in parent");
         }
         if (_dropSystem == null)
         {
-            Debug.LogError("ItemDropingSystem not found in parent");
+            Debug.LogError("ItemDropingSystem not found");
         }
         InitEnemyDeatial();
     }
@@ -94,7 +94,7 @@ public class EnemyHealth : MonoBehaviour
         //Edit Rating Here
         _dropSystem.DropItem();
         _animator.SetTrigger("Hit");
-        _pooledEnemy?.ReturnToPool();
+        _pooledEnemy.ReturnToPool();
     }
 }
 

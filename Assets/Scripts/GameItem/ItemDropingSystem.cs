@@ -1,33 +1,38 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Pool;
-
-
 
 public class ItemDropingSystem : MonoBehaviour
 {
     [System.Serializable]
     public class ItemDropInfor
     {
-        public ItemPool pool;
+        public ItemType itemType;
         [Range(0, 100)]
         public int dropChance;
     }
-    [SerializeField] private PooledItem pooledItem;
+    private ItemPool _itemPool;
+    private void Start()
+    {
+        _itemPool = GetComponentInParent<ItemPool>();
+        if (_itemPool == null)
+        {
+            Debug.LogError("ItemPool not found in parent");
+        }
+    }
     [SerializeField] private List<ItemDropInfor> _itemDropList = new List<ItemDropInfor>();
     public void DropItem()
     {
         int randomValue = Random.Range(0, 100);
 
-        foreach (ItemDropInfor itemDropInfor in _itemDropList)
+        foreach (var item in _itemDropList)
         {
-            if (randomValue <= itemDropInfor.dropChance)
+            if (randomValue <= item.dropChance)
             {
-                // Drop the item from the pool
-                GameObject droppedItem = itemDropInfor.pool.GetItem(pooledItem._itemType);
+                GameObject droppedItem = _itemPool.GetItem(item.itemType);
                 droppedItem.transform.position = transform.position + Vector3.up;
-                break;
+                //if wanna drop only one item, uncomment break
+                //break;
             }
         }
     }

@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PooledItem : MonoBehaviour
 {
-    public ItemType _itemType;
+    private ItemType _itemType;
     private ItemPool _itemPool;
 
     public void SetPool(ItemPool itemPool)
     {
         _itemPool = itemPool;
     }
-
+    public ItemType GetItemType()
+    {
+        return _itemType;
+    }
     public void ReturnToPool()
     {
         if (_itemPool != null)

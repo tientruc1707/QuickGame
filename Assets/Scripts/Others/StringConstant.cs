@@ -38,9 +38,10 @@ public static class StringConstant
     {
         public static string PLAYER = "Player";
         public static string ENEMY = "Enemy";
-        public static string COIN = "Coin";
-        public static string TRAP = "Trap";
+        public static string ITEM = "Item";
+        public static string DEADZONE = "DeadZone";
         public static string CHECKPOINT = "Checkpoint";
+        public static string GROUND = "Ground";
     }
     public static class LAYER
     {
@@ -86,7 +87,7 @@ public static class StringConstant
     {
         public static string MAIN_MENU = "GameStart";
     }
-    
+
     public static class WEAPONTYPE
     {
         public static string KUNAI = "Kunai";

@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -87,18 +88,19 @@ public class PlayerMovement : MonoBehaviour
     // Check if the player is on the ground
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag(StringConstant.TAGS.GROUND))
         {
             _onGrounded = true;
         }
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        IIItem item = other.GetComponent<IIItem>();
-        if (item != null)
+        if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
         {
-            item.OnItemPickup();
-            AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.ITEM_PICKUP);
+            IIItem item = other.gameObject.GetComponent<IIItem>();
+            if (item != null)
+            {
+                item.OnItemPickup();
+                AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.ITEM_PICKUP);
+                item.ReturnItemToPool();
+            }
         }
     }
 }

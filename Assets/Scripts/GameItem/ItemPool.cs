@@ -23,9 +23,10 @@ public class ItemPool : MonoBehaviour
     [SerializeField] private List<ItemTypeInfor> _itemTypeList = new List<ItemTypeInfor>();
     // Dictionary to hold the item pools for each item type
     private Dictionary<ItemType, IObjectPool<GameObject>> _itemPools = new Dictionary<ItemType, IObjectPool<GameObject>>();
+
+
     private void Awake()
     {
-        // Initialize the item pools based on the item type list
         foreach (var itemType in _itemTypeList)
         {
             var pool = new ObjectPool<GameObject>(
@@ -34,8 +35,8 @@ public class ItemPool : MonoBehaviour
                 item => ReturnItemToPool(item),
                 item => DestroyItem(item),
                 true,
-                itemType._defaultSize, // Default size
-                itemType._maxSize  // Maximum size
+                itemType._defaultSize,
+                itemType._maxSize
             );
             itemType._pool = pool;
             _itemPools.Add(itemType._itemType, pool);
@@ -46,6 +47,7 @@ public class ItemPool : MonoBehaviour
         GameObject item = Instantiate(itemPrefab);
         PooledItem pooledComponent = item.GetComponent<PooledItem>();
         pooledComponent.SetPool(this);
+        item.SetActive(false);
         return item;
     }
     private void GetItemFromPool(GameObject item)
