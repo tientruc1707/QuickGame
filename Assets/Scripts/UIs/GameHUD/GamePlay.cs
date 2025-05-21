@@ -84,7 +84,7 @@ public class GamePlay : MonoBehaviour
 
     private void UpdateHealthSlider()
     {
-        _healthSlider.value = _playerHealth.CurrentHealth;
+        _healthSlider.value = (float)_playerHealth.CurrentHealth;
     }
 
     private void UpdateSkillCooldown()

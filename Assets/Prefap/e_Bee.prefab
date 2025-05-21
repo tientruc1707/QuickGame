@@ -251,9 +251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemDropList:
   - itemType: 0
-    dropChance: 80
+    dropChance: 0
   - itemType: 1
-    dropChance: 20
+    dropChance: 26
 --- !u!114 &3087736184940835392
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,12 +29,14 @@ public class PlayerAction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             _skills[1].ExecuteSkill();
+            FreezePlayer();
         }
         if (Input.GetMouseButtonDown(1))
         {
             IsAttacking = true;
             Attack();
         }
+
         IsAttacking = false;
     }
     public void Attack()
@@ -64,9 +66,14 @@ public class PlayerAction : MonoBehaviour
                 break;
         }
     }
-    public void pauseAnimation()
+    private void FreezePlayer()
     {
-        _animator.speed = 0;
+        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll |
+                                                             RigidbodyConstraints2D.FreezeRotation;
+    }
+    public void UnfreezePlayer()
+    {
+        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
     }
     public void ActiveGokakyoNoJutsu()
     {

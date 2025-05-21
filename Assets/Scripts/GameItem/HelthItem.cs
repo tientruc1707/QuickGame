@@ -1,21 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PotionItem : PooledItem, IIItem
 {
     [SerializeField] private PlayerHealth _playerHealth;
-    private int HealthValue => 20;
     public void OnItemPickup()
     {
-        if (_playerHealth.CurrentHealth < StringConstant.PLAYER_DETAIL.HEALTH)
-        {
-            _playerHealth.Heal(HealthValue);
-        }
-        else
-        {
-            Debug.Log("Health is full");
-        }
+        EventManager.Instance.TriggerEvent("Heal");
     }
     public void ReturnItemToPool()
     {

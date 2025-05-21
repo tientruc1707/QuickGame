@@ -60,6 +60,9 @@ public class UIManager : MonoBehaviour
     {
         _gameOverPanel.SetActive(false);
         _gamePlayPanel.SetActive(true);
+        _gamePausePanel.SetActive(false);
+        _gameWinPanel.SetActive(false);
+        SceneManager.LoadScene("Level" + _currentLevel);
         Time.timeScale = 1;
         //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
     }

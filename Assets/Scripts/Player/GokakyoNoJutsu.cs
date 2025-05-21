@@ -14,6 +14,7 @@ public class GokakyoNoJutsu : ISkill
         GetCoolDownTime();
         if (Time.time - _lastExecution >= _animator.GetCurrentAnimatorStateInfo(0).length)
         {
+            _animator.gameObject.GetComponent<PlayerAction>().UnfreezePlayer();
             this.gameObject.SetActive(false);
         }
     }
