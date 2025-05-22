@@ -94,6 +94,16 @@ public class EnemyPool : MonoBehaviour
             Debug.LogError($"Enemy type {enemyType} not found in pool.");
         }
     }
-
+    public void ReleaseAllEnemies()
+    {
+        foreach (var enemyPool in _enemyPools.Values)
+        {
+            enemyPool.Clear();
+        }
+    }
+    public int ListSize()
+    {
+        return _enemyTypeList.Count;
+    }
 }
 

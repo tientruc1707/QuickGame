@@ -24,7 +24,7 @@ public static class StringConstant
             public static int DAMAGE = 15;
             public static int SPEED = 7;
             public static int VALUE = 8;
-            public static int ATTACK_RANGE = 3;
+            public static int ATTACK_RANGE = 2;
         }
     }
     public static class UI

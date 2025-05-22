@@ -13,8 +13,6 @@ public class GamePlay : MonoBehaviour
     [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private DashJutsu _dashJutsu;
     [SerializeField] private GokakyoNoJutsu _gokakyoNoJutsu;
-    [SerializeField] private EnemyPool _enemyPool;
-    private List<Vector3> _enemySpawnPoints = new List<Vector3>();
 
 
 
@@ -32,29 +30,6 @@ public class GamePlay : MonoBehaviour
 
         EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
         EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
-
-        //Controll the spawn of enemies based on the level
-        for (int i = 0; i < DataManager.Instance.GetLevel() + 2; i++)
-        {
-            GenerateRandomEnemy();
-        }
-    }
-
-    private void GenerateRandomEnemy()
-    {
-        int randomIndex = UnityEngine.Random.Range(0, 2);
-        Vector3 randomPosition = new Vector3(UnityEngine.Random.Range(40f, 60f), UnityEngine.Random.Range(2, 5), 0);
-
-        switch (randomIndex)
-        {
-            case 0:
-                _enemyPool.SpawnEnemy(EnemyType.BOAR, randomPosition, Quaternion.identity);
-                break;
-            case 1:
-                _enemyPool.SpawnEnemy(EnemyType.BEE, randomPosition, Quaternion.identity);
-                break;
-        }
-
     }
 
     private void Update()

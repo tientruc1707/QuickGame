@@ -19,17 +19,8 @@ public class EnemyHealth : MonoBehaviour
     {
         _health = GetComponent<Health>();
         _animator = GetComponent<Animator>();
-
         _pooledEnemy = GetComponentInParent<PooledEnemy>();
         _dropSystem = GetComponent<ItemDropingSystem>();
-        if (_pooledEnemy == null)
-        {
-            Debug.LogError("EnemyPool not found in parent");
-        }
-        if (_dropSystem == null)
-        {
-            Debug.LogError("ItemDropingSystem not found");
-        }
         InitEnemyDeatial();
     }
 
@@ -44,7 +35,6 @@ public class EnemyHealth : MonoBehaviour
                 StringConstant.ENEMY_DETAIL.BOAR.DAMAGE,
                 StringConstant.ENEMY_DETAIL.BOAR.VALUE
             );
-            Debug.Log("BOAR CREATED");
         }
         else if (_pooledEnemy._enemyType == EnemyType.BEE)
         {
@@ -55,7 +45,6 @@ public class EnemyHealth : MonoBehaviour
                  StringConstant.ENEMY_DETAIL.BEE.DAMAGE,
                  StringConstant.ENEMY_DETAIL.BEE.VALUE
             );
-            Debug.Log("BEE CREATED");
         }
     }
     //collision detection with player
