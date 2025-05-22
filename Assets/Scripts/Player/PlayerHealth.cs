@@ -5,28 +5,18 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private Health health;
     private int _healthAmount = 20;
+    private int _playerHP = StringConstant.PLAYER_DETAIL.HEALTH;
+    private int _currentHP;
     private void Start()
     {
-        health = GetComponent<Health>();
-        health.MinHealth = 0;
-        health.MaxHealth = StringConstant.PLAYER_DETAIL.HEALTH;
-        health.CurrentHealth = health.MaxHealth;
-
+        _currentHP = _playerHP;
         EventManager.Instance.StartListening("Heal", OnHeal);
     }
 
     private void OnHeal()
     {
-        if (health.CurrentHealth < StringConstant.PLAYER_DETAIL.HEALTH)
-        {
-            health.Increment(_healthAmount);
-        }
-        else
-        {
-            Debug.Log("Health is full");
-        }
+        Heal(_healthAmount);
     }
     private void OnDestroy()
     {
@@ -34,28 +24,30 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
-        if (health.CurrentHealth <= 0)
+        if (_currentHP <= 0)
         {
             Dead();
         }
     }
-    public int CurrentHealth
+    public int CurrentHealth()
     {
-        get { return health.CurrentHealth; }
+        return _currentHP;
     }
     public void TakeDamage(int amount)
     {
-        health?.Decrement(amount);
+        _currentHP -= amount;
+        _currentHP = Mathf.Clamp(_currentHP, 0, _playerHP);
     }
 
     public void Heal(int amount)
     {
-        health?.Increment(amount);
+        _currentHP += amount;
+        _currentHP = Mathf.Clamp(_currentHP, 0, _playerHP);
     }
 
-    public void Reset()
+    public void Regen()
     {
-        health?.Regen();
+        _currentHP = _playerHP;
     }
     public void Dead()
     {
