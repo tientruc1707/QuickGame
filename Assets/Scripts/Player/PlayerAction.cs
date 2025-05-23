@@ -68,12 +68,11 @@ public class PlayerAction : MonoBehaviour
     }
     private void FreezePlayer()
     {
-        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll |
-                                                             RigidbodyConstraints2D.FreezeRotation;
+        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
     public void UnfreezePlayer()
     {
-        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
     public void ActiveGokakyoNoJutsu()
     {

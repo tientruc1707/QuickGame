@@ -93,4 +93,11 @@ public static class StringConstant
         public static string KUNAI = "Kunai";
         public static string SHURIKEN = "Shuriken";
     }
+    public static class BOSS
+    {
+        public static int HEALTH = 100;
+        public static int DAMAGE = 20;
+        public static int SPEED = 2;
+        public static int ATTACK_RANGE = 2;
+    }
 }

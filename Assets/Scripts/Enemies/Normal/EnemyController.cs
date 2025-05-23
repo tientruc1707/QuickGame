@@ -72,13 +72,4 @@ public class EnemyController : MonoBehaviour
         Vector3 direction = (transform.position - currentPos).normalized;
         transform.position += direction * knockBackForce * Time.deltaTime;
     }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
-        {
-            EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
-            enemyPosition?.KnockBack(transform.position, 2f);
-        }
-    }
 }
