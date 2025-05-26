@@ -1,5 +1,7 @@
 
 
+using UnityEngine;
+
 public class GameManager : Singleton<GameManager>
 {
 
@@ -24,5 +26,33 @@ public class GameManager : Singleton<GameManager>
     private void OnGameStart()
     {
 
+    }
+    public void FreezeAllObjects(GameObject exception)
+    {
+        Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
+        foreach (Rigidbody rb in allRigidbodies)
+        {
+            if (rb.gameObject != exception)
+            {
+                rb.isKinematic = true;
+            }
+        }
+    }
+    public void FreezeObject(GameObject gameObject)
+    {
+        gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    public void UnfreezeAllObjects()
+    {
+        Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
+        foreach (Rigidbody rb in allRigidbodies)
+        {
+            rb.isKinematic = false;
+        }
+    }
+    public void UnfreezeObject(GameObject gameObject)
+    {
+        gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 }

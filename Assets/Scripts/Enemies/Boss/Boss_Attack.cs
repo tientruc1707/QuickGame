@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Boss_Attack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int damage = StringConstant.BOSS.DAMAGE;
+    public int onPowerModeDamage = StringConstant.BOSS.DAMAGE * 2;
+    public Vector3 attackOffdet;
+    public int attackRange = StringConstant.BOSS.ATTACK_RANGE;
+    public void Attack()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public void OnPowerModeAttack()
     {
-        
+
     }
 }

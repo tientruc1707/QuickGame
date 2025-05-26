@@ -8,9 +8,11 @@ public class PlayerHealth : MonoBehaviour
     private int _healthAmount = 20;
     private int _playerHP = StringConstant.PLAYER_DETAIL.HEALTH;
     private int _currentHP;
+    private Animator _animator;
     private void Start()
     {
         _currentHP = _playerHP;
+        _animator = GetComponent<Animator>();
         EventManager.Instance.StartListening("Heal", OnHeal);
     }
 
@@ -37,6 +39,14 @@ public class PlayerHealth : MonoBehaviour
     {
         _currentHP -= amount;
         _currentHP = Mathf.Clamp(_currentHP, 0, _playerHP);
+        // if(amount <= 20)
+        // {
+        //     _animator.SetTrigger("Hurt");
+        // }
+        // else
+        // {
+        //     _animator.SetTrigger("HurtHeavy");
+        // }
     }
 
     public void Heal(int amount)

@@ -14,7 +14,7 @@ public class GokakyoNoJutsu : ISkill
         GetCoolDownTime();
         if (Time.time - _lastExecution >= _animator.GetCurrentAnimatorStateInfo(0).length)
         {
-            _animator.gameObject.GetComponent<PlayerAction>().UnfreezePlayer();
+            GameManager.Instance.UnfreezeObject(_animator.gameObject);
             this.gameObject.SetActive(false);
         }
     }
@@ -37,15 +37,25 @@ public class GokakyoNoJutsu : ISkill
         this.gameObject.SetActive(true);
         anim.SetTrigger("KatonGokakyoNoJutsu");
     }
-
-    void OnCollisionEnter2D(Collision2D other)
+    /// <summary>
+    /// OnTriggerEnter is called when the Collider other enters the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    void OnTriggerStay(Collider other)
     {
+        Debug.Log("has collider with " + other.name);
         if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
         {
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
             enemyHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-            enemyPosition.KnockBack(enemyPosition.transform.position, 2f);
+            enemyPosition.KnockBack(this.transform.position, 2f);
+        }
+        if (other.gameObject.CompareTag(StringConstant.TAGS.BOSS))
+        {
+            Boss_Health bossHealth = other.gameObject.GetComponent<Boss_Health>();
+            bossHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
+            bossHealth?.KnockBack(transform.position, 2f);
         }
     }
 }

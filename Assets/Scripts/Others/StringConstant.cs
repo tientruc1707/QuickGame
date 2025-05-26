@@ -27,13 +27,6 @@ public static class StringConstant
             public static int ATTACK_RANGE = 2;
         }
     }
-    public static class UI
-    {
-        public static string GAME_OVER = "Game Over";
-        public static string GAME_WIN = "Game Win";
-        public static string GAME_PAUSE = "Game Pause";
-        public static string GAME_PLAY = "Game Play";
-    }
     public static class TAGS
     {
         public static string PLAYER = "Player";
@@ -42,6 +35,7 @@ public static class StringConstant
         public static string DEADZONE = "DeadZone";
         public static string CHECKPOINT = "Checkpoint";
         public static string GROUND = "Ground";
+        public static string BOSS = "Boss";
     }
     public static class LAYER
     {
@@ -56,20 +50,6 @@ public static class StringConstant
         public static string PLAYER_DEAD = "PlayerDead";
         public static string ENEMY_DEAD = "EnemyDead";
         public static string CHECKPOINT_REACHED = "CheckpointReached";
-    }
-    public static class ITEMTYPE
-    {
-        public static string COIN = "Coin";
-        public static string POTION = "Potion";
-        public static string WEAPON = "Weapon";
-    }
-    public static class ANIMATION
-    {
-        public static string IDLE = "Idle";
-        public static string RUN = "Run";
-        public static string JUMP = "Jump";
-        public static string ATTACK = "Attack";
-        public static string DIE = "Die";
     }
     public static class SOUND
     {
@@ -87,17 +67,11 @@ public static class StringConstant
     {
         public static string MAIN_MENU = "GameStart";
     }
-
-    public static class WEAPONTYPE
-    {
-        public static string KUNAI = "Kunai";
-        public static string SHURIKEN = "Shuriken";
-    }
     public static class BOSS
     {
         public static int HEALTH = 100;
         public static int DAMAGE = 20;
         public static int SPEED = 2;
-        public static int ATTACK_RANGE = 2;
+        public static int ATTACK_RANGE = 4;
     }
 }

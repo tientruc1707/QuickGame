@@ -1356,7 +1356,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3.5, y: 3}
+        - {x: 1.5, y: 29}
+        - {x: -30.5, y: 26}
+        - {x: -21.5, y: -2}
+        - {x: -21.5, y: -29}
+        - {x: 17.5, y: -29}
+        - {x: 30.5, y: -10}
+        - {x: 30.5, y: 14}
       tessellationDetail: 0
       bones: []
       spriteID: ae4605160e71f704ba2ae74322e4c6ec
@@ -1507,8 +1515,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 10.5, y: 26.5}
+        - {x: -29.5, y: 13.5}
+        - {x: -29.5, y: -5.5}
+        - {x: -20.5, y: -26.5}
+        - {x: 21.5, y: -26.5}
+        - {x: 29.5, y: 26.5}
+      tessellationDetail: 0.1
       bones: []
       spriteID: 84734bd81a51e2e4e8a2bb33a0c5be55
       internalID: -827192139
@@ -2935,27 +2949,6 @@ TextureImporter:
       bones: []
       spriteID: 0e26e943efa6b414ba1c817dd86d0e08
       internalID: 2116630468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hidan_sprites__chikara__by_sasorifan_xd_ddu1g32_367
-      rect:
-        serializedVersion: 2
-        x: 601
-        y: 2071
-        width: 4
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02b2fe582e5312841bcf67cdd0e5830e
-      internalID: -869931678
       vertices: []
       indices: 
       edges: []

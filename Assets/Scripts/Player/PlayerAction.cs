@@ -29,7 +29,8 @@ public class PlayerAction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             _skills[1].ExecuteSkill();
-            FreezePlayer();
+            GameManager.Instance.FreezeObject(this.gameObject);
+            GameManager.Instance.FreezeAllObjects(this.gameObject);
         }
         if (Input.GetMouseButtonDown(1))
         {
@@ -50,7 +51,6 @@ public class PlayerAction : MonoBehaviour
         _lastHit = Time.time;
         _count++;
     }
-
     private void PerformAttack(int count)
     {
         switch (count)
@@ -66,16 +66,13 @@ public class PlayerAction : MonoBehaviour
                 break;
         }
     }
-    private void FreezePlayer()
-    {
-        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-    }
-    public void UnfreezePlayer()
-    {
-        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-    }
     public void ActiveGokakyoNoJutsu()
     {
         _gokakyoNoJutsu.ActiveSkill();
+    }
+
+    public void UnfreezeAllObjects()
+    {
+        GameManager.Instance.UnfreezeAllObjects();
     }
 }
