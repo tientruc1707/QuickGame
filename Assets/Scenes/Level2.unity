@@ -344,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 437816189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.115445, y: 5.081452, z: -10}
+  m_LocalPosition: {x: -4.108879, y: 1.8567472, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -551,7 +551,7 @@ Transform:
   m_GameObject: {fileID: 574355014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.39, y: 5.13, z: -10}
+  m_LocalPosition: {x: -4.92, y: -0.31, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -683,12 +683,12 @@ GameObject:
   - component: {fileID: 830714045}
   - component: {fileID: 830714044}
   - component: {fileID: 830714043}
-  - component: {fileID: 830714047}
-  - component: {fileID: 830714046}
-  - component: {fileID: 830714051}
-  - component: {fileID: 830714050}
   - component: {fileID: 830714049}
+  - component: {fileID: 830714050}
   - component: {fileID: 830714052}
+  - component: {fileID: 830714051}
+  - component: {fileID: 830714046}
+  - component: {fileID: 830714047}
   - component: {fileID: 830714053}
   m_Layer: 0
   m_Name: Hidan Boss
@@ -992,11 +992,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 438879627599746981, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.39
+      value: -4.92
       objectReference: {fileID: 0}
     - target: {fileID: 438879627599746981, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.13
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 438879627599746981, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}
       propertyPath: m_LocalPosition.z

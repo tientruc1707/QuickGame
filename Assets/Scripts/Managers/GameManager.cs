@@ -1,6 +1,7 @@
 
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -23,10 +24,7 @@ public class GameManager : Singleton<GameManager>
     {
         DataManager.Instance.SaveGameData();
     }
-    private void OnGameStart()
-    {
-
-    }
+    
     public void FreezeAllObjects(GameObject exception)
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
@@ -34,7 +32,7 @@ public class GameManager : Singleton<GameManager>
         {
             if (rb.gameObject != exception)
             {
-                rb.isKinematic = true;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
     }
@@ -48,11 +46,17 @@ public class GameManager : Singleton<GameManager>
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
         foreach (Rigidbody rb in allRigidbodies)
         {
-            rb.isKinematic = false;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
         }
     }
     public void UnfreezeObject(GameObject gameObject)
     {
         gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    public void OnLoadScene(string name)
+    {
+        PoolManager.Instance.ClearAllPools();
+        SceneManager.LoadScene(name);
     }
 }

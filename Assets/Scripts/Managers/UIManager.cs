@@ -63,18 +63,17 @@ public class UIManager : MonoBehaviour
         _gamePlayPanel.SetActive(true);
         _gamePausePanel.SetActive(false);
         _gameWinPanel.SetActive(false);
-        SceneManager.LoadScene("Level" + _currentLevel);
+        GameManager.Instance.OnLoadScene("Level" + _currentLevel);
         //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
     }
     public void MainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(StringConstant.SCENES.MAIN_MENU);
+        GameManager.Instance.OnLoadScene(StringConstant.SCENES.MAIN_MENU);
     }
     public void LoadNextLevel()
     {
-        InitializePanels();
-        SceneManager.LoadScene("Level" + (_currentLevel + 1));
         DataManager.Instance.SetLevel(_currentLevel + 1);
+        GameManager.Instance.OnLoadScene("Level" + (_currentLevel + 1));
     }
 }

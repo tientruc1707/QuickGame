@@ -43,11 +43,10 @@ public class OnBossMove : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // Reset any parameters or states if needed
         animator.ResetTrigger("Attack");
     }
 
-    //Check if have any ground in front ;
+    //Check if have any ground in front 
     private bool ObstacleDetection(int direction)
     {
         Color color = Color.red;

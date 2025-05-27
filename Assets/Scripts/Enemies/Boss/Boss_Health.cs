@@ -55,6 +55,7 @@ public class Boss_Health : MonoBehaviour
     private void Die()
     {
         Debug.Log("Boss is dead");
+        AudioManager.Instance.StopBackgroundSound();
         Destroy(gameObject);
     }
     public void ActivatePowerMode()
@@ -66,6 +67,8 @@ public class Boss_Health : MonoBehaviour
     public void OnPowerMode()
     {
         _animator.SetTrigger("OnPowerMode");
+        AudioManager.Instance.StopBackgroundSound();
+        AudioManager.Instance.PlayBackgroundSound(StringConstant.SOUND.BOSSHIDAN);
     }
     public void KnockBack(Vector3 currentPos, float knockBackForce)
     {

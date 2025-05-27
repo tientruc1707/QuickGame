@@ -10,7 +10,7 @@ public enum EnemyType
 }
 public class EnemyHealth : MonoBehaviour
 {
-    private Health _health;
+    private int _health;
     private Animator _animator;
     private ItemDropingSystem _dropSystem;
     public EnemyDetail _enemyDetail { get; set; }
@@ -20,10 +20,10 @@ public class EnemyHealth : MonoBehaviour
 
     void OnEnable()
     {
-        _health = GetComponent<Health>();
         _animator = GetComponent<Animator>();
         _dropSystem = GetComponent<ItemDropingSystem>();
         InitEnemyDeatial();
+        _health = _enemyDetail.Health;
     }
 
     private void InitEnemyDeatial()
@@ -71,8 +71,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        _health?.Decrement(amount);
-        if (_health.CurrentHealth <= 0)
+        _health -= amount;
+        _animator.SetTrigger("Hit");
+        if (_health <= 0)
         {
             OnDead();
         }
@@ -80,8 +81,6 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnDead()
     {
-        DataManager.Instance.SetScore(DataManager.Instance.GetScore() + _enemyDetail.Value);
-        //Edit Rating Here
         _dropSystem.DropItem();
         _animator.SetTrigger("Hit");
         this.gameObject.SetActive(false);

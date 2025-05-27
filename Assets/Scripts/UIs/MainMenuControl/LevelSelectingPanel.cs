@@ -25,8 +25,7 @@ public class LevelSelectingPanel : MonoBehaviour
     }
     private void OnLevelButtonClicked(int levelIndex)
     {
-        SceneManager.LoadScene("Level" + levelIndex);
-        //UIManager.Instance.InitializePanels();
+        GameManager.Instance.OnLoadScene("Level" + levelIndex);
         DataManager.Instance.SetLevel(levelIndex);
     }
     private void OnDestroy()

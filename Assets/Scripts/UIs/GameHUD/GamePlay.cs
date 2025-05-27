@@ -18,7 +18,6 @@ public class GamePlay : MonoBehaviour
 
     private void Start()
     {
-        UpdateScoreText();
         UpdateCoinText();
 
         _dashCooldownSlider.maxValue = 1f;
@@ -41,16 +40,11 @@ public class GamePlay : MonoBehaviour
                 PauseGame();
             }
         }
-        UpdateScoreText();
         UpdateCoinText();
         UpdateHealthSlider();
         UpdateSkillCooldown();
     }
 
-    private void UpdateScoreText()
-    {
-        _scoreText.text = DataManager.Instance.GetScore().ToString();
-    }
 
     private void UpdateCoinText()
     {

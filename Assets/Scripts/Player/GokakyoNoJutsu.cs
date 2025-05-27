@@ -44,7 +44,7 @@ public class GokakyoNoJutsu : ISkill
         this.gameObject.SetActive(true);
         anim.SetTrigger("KatonGokakyoNoJutsu");
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
         {
@@ -55,6 +55,15 @@ public class GokakyoNoJutsu : ISkill
         {
             Boss_Health bossHealth = other.gameObject.GetComponent<Boss_Health>();
             bossHealth?.TakeDamage(5);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag(StringConstant.TAGS.BOSS))
+        {
+            Boss_Health bossHealth = other.gameObject.GetComponent<Boss_Health>();
+            bossHealth?.KnockBack(this.transform.position, 2f);
         }
     }
 }

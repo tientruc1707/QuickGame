@@ -15,4 +15,8 @@ public class PoolManager : Singleton<PoolManager>
         }
         return _dicPools[obj].Get();
     }
+    public void ClearAllPools()
+    {
+        _dicPools.Clear();
+    }
 }

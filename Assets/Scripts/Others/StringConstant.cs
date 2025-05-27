@@ -62,6 +62,7 @@ public static class StringConstant
         public static string GAME_WIN = "GameWin";
         public static string PLAYER_RUN = "PlayerRun";
         public static string SKILL1 = "KatonGokakyoNoJutsu";
+        public static string BOSSHIDAN = "BossHidan";
 
     }
     public static class SCENES

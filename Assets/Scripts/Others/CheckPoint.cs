@@ -16,7 +16,6 @@ public class CheckPoint : MonoBehaviour
         {
             EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHECKPOINT_REACHED);
             DataManager.Instance.SetLevel(_currentLevel + 1);
-            Debug.Log("Checkpoint Reached!");
         }
     }
 }
