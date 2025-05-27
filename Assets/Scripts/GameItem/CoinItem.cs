@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class CoinItem : PooledItem, IIItem
+public class CoinItem : MonoBehaviour, IIItem
 {
     private int CoinValue => 10;
     public void OnItemPickup()
@@ -13,7 +13,7 @@ public class CoinItem : PooledItem, IIItem
     }
     public void ReturnItemToPool()
     {
-        ReturnToPool();
+        this.gameObject.SetActive(false);
     }
 }
 

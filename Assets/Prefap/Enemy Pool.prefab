@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8404312285255943138}
-  - component: {fileID: 1306813421056142471}
   - component: {fileID: 1291995072283732384}
   - component: {fileID: 1286260851763393091}
   m_Layer: 0
@@ -34,27 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1306813421056142471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3232672681297943345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b3172b6a412c540b1f4dfcd3195337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemyTypeList:
-  - _enemyType: 0
-    _enemyPrefab: {fileID: 8235912395930395373, guid: 0b86a84c6395eae48bd53f30b7afd1fc, type: 3}
-    _defaultSize: 10
-    _maxSize: 20
-  - _enemyType: 1
-    _enemyPrefab: {fileID: 7491608534063319896, guid: 70248a6801c24d14cba554ccafd590de, type: 3}
-    _defaultSize: 10
-    _maxSize: 20
 --- !u!114 &1291995072283732384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,4 +66,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265c695a70894c04a8af5cefdaad14e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPool: {fileID: 1306813421056142471}
+  _eBoar: {fileID: 8235912395930395373, guid: 0b86a84c6395eae48bd53f30b7afd1fc, type: 3}
+  _eBee: {fileID: 7491608534063319896, guid: 70248a6801c24d14cba554ccafd590de, type: 3}

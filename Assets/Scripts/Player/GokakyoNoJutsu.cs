@@ -9,6 +9,11 @@ public class GokakyoNoJutsu : ISkill
     [SerializeField] private Animator _animator;
     private float _cooldown = 15f;
     private float _lastExecution = 0f;
+    void OnDisable()
+    {
+        Animator anim = GetComponent<Animator>();
+        anim.ResetTrigger("KatonGokakyoNoJutsu");
+    }
     void Update()
     {
         GetCoolDownTime();
@@ -27,6 +32,8 @@ public class GokakyoNoJutsu : ISkill
         if (Time.time - _lastExecution > _cooldown)
         {
             _animator.SetTrigger("KatonGokakyoNoJutsu");
+            GameManager.Instance.FreezeObject(_animator.gameObject);
+            GameManager.Instance.FreezeAllObjects(_animator.gameObject);
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.SKILL1);
             _lastExecution = Time.time;
         }
@@ -37,25 +44,17 @@ public class GokakyoNoJutsu : ISkill
         this.gameObject.SetActive(true);
         anim.SetTrigger("KatonGokakyoNoJutsu");
     }
-    /// <summary>
-    /// OnTriggerEnter is called when the Collider other enters the trigger.
-    /// </summary>
-    /// <param name="other">The other Collider involved in this collision.</param>
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("has collider with " + other.name);
         if (other.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
         {
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            EnemyController enemyPosition = other.gameObject.GetComponent<EnemyController>();
-            enemyHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-            enemyPosition.KnockBack(this.transform.position, 2f);
+            enemyHealth?.TakeDamage(5);
         }
         if (other.gameObject.CompareTag(StringConstant.TAGS.BOSS))
         {
             Boss_Health bossHealth = other.gameObject.GetComponent<Boss_Health>();
-            bossHealth?.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-            bossHealth?.KnockBack(transform.position, 2f);
+            bossHealth?.TakeDamage(5);
         }
     }
 }

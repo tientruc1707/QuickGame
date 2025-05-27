@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ItemType
+{
+    POTION,
+    COIN
+}
 public class ItemDropingSystem : MonoBehaviour
 {
     [System.Serializable]
@@ -11,15 +16,7 @@ public class ItemDropingSystem : MonoBehaviour
         [Range(0, 100)]
         public int dropChance;
     }
-    private ItemPool _itemPool;
-    private void Start()
-    {
-        _itemPool = GetComponentInParent<ItemPool>();
-        if (_itemPool == null)
-        {
-            Debug.LogError("ItemPool not found in parent");
-        }
-    }
+
     [SerializeField] private List<ItemDropInfor> _itemDropList = new List<ItemDropInfor>();
     public void DropItem()
     {
@@ -29,8 +26,8 @@ public class ItemDropingSystem : MonoBehaviour
         {
             if (randomValue <= item.dropChance)
             {
-                GameObject droppedItem = _itemPool.GetItem(item.itemType);
-                droppedItem.transform.position = transform.position + Vector3.up;
+                GameObject dropItem = PoolManager.Instance.GetFromPool(this.gameObject);
+                dropItem.transform.position = transform.position + Vector3.up;
                 //if wanna drop only one item, uncomment break
                 //break;
             }

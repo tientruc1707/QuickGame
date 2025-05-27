@@ -3,15 +3,18 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-
+public enum EnemyType
+{
+    BOAR,
+    BEE
+}
 public class EnemyHealth : MonoBehaviour
 {
     private Health _health;
     private Animator _animator;
-    private PooledEnemy _pooledEnemy;
     private ItemDropingSystem _dropSystem;
     public EnemyDetail _enemyDetail { get; set; }
-
+    public EnemyType _enemyType;
 
 
 
@@ -19,14 +22,13 @@ public class EnemyHealth : MonoBehaviour
     {
         _health = GetComponent<Health>();
         _animator = GetComponent<Animator>();
-        _pooledEnemy = GetComponentInParent<PooledEnemy>();
         _dropSystem = GetComponent<ItemDropingSystem>();
         InitEnemyDeatial();
     }
 
     private void InitEnemyDeatial()
     {
-        if (_pooledEnemy._enemyType == EnemyType.BOAR)
+        if (_enemyType == EnemyType.BOAR)
         {
             _enemyDetail = new EnemyDetail(
                 StringConstant.ENEMY_DETAIL.BOAR.SPEED,
@@ -36,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
                 StringConstant.ENEMY_DETAIL.BOAR.VALUE
             );
         }
-        else if (_pooledEnemy._enemyType == EnemyType.BEE)
+        else if (_enemyType == EnemyType.BEE)
         {
             _enemyDetail = new EnemyDetail(
                  StringConstant.ENEMY_DETAIL.BEE.SPEED,
@@ -57,7 +59,6 @@ public class EnemyHealth : MonoBehaviour
             {
                 if (player.GetComponent<PlayerAction>().IsAttacking)
                 {
-                    AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
                     TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
                 }
                 else
@@ -83,13 +84,13 @@ public class EnemyHealth : MonoBehaviour
         //Edit Rating Here
         _dropSystem.DropItem();
         _animator.SetTrigger("Hit");
-        _pooledEnemy.ReturnToPool();
+        this.gameObject.SetActive(false);
     }
 }
 
 
 [System.Serializable]
-public class EnemyDetail
+public struct EnemyDetail
 {
     public int Speed { get; set; }
     public int MovingRange { get; set; }

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private EnemyPool _enemyPool;
     private GameObject _spawnZone;
     private SpriteRenderer _sprite;
+    [SerializeField] private GameObject _eBoar;
+    [SerializeField] private GameObject _eBee;
 
     void Start()
     {
@@ -23,21 +24,26 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = x - value; i < x + value; i += 6)
         {
-            int type = Random.Range(0, _enemyPool.ListSize());
+            int type = Random.Range(0, 2);
             int j = (int)_spawnZone.transform.position.y;
             Vector3 spawnPosition = new(i, j, 0);
             switch (type)
             {
                 case 0:
-                    _enemyPool.SpawnEnemy(EnemyType.BOAR, spawnPosition, Quaternion.identity);
+                    GenerateEnemy(_eBoar, spawnPosition);
                     break;
                 case 1:
-                    _enemyPool.SpawnEnemy(EnemyType.BEE, spawnPosition, Quaternion.identity);
+                    GenerateEnemy(_eBee, spawnPosition);
                     break;
                 default:
                     break;
             }
-            Debug.Log("Spawn enemy type: " + type + " at position: " + spawnPosition);
         }
+    }
+    private void GenerateEnemy(GameObject obj, Vector3 pos)
+    {
+        PoolManager.Instance.GetFromPool(obj);
+        obj.transform.position = pos;
+        obj.transform.rotation = Quaternion.identity;
     }
 }

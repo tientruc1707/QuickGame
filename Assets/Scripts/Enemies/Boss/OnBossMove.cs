@@ -7,10 +7,10 @@ public class OnBossMove : StateMachineBehaviour
     public float _speed;
     private float _attackRange;
     private float _xAxis;
-    Transform _player;
-    Rigidbody2D _rb;
-    SpriteRenderer _sprite;
-    Boss _boss;
+    private Transform _player;
+    private Rigidbody2D _rb;
+    private SpriteRenderer _sprite;
+    private Boss _boss;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

@@ -36,6 +36,7 @@ public static class StringConstant
         public static string CHECKPOINT = "Checkpoint";
         public static string GROUND = "Ground";
         public static string BOSS = "Boss";
+        public static string WEAPON = "Weapon";
     }
     public static class LAYER
     {

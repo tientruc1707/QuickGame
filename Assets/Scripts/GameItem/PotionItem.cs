@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PotionItem : PooledItem, IIItem
+public class PotionItem : MonoBehaviour, IIItem
 {
     [SerializeField] private PlayerHealth _playerHealth;
     public void OnItemPickup()
@@ -13,6 +13,6 @@ public class PotionItem : PooledItem, IIItem
     }
     public void ReturnItemToPool()
     {
-        ReturnToPool();
+        this.gameObject.SetActive(false);
     }
 }

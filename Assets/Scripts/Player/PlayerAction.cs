@@ -29,8 +29,6 @@ public class PlayerAction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             _skills[1].ExecuteSkill();
-            GameManager.Instance.FreezeObject(this.gameObject);
-            GameManager.Instance.FreezeAllObjects(this.gameObject);
         }
         if (Input.GetMouseButtonDown(1))
         {
