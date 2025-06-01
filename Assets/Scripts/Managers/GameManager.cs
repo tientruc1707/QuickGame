@@ -8,23 +8,23 @@ public class GameManager : Singleton<GameManager>
 
     override public void Awake()
     {
-        EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
-        EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, OnCheckPointReached);
+        EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
+        EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
     }
     private void OnDestroy()
     {
-        EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
-        EventManager.Instance.StopListening(StringConstant.EVENT.CHECKPOINT_REACHED, OnCheckPointReached);
+        EventManager.Instance.StopListening(StringConstant.EVENT.DEFEAT, OnDefeat);
+        EventManager.Instance.StopListening(StringConstant.EVENT.VICTORY, OnVictory);
     }
-    private void OnPlayerDead()
+    private void OnDefeat()
     {
         DataManager.Instance.SaveGameData();
     }
-    private void OnCheckPointReached()
+    private void OnVictory()
     {
         DataManager.Instance.SaveGameData();
     }
-    
+
     public void FreezeAllObjects(GameObject exception)
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();

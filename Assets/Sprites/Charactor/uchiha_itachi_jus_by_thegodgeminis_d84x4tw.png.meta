@@ -1,0 +1,5760 @@
+fileFormatVersion: 2
+guid: 39e7688f681ed664e800e1e51e639996
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 36
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5175
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5837d13061f49b4cadac5f7e8b4e734
+      internalID: -733383055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5107
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455e07886a2072c45a9a85cf304c7573
+      internalID: -423602224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 5107
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47e8524c57c724489b7dedd5c3a83ff
+      internalID: -1543990589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 5107
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239272e414920b34d87ed0f881de7050
+      internalID: -200306366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5085
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a5c54b755f4ac4094b276f16b5479b
+      internalID: 1962736743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_5
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 5085
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c404818dd0fd6884aa8174b52fe0f9c5
+      internalID: 1848889145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5027
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436da33b7829f0a4f8952581724adf9c
+      internalID: 54931727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 5027
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd415af1ebdfc748985cb5f09eaa997
+      internalID: 1020610527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 5027
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33956323a970cae4b9a1cf0f0d37c14b
+      internalID: 1882238810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 5027
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208ba2eb78c4f5a4cb77bdd8b3a3548f
+      internalID: 1299758266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5027
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3f4cf8160e7db4287a3fb7a85a88df
+      internalID: -1609872355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 5027
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d561f8dc27a266a4fbf962601549d8f4
+      internalID: 2085268321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 5027
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6968b39a8788c984085b239bdbcc979c
+      internalID: 1350186731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 5027
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c686fc8bd0500be489c4fc09eecf25a9
+      internalID: 1109738511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 5027
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07c8fc71a4f694eb4279396d760244
+      internalID: 1244378228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_15
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 5027
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca0c59e3ff7a31468923805e56495c6
+      internalID: -1964144741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5005
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdddbf99a76f1f4fb4a0942d06cd814
+      internalID: 499932281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4930
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a408b6557734142ab7804d116dbe78
+      internalID: -707738763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4940
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3135060f348152f4a85e00ec0b1210bb
+      internalID: -1005888026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4942
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fa973fc1520734f9096354bbc499ca
+      internalID: -146828951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 4938
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaf77bebea8b1842928e33b1615780c
+      internalID: -1670528635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 4938
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5974c2a2a1d10b541b0158a7c9c72bb5
+      internalID: -1092504006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 4932
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ac2c7a6afa8314bb32cfb3778fda4f
+      internalID: -1474175816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_23
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4932
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f71baee8324e6143b3a94662bef4170
+      internalID: -853410003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4910
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3f901f40a81364580b2271a5003027
+      internalID: -1606174045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4843
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac10932e4960a8640ae3edc924b69ced
+      internalID: 847093540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4844
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571bc93a0a6cc7a46928ca77b616c2fe
+      internalID: 920361188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4844
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6b6f75c290cce4080a6c52a8416a2a
+      internalID: -878613620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4821
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6e9bec801ed8649950e1e878cf652f
+      internalID: -968698071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_29
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 4821
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12116e9c7eafc46459d1bd1e23ce3db1
+      internalID: 213448537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4749
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538490309c5eebe4c92b1d357def6be9
+      internalID: 573296099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4746
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef800c06f0d950e4c93858ed7abc6a38
+      internalID: -992563694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_32
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4746
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8140b9fe6037cee4d9b54eab4c58cad7
+      internalID: -1227414725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_33
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4745
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58d8ebe8718e2f4aadfc62467982058
+      internalID: -141367881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_34
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 4747
+        width: 57
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6098b094784ab4c93659ae435f453f
+      internalID: -1651552493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_35
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4746
+        width: 59
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe216f155d2d2b549bbc2a5cd5d9e190
+      internalID: -1402112954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_36
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 4747
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5c3c01e2bda9645a426e823626d202
+      internalID: -847677964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_37
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 4749
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82dccaa3830b9744ad24041d03113c8
+      internalID: -1629424872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_38
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 4750
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2192505ca3a8d4995bf55e552a7487
+      internalID: 2092804256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_39
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4723
+        width: 99
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac6bc81a7387904c8110cd48091a03a
+      internalID: 239804396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_40
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 4647
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b5530e15d3fcd408aeb5248095ed09
+      internalID: -503746216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_41
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 4647
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b011f1d66bd7e94bbea58ebd0d366ea
+      internalID: -2108705312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_42
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 4647
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ccf62aeff579b49964a0e8e08caec2
+      internalID: 740041961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_43
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 4648
+        width: 77
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cb0b77314c8ef4ba0b37c2555cd616
+      internalID: 2131589728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_44
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 4648
+        width: 81
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2435f46a1b24c3e42bb0529652c266be
+      internalID: 439047836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_46
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4647
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a7bbc5078e82e4f86a079b077f073c
+      internalID: 936698909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_47
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 4647
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452cdc0a632e80a4183c53eacd9a64e4
+      internalID: -858182509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_48
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 4647
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2b0bda5eb687a4d9cef5e916afbfe3
+      internalID: 1252966892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_49
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 4647
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73be29832151f54eb74a4f4100310fd
+      internalID: -63742377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_50
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4647
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ca34207e70c1446bf4cfa3a41330c1
+      internalID: 1810602413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_61
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4620
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5767dbf753eea2947ad1e07580966eb6
+      internalID: 518198079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_62
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4554
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976ea42984dcff249b9a602472bb335e
+      internalID: -28174505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_63
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4554
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813abce6343890f4aa409eb9b9c31a04
+      internalID: 1965522186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_64
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 4554
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a21b5edefd1db43a564277d8b184b9
+      internalID: 2053434302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_65
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 4554
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30ed69fb4b1ade47bf25a94687d02e1
+      internalID: 724740081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_66
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4534
+        width: 87
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e80fa06dbbd474fa2044236ae72dd6
+      internalID: 1323351406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_69
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4471
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23bbf6796c70a54ca662ac74dc693e4
+      internalID: -32615480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_70
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4471
+        width: 109
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e195cffe9f7a8e458a093a4f43dda52
+      internalID: 424860368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_71
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 4471
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217af6d29629ee45b4d3b089e7edfa6
+      internalID: -2053838635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_72
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 4471
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bbb6697b049e54aab8d2aff2a5f45b
+      internalID: 1212718998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_73
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4447
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4ae4ada7ef35f4cb801eea4850f120
+      internalID: 1491898361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_75
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4372
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadb059c823b924429c03df7536eb6c9
+      internalID: 1385390379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_76
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 4372
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a20b253e2170e346b176ee5f4dcfc79
+      internalID: 270737147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_77
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 4372
+        width: 100
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f6925c698833e48b3dae47ebce3b27
+      internalID: 1966944077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_78
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 4372
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac921435676c0946ab9a1e44c70be3f
+      internalID: -1025346258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_79
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4372
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fee7bdd65d0134b8dc0279933a270e
+      internalID: -1367481315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_80
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4345
+        width: 67
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e6599e28cfabc45be6092f00529221
+      internalID: 924794734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_81
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4273
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18f17ae72c73fd42887e827785e5df7
+      internalID: -418891696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_82
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 4273
+        width: 132
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee991c346ce5fc844b7fe7934c1c0895
+      internalID: -2019602160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_83
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 4273
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07046e28b68a4254b95eed5c87f2befe
+      internalID: 437431372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_84
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 4273
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9013bb413688e74a9ec6433af99d9bf
+      internalID: 1205039322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_85
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4248
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24303fbc28b3b90408819a6efec6a3c1
+      internalID: -1348545801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_87
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4181
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316f6a497d2d7df488e3b20b8a0fc51a
+      internalID: 481528608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_88
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 4181
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7b0716f800a554692d800d90d46084
+      internalID: -2024118878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_89
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 4182
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df6b8cb3c7f298498461978f40b3df4
+      internalID: 953756358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_90
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 4182
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f267625711ece742a39632422c4267c
+      internalID: -2127724377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_91
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4182
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab5a96d4a4a1ee42bd6600481ab94c4
+      internalID: -13001682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_92
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 4195
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94314c4bdd14f034dbddbb5f2af98719
+      internalID: -1497301549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_94
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4191
+        width: 78
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bcafc46cbbf0e4684799e4a7f58187
+      internalID: -1957533332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_95
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 4182
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1971b4826117fd245b1d4c1666751e50
+      internalID: -2114846380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_96
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 4182
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0ea464651ea0b468b5862573ea94f9
+      internalID: 1503419421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_97
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 4205
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8447f0453b5a74798ed13169f56be8
+      internalID: -926395810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_98
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 4203
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf32fd3eb49b7a4290df976df2f76fd
+      internalID: 1093653531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_99
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 4195
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84629920f3d83bb4d9adc645124f648b
+      internalID: -722350561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_100
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 4195
+        width: 81
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a47a2fb73f8a0409e5e3bd6893f952
+      internalID: -2030295075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_101
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 4195
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32986965b4f37824086fa574a5823364
+      internalID: 1300374326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_102
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4157
+        width: 86
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a6905a58b819a449674364e9bfb9d5
+      internalID: -1213298408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_103
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4080
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f452dd5bfcda3247990065779ee9981
+      internalID: 1196475811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4081
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92850c82668cae479b1e1d5fc6d2788
+      internalID: -1043177369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_105
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 4081
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dd306eb6aa56f469137a28904fe349
+      internalID: -1991258298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_106
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4081
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78abe837f5ea3f3479f4e6bb2080d725
+      internalID: 1477358789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_107
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 4078
+        width: 188
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db227567041ceb74890ce54c51646867
+      internalID: -1061894804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_108
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4054
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af768ee5a001c64cb55fbad2eda9dea
+      internalID: -188054064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_109
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4057
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1dca5ffb7c02b439f3195b7df11320
+      internalID: -205463672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_110
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3983
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492272237b5330e4a8c780c2164415c6
+      internalID: -14100456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_111
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3983
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f260f97757c814942ba946f320cb8426
+      internalID: -7415746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_112
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3983
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1a6215a293f2c4aa9b34148a1e4277
+      internalID: -206165959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_113
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3983
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07737e2f1f01ab84aa1228f4c5c764ac
+      internalID: -684018457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_114
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3983
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c02ff8c57bfebd4882d1520c574ef38
+      internalID: 466887840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_115
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 3983
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f80251669fe38b49ad9c1b445d3e235
+      internalID: 1901639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3983
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981a78220abd29349b52b73a6da84c2e
+      internalID: 233506334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_117
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3983
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7df7b1927bb6b469a5920f3e920065
+      internalID: -156132143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_118
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3958
+        width: 69
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b942cef87d13dbc4f90a2ea120882f2f
+      internalID: -1327253623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_119
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3888
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d16be46e273774cbfe8823c945530a
+      internalID: -910244761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_120
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3888
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37b4d88d3d7b6041bbdddf2b3c4c73d
+      internalID: -828604844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_121
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3888
+        width: 78
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f663486a97732479302ae00ab96eb0
+      internalID: -839546396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_122
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3888
+        width: 78
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcb0c6e29fdfd94fb5aa05c6725a1e5
+      internalID: -1741754569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_123
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3888
+        width: 78
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54c38fd270d2a14fa9be7a4d7530d7d
+      internalID: -734445293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_124
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 3865
+        width: 65
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02da028953f29ab44ab20d9b3cf97bed
+      internalID: 1564577906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_125
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3790
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24be1fce54b66d24bbc781dc8bd5c458
+      internalID: -1202062544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_126
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3790
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62c6901316178f4a9d26f8c008334b8
+      internalID: 1224129374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_127
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3790
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833e5bbbcd6596e46801f739db738041
+      internalID: 1466884791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_128
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 3790
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6305249ca3c3754e9496e5fdf592869
+      internalID: 1372119236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_129
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 3790
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4e394fff2166c40ac71fd0a6becdec
+      internalID: 617735050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_130
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3804
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e264f66503879a489cbe27cf62fab96
+      internalID: -2037084818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_131
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 3804
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d01d3b0f7f7d844b21d37dda7845fd
+      internalID: 1652245689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_132
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3804
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a302c0dce8e9000439e437382468d969
+      internalID: -1130885999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_133
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 3803
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff8a03bdb808c74293547090a4de488
+      internalID: 452610760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_134
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3764
+        width: 66
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c7065d5377a54f9d5e3d9771c217b
+      internalID: -792389626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_135
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3687
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbba2559a0ec94741ab7310c20ca48ce
+      internalID: -634093038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_136
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3686
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2102a98eb478ada4eacf4e3ae4ca2f93
+      internalID: -1213233687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_137
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3686
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb70ab5652801df40b0ea6d31f74d85a
+      internalID: -903785456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_138
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3690
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6447879e24a6e344f91260b72f4e117c
+      internalID: -758213227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_139
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 3689
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe7f758eb897f14287db07a684b8cf9
+      internalID: -1776868061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_140
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3723
+        width: 640
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff1fbfb5e041e343b8391cb08c27a35
+      internalID: -844843226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_141
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 3696
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ceeadfe49e9a248a982c7991cde5ff
+      internalID: -920342777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_142
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3686
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d182e0fd581afb4d940a8b0dcca8769
+      internalID: -75327871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_143
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 3675
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bf427cd69a0f84b9a2aeb34dcfa0de
+      internalID: -1885590093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_144
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 3657
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c45974f6427e142976d6a442c05091
+      internalID: -905988357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_145
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3657
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9a585ba48415a45a55eac29655bb43
+      internalID: 143767204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_146
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 3661
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852c17fe8712ebb4fb8c7dd139ad6c59
+      internalID: -422522464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_148
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 3662
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b2b230888e6274a8b0326e4c682d0f
+      internalID: -1466275623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_150
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3629
+        width: 90
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2969a9c90eef4744a8415b558bfef844
+      internalID: -91802288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3530
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518b5c882a47761458d2bcd97338fef4
+      internalID: -602901667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_153
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3526
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813c2f0178866314d96b6292d16218b2
+      internalID: 2063051211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_154
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3526
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949a0de658f42694088466fa8adfc52d
+      internalID: 1255254808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_155
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3543
+        width: 199
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1222ba9dd243524fb457fbd75cd1c6a
+      internalID: 1120662242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_156
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3540
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e02083d4a8d8fa478e3a707f2a27382
+      internalID: -382615519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_158
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 3526
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6c656a11b20d3489cba6fbf14e59cd
+      internalID: -1663216386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_159
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 3558
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcaa99619feef44892fd9fc4f59d1e4
+      internalID: 2050985003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_164
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 3530
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157abed4d678b8640b263d234ae1fbe2
+      internalID: -1418323676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_166
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3021
+        width: 890
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2a4ffe6f62fdc43a63a9fb79870445
+      internalID: 1593570352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_167
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2974
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095754f6d86e2d94fa6b1a89b5e598f3
+      internalID: 1923383877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_168
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2884
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838a6e7d7f934ae4cb988f8c4cae2f76
+      internalID: -894500969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_169
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2885
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa24a9874ecf24541bd34d6c984de80f
+      internalID: 1974200683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_170
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2886
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e303cbeca22bd9468e737617124d403
+      internalID: -2099608368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_171
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2886
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f38678e6d573040b863c21540dcfcd
+      internalID: -142508721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_172
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2886
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7eb2c35b903f894eb064eed5695cca1
+      internalID: 43911153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_173
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 2886
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757587fb33effc046b194d52365c0664
+      internalID: -98222699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_174
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2886
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898ae5941cbdffe4fbe65e5d50d5d733
+      internalID: -564351913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_175
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2738
+        width: 142
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5032b35cadb1d49a472f8af8b3e760
+      internalID: -2145608068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_177
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2739
+        width: 142
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afa1b2e30616fe4985b68f58811d9db
+      internalID: -1570699819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_179
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2742
+        width: 141
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c2bf33a99f12941b03e3d4b28c72d0
+      internalID: -1080979494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_180
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 2742
+        width: 142
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d990f4bb5b9cfaa4eabf808c120bc1b4
+      internalID: -133082773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_181
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 2734
+        width: 142
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851dbd28b9b7dbf48912cb63f4aa79c4
+      internalID: -1223754788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_182
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2739
+        width: 142
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d2f82a70d6fac458d2a8ccd5ab40e9
+      internalID: 535411566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_184
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2736
+        width: 144
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc7b8bec7d52714ebc9563a2356c55e
+      internalID: 844980965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_186
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2785
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b942b86c9a6044488908d9e6a049cf9
+      internalID: -261409046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_187
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2768
+        width: 74
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c3e2542030e0b4daa658abe5873f09
+      internalID: 199790852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_190
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2706
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a42941aab628b46a32bc4dbeaa6a8f
+      internalID: 1574879625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_191
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2593
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc345c1165e9543b4e168be9b1d1f9
+      internalID: -158557575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_194
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 2585
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4c227141174ff46bf0c93698b6ef01
+      internalID: -1496301076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_197
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2585
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf32ea71c33d75459abf8ca04dc1655
+      internalID: 295965596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_201
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2596
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1112225f13afb6f4494632fc23fc073e
+      internalID: 2147448058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_202
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2596
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5a466fe45e793458b0fba5a19b569e
+      internalID: -1673154888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_203
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2596
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94235a373b9cf341afc5f4c9e4ca373
+      internalID: 1777675452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_204
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2596
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0027c037f3a8f104cbb3a022b8765af6
+      internalID: 1226542792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_205
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2596
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8516f95769453646babbc4784444dc7
+      internalID: -1936368338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_206
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2596
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faf2888bd331d64d991565b37536704
+      internalID: 768629568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_207
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2596
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76726bf4f9b8f940b2982130e423787
+      internalID: -1152467214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_208
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2596
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d004bfaa603374aa69708e5cf60a26
+      internalID: -2116960631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_212
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 2576
+        width: 82
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6482edbcd20b48468265c567ba57b68
+      internalID: -1721634877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_216
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2516
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8869d115b638e7c44ac153e4dec9b9c3
+      internalID: 2091707850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_217
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2428
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816fd8b950a2f1d43b3bf93c8a52f104
+      internalID: -971242358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_218
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2428
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e2a74e9ba84b241a1787e9bd16720b
+      internalID: 1235378905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_219
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2427
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2b416b358afad43bd5ae7c629c6f95
+      internalID: -1658048868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_220
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2429
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fcd00664bd48a46ad4dc1bd1679289
+      internalID: 227674787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_221
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2425
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08a1a970af04fc4287a5ca4e025ec2f
+      internalID: -499282717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_222
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2415
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0113cfd95ef3e6542a8e02357eacb044
+      internalID: -468843248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_224
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2444
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeec3ad10e9b694993092372d19066b
+      internalID: -224572178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_229
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2415
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b248b2c9519964042a0e891a179bd052
+      internalID: -2058768159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_231
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1906
+        width: 890
+        height: 483
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1cf658542142f47a69a72fe5135f15
+      internalID: -1244571937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_232
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1777
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460618acafc44b84a9baffda94857d9a
+      internalID: 1566891093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_233
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1777
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd8f563dba546a40ab181567c64bac8
+      internalID: -637651778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_234
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1777
+        width: 102
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb791cfc6a28c8142a437df437e38b00
+      internalID: 323599332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_235
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1777
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fd662a680f00343b5832e91212f2ae
+      internalID: 521989720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_236
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1777
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51315143701c3dc4a954d904d27169dc
+      internalID: -1018643943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_237
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1777
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af42350d30ce6a843908adf1672aa217
+      internalID: 170650720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_238
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1718
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabe78d3fa6ccbc459df12559f24083c
+      internalID: -1077474699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_239
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1547
+        width: 391
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ab61b3939b70b47983f6cd35799946
+      internalID: 1516115396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_240
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1610
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab311213cef21d4f84c5fdf739e265c
+      internalID: 1441995434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_241
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1612
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da61b88611557094ea010d09160851dd
+      internalID: -536823105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_242
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1613
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2134adcb664924eabb634007cc81e0
+      internalID: -1482520342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_243
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1613
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53871d645781d04d954a6e743da21d6
+      internalID: 1675181232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_244
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1613
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a9f1870d6b0f64bb9c0e7c2d97cb6f
+      internalID: 1021960487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_245
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1613
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73153ba48ea33f448bfa06051f2ce880
+      internalID: -884174590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_246
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1613
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061737d564e92d942b1dff59e21a393f
+      internalID: -1361672446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_248
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1528
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54659f874093b29448165c1e694f5bc8
+      internalID: -632537705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_249
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1430
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774890aded7c175419c01408b555cbc3
+      internalID: -1784128485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_250
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1430
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5ae61ebcbbe8c44b804b781e23bc30
+      internalID: -1042773732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_251
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1430
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e44ae5badc72ce499974f7d4149ffa3
+      internalID: -1728872975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_252
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1430
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963f154536dc1a6428d2947fd22e6787
+      internalID: -776570719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_253
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1430
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff64dc330dbfbd047a9888796ea56a1c
+      internalID: -2017108730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_254
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1430
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9fa003079186c4d9991be871ddf1ff
+      internalID: 2010954474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_255
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1430
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b516116b9ccff4d8ed65716b9d4e17
+      internalID: -426954404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_256
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1430
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec128a044ebd5324795424485dd185bf
+      internalID: -1191686772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_257
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1433
+        width: 199
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b34ddc902ee35c4fa626a6fbe096e49
+      internalID: 1150474878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_261
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1051
+        width: 362
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4741cd0b827f9440a4c349910b5bf27
+      internalID: 2122974761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_277
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1096
+        width: 250
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdb90f89e654184497c1446e7df2103
+      internalID: -406654530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_285
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1029
+        width: 389
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e56a9781c0907b47b9ed31c6421d3cc
+      internalID: -473360083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_301
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1122
+        width: 185
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90be71c3df3af6e4bbbea6467df1aca5
+      internalID: 922416352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_304
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1171
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b9c472f5fedcb44a8515e965dae518
+      internalID: -1679953721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_306
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1150
+        width: 133
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6867e98cc5e2141bb42f5a44b74767
+      internalID: -1614191367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_400
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 690
+        width: 361
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672d2551429820f4bb53edc999eb492b
+      internalID: 1297206924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_404
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 689
+        width: 352
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9733d51ed5c6d4c9e4cd185fd85f5b
+      internalID: 1268319072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_412
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 678
+        width: 265
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8622d97727102046a54df32b9f4fd88
+      internalID: -454399714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_421
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 685
+        width: 216
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177ae37faed6d564688e3568b6a1af27
+      internalID: 2100917730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_519
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 335
+        width: 248
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3dd76074730164fb53cbed2e94670b
+      internalID: 982272765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_528
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 336
+        width: 172
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49195eeba22dd11459da3c12a2b14517
+      internalID: 1208290509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_538
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 382
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915b6b43486255649b75e1e26509d1bd
+      internalID: 490938802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_581
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 276
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5580fe9719c484c9bdf5aebfe5f414
+      internalID: 28866070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_582
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 204
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f2a1f58e1c9c846b62b50763918934
+      internalID: -901926055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_583
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 204
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba94111f149f1c46ab88e61f2b6cd76
+      internalID: -916723542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_584
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 204
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c7d3d998df4f44c8069b280a0c8792
+      internalID: 118047410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_585
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 204
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc65d5838a938646a3011d93cc79690
+      internalID: 872018654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_586
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 204
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066e7bd3bbcc094a9daac3aa2b5d6c1
+      internalID: -1929659339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_587
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 177
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265e08abc04cf5949af824e11005d0df
+      internalID: -1531081878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_588
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 102
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb99a02ff0b30a48adf215793eb75c3
+      internalID: 61028283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_589
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 102
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718beedd59ebc4543b0e36414f5065c8
+      internalID: -1706331675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_590
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5caf453292ce354f80d4d7e820fe6ce
+      internalID: -631981081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_591
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 102
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69772ecb9c9fd214aafd117190668cd8
+      internalID: 137898436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_592
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 102
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b3d73b11035c241b3054f0d2758b2e
+      internalID: 488205192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_45
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 2596
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c190b24d7ff599a4484c2d16e7dde6b4
+      internalID: -480221818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_51
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 2596
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89175b9592eea4d488a72c1b143d95c7
+      internalID: 1905222117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2596
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f964de540e6fa469d723db19be0434
+      internalID: 839741510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_53
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 2596
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb563df1fa80a7499e15f653694a2b2
+      internalID: -1429523520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_54
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2595
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46ff30b57a6f284681fe170ad8b2317
+      internalID: 1789909583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_55
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2430
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23ee4b35c8f4d849817b80022f1aac3
+      internalID: -32350605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_56
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2430
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906990aa86d9c8a43a917ea8b584208b
+      internalID: -1975303102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uchiha_itachi_jus_by_thegodgeminis_d84x4tw_57
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2430
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd11959258e36747aae1a6f33d4c95d
+      internalID: -1475160517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_0: -733383055
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_1: -423602224
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_10: -1609872355
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_100: -2030295075
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_101: 1300374326
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_102: -1213298408
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_103: 1196475811
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_104: -1043177369
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_105: -1991258298
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_106: 1477358789
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_107: -1061894804
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_108: -188054064
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_109: -205463672
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_11: 2085268321
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_110: -14100456
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_111: -7415746
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_112: -206165959
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_113: -684018457
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_114: 466887840
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_115: 1901639
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_116: 233506334
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_117: -156132143
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_118: -1327253623
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_119: -910244761
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_12: 1350186731
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_120: -828604844
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_121: -839546396
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_122: -1741754569
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_123: -734445293
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_124: 1564577906
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_125: -1202062544
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_126: 1224129374
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_127: 1466884791
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_128: 1372119236
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_129: 617735050
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_13: 1109738511
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_130: -2037084818
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_131: 1652245689
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_132: -1130885999
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_133: 452610760
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_134: -792389626
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_135: -634093038
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_136: -1213233687
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_137: -903785456
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_138: -758213227
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_139: -1776868061
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_14: 1244378228
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_140: -844843226
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_141: -920342777
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_142: -75327871
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_143: -1885590093
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_144: -905988357
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_145: 143767204
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_146: -422522464
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_147: 191940010
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_148: -1466275623
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_149: -318428164
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_15: -1964144741
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_150: -91802288
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_151: 2129747827
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_152: -602901667
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_153: 2063051211
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_154: 1255254808
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_155: 1120662242
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_156: -382615519
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_157: -394274677
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_158: -1663216386
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_159: 2050985003
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_16: 499932281
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_160: 1300741150
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_161: -836817910
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_162: 1429135158
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_163: 955108107
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_164: -1418323676
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_165: 359637688
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_166: 1593570352
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_167: 1923383877
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_168: -894500969
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_169: 1974200683
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_17: -707738763
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_170: -2099608368
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_171: -142508721
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_172: 43911153
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_173: -98222699
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_174: -564351913
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_175: -2145608068
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_176: -319472626
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_177: -1570699819
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_178: 340623561
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_179: -1080979494
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_18: -1005888026
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_180: -133082773
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_181: -1223754788
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_182: 535411566
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_183: -1576582159
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_184: 844980965
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_185: -98771975
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_186: -261409046
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_187: 199790852
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_188: -87485924
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_189: -2090578292
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_19: -146828951
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_190: 1574879625
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_191: -158557575
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_192: 785875244
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_193: 1641321826
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_194: -1496301076
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_195: 1855955742
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_196: -805117003
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_197: 295965596
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_198: 2034434621
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_199: 1303133777
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_2: -1543990589
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_20: -1670528635
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_200: 1174153939
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_201: 2147448058
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_202: -1673154888
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_203: 1777675452
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_204: 1226542792
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_205: -1936368338
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_206: 768629568
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_207: -1152467214
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_208: -2116960631
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_209: -1749909052
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_21: -1092504006
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_210: -1379476948
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_211: -80052595
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_212: -1721634877
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_213: -1731631503
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_214: 735954999
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_215: 2062893041
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_216: 2091707850
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_217: -971242358
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_218: 1235378905
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_219: -1658048868
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_22: -1474175816
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_220: 227674787
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_221: -499282717
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_222: -468843248
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_223: -902062598
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_224: -224572178
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_225: 1847127651
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_226: 150915548
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_227: 771198249
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_228: -1435298088
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_229: -2058768159
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_23: -853410003
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_230: 35337888
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_231: -1244571937
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_232: 1566891093
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_233: -637651778
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_234: 323599332
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_235: 521989720
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_236: -1018643943
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_237: 170650720
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_238: -1077474699
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_239: 1516115396
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_24: -1606174045
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_240: 1441995434
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_241: -536823105
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_242: -1482520342
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_243: 1675181232
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_244: 1021960487
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_245: -884174590
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_246: -1361672446
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_247: 392767489
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_248: -632537705
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_249: -1784128485
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_25: 847093540
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_250: -1042773732
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_251: -1728872975
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_252: -776570719
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_253: -2017108730
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_254: 2010954474
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_255: -426954404
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_256: -1191686772
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_257: 1150474878
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_258: 45227244
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_259: -983023541
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_26: 920361188
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_260: 798354492
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_261: 2122974761
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_262: 567320944
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_263: 687846223
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_264: -776595253
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_265: 471929455
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_266: 1754609223
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_267: -1920591691
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_268: 2129554305
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_269: -1689612144
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_27: -878613620
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_270: -128742319
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_271: 2125723175
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_272: -2072301169
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_273: 1982850615
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_274: 2018763252
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_275: -1441637026
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_276: 1426487246
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_277: -406654530
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_278: 407229220
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_279: -715923738
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_28: -968698071
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_280: -1043751881
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_281: 1647688958
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_282: 1044198241
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_283: 277839440
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_284: -1689547146
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_285: -473360083
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_286: -414831554
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_287: -42618323
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_288: -694543284
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_289: -1812047040
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_29: 213448537
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_290: -1250130347
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_291: 1088908700
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_292: 971793545
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_293: 1412353397
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_294: 1359068668
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_295: -1895184574
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_296: 1481056254
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_297: -1184233245
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_298: -478052217
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_299: 1320368326
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_3: -200306366
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_30: 573296099
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_300: 2139189134
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_301: 922416352
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_302: 420855887
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_303: -299281433
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_304: -1679953721
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_305: -1534130683
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_306: -1614191367
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_307: -882343418
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_308: -282097172
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_309: 580214002
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_31: -992563694
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_310: -2127393614
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_311: 1221379728
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_312: 1227274651
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_313: 542892276
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_314: 976796133
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_315: 1769628674
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_316: -1641959884
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_317: -1073411159
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_318: -968014655
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_319: -101536242
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_32: -1227414725
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_320: -1135342917
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_321: 814640433
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_322: -2015605085
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_323: -66130067
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_324: -333553581
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_325: -423854399
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_326: -183935914
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_327: -452629396
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_328: 437589441
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_329: 2061080408
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_33: -141367881
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_330: -948855058
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_331: 1514903
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_332: -32405434
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_333: 40472169
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_334: -346851203
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_335: -1910419046
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_336: -412504009
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_337: 1151524714
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_338: -2116755737
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_339: 2060626212
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_34: -1651552493
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_340: -1005677304
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_341: -1232345894
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_342: -877142905
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_343: -2056647776
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_344: 28470703
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_345: 2009470066
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_346: -157695395
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_347: 1918408877
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_348: -1922913809
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_349: 782704035
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_35: -1402112954
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_350: 1750851891
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_351: -1829260018
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_352: -570780243
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_353: 36971641
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_354: 2137149096
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_355: -506247996
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_356: -417543520
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_357: 57889914
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_358: 762487784
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_359: -463948720
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_36: -847677964
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_360: -1387907969
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_361: 900155494
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_362: 1751079046
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_363: -475119107
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_364: 61456724
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_365: 1042576162
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_366: 977839918
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_367: 1871345436
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_368: 203175569
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_369: 1908021597
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_37: -1629424872
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_370: 1057376183
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_371: -1132533600
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_372: 1581898881
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_373: -675752016
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_374: 172699920
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_375: -469013884
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_376: 374655405
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_377: -1789520451
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_378: 666761763
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_379: 789779110
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_38: 2092804256
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_380: 1449228217
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_381: -2136735529
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_382: -1357833765
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_383: -200068414
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_384: -1255466423
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_385: -1471147331
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_386: 1582364478
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_387: 1014666263
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_388: 1573514439
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_389: 2117660075
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_39: 239804396
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_390: -570632900
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_391: 1504856276
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_392: -1580924373
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_393: -1910213984
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_394: -1099269749
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_395: -150810296
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_396: -157863789
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_397: -841257741
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_398: -988721017
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_399: 809425719
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_4: 1962736743
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_40: -503746216
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_400: 1297206924
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_401: -155877528
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_402: 1771016131
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_403: -169303658
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_404: 1268319072
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_405: -1026177043
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_406: -1748861566
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_407: -268528653
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_408: -1844073787
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_409: -592293049
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_41: -2108705312
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_410: 911149207
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_411: -1873732108
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_412: -454399714
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_413: 2126463558
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_414: 584712417
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_415: -1607823299
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_416: -1411079240
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_417: -405331490
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_418: -1496933776
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_419: -1579086471
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_42: 740041961
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_420: -326424404
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_421: 2100917730
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_422: -512414526
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_423: 780436796
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_424: -786458072
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_425: 230337393
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_426: 1467476789
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_427: -1597842826
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_428: -1257054998
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_429: 1376668460
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_43: 2131589728
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_430: 1588753427
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_431: 1059162258
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_432: -1727414749
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_433: -570147474
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_434: -584692981
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_435: 1649357245
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_436: -27675185
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_437: -1451411861
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_438: 1006525769
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_439: 258779623
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_44: 439047836
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_440: -1731867231
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_441: 1293685175
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_442: 1695458642
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_443: 1103992880
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_444: 1633129709
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_445: -1703779804
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_446: -2118069438
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_447: 972881670
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_448: -1829053993
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_449: 48304144
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_45: -480221818
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_450: 595094745
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_451: -2082389102
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_452: 919133629
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_453: 1437258088
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_454: 236637742
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_455: 579885052
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_456: -968644855
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_457: -1173720501
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_458: -187794742
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_459: -1203560098
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_46: 936698909
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_460: 1524852058
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_461: -1903592601
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_462: 1799291529
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_463: 1011076792
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_464: -159482079
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_465: -159925689
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_466: -1711252685
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_467: -1821550236
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_468: 616479866
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_469: -713198118
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_47: -858182509
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_470: 1460684757
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_471: -1519785617
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_472: 1326047925
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_473: 94985323
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_474: 1426194314
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_475: 1832893996
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_476: -287535771
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_477: -875779412
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_478: 1274118036
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_479: -2119430890
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_48: 1252966892
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_480: 1649374649
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_481: -2030687178
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_482: -318245205
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_483: 399102388
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_484: 1732525590
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_485: 771579630
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_486: -11916010
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_487: 1536978728
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_488: -1609242766
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_489: -373886649
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_49: -63742377
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_490: -1543654302
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_491: 556219141
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_492: 1797149717
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_493: 1232874820
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_494: -734272870
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_495: -1552087574
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_496: -17333828
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_497: 1061312850
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_498: 221708613
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_499: -331530714
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_5: 1848889145
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_50: 1810602413
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_500: -253972450
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_501: 99332537
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_502: -807176112
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_503: 22058237
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_504: 1327407764
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_505: -184364249
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_506: 1675497219
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_507: -2091188613
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_508: 2048000431
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_509: -1177803727
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_51: 1905222117
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_510: 892684008
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_511: -1904230167
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_512: 1099853117
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_513: -1589314144
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_514: -1213233118
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_515: 1799239747
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_516: -1797260561
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_517: -94076722
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_518: 709389990
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_519: 982272765
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_52: 839741510
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_520: 929388933
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_521: -225219972
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_522: -872751777
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_523: 396526917
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_524: 815843420
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_525: -620964740
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_526: 1753645400
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_527: -254146347
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_528: 1208290509
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_529: 1627171763
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_53: -1429523520
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_530: -1964571917
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_531: 211117408
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_532: 1233944114
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_533: -2060042284
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_534: 607625906
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_535: -1110358877
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_536: -601734775
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_537: -1561235893
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_538: 490938802
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_539: -750399577
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_54: 1789909583
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_540: 200608747
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_541: -1474085943
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_542: 537605644
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_543: 1807314745
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_544: 1240162364
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_545: 1503467401
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_546: -1705572820
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_547: -525745153
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_548: -1449204953
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_549: -1503958199
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_55: -32350605
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_550: -1467664022
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_551: 1710417867
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_552: -210934417
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_553: -1081041669
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_554: -1243485357
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_555: 2118052267
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_556: -670791810
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_557: -2028377176
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_558: 1867154307
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_559: -122920507
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_56: -1975303102
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_560: 1319456168
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_561: -1372261620
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_562: -865090461
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_563: -1498498837
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_564: 63552670
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_565: 1534090379
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_566: 2097387984
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_567: 1011114548
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_568: 2030575497
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_569: -506599310
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_57: -1475160517
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_570: 119477980
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_571: -2040652591
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_572: -1147178059
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_573: 701930748
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_574: -1887946230
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_575: -614265320
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_576: 1513560208
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_577: 1048971579
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_578: -846943834
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_579: 640563423
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_58: 1705764528
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_580: -635242570
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_581: 28866070
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_582: -901926055
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_583: -916723542
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_584: 118047410
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_585: 872018654
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_586: -1929659339
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_587: -1531081878
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_588: 61028283
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_589: -1706331675
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_59: 1601095202
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_590: -631981081
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_591: 137898436
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_592: 488205192
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_6: 54931727
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_60: 1274000177
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_61: 518198079
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_62: -28174505
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_63: 1965522186
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_64: 2053434302
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_65: 724740081
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_66: 1323351406
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_67: 287239620
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_68: -975708109
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_69: -32615480
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_7: 1020610527
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_70: 424860368
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_71: -2053838635
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_72: 1212718998
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_73: 1491898361
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_74: -778024781
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_75: 1385390379
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_76: 270737147
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_77: 1966944077
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_78: -1025346258
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_79: -1367481315
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_8: 1882238810
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_80: 924794734
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_81: -418891696
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_82: -2019602160
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_83: 437431372
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_84: 1205039322
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_85: -1348545801
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_86: 1424245188
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_87: 481528608
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_88: -2024118878
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_89: 953756358
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_9: 1299758266
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_90: -2127724377
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_91: -13001682
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_92: -1497301549
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_93: -548889861
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_94: -1957533332
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_95: -2114846380
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_96: 1503419421
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_97: -926395810
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_98: 1093653531
+      uchiha_itachi_jus_by_thegodgeminis_d84x4tw_99: -722350561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

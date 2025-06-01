@@ -10,12 +10,14 @@ public class PowerMode : MonoBehaviour
         gameObject.SetActive(true);
         anim.SetTrigger("OnPowerMode");
     }
+
     public void ChangeMode()
     {
         GetComponentInParent<Boss_Health>().OnPowerMode();
     }
-    public void OnModeDone()
+
+    public void SetInActive()
     {
-        gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

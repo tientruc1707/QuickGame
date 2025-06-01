@@ -49,25 +49,6 @@ public class EnemyHealth : MonoBehaviour
             );
         }
     }
-    //collision detection with player
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag(StringConstant.TAGS.PLAYER))
-        {
-            PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
-            if (player != null)
-            {
-                if (player.GetComponent<PlayerAction>().IsAttacking)
-                {
-                    TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
-                }
-                else
-                {
-                    player.TakeDamage(_enemyDetail.Damage);
-                }
-            }
-        }
-    }
 
     public void TakeDamage(int amount)
     {

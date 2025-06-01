@@ -14,7 +14,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHECKPOINT_REACHED);
+            EventManager.Instance.TriggerEvent(StringConstant.EVENT.VICTORY);
             DataManager.Instance.SetLevel(_currentLevel + 1);
         }
     }

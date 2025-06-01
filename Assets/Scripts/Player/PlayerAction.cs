@@ -64,6 +64,18 @@ public class PlayerAction : MonoBehaviour
                 break;
         }
     }
+    public void DealDamage()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag(StringConstant.TAGS.ENEMY))
+            {
+                EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
+                enemyHealth.TakeDamage(StringConstant.PLAYER_DETAIL.DAMAGE);
+            }
+        }
+    }
     public void ActiveGokakyoNoJutsu()
     {
         _gokakyoNoJutsu.ActiveSkill();

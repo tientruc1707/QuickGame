@@ -48,9 +48,9 @@ public static class StringConstant
     }
     public static class EVENT
     {
-        public static string PLAYER_DEAD = "PlayerDead";
+        public static string DEFEAT = "Defeat";
         public static string ENEMY_DEAD = "EnemyDead";
-        public static string CHECKPOINT_REACHED = "CheckpointReached";
+        public static string VICTORY = "Victory";
     }
     public static class SOUND
     {

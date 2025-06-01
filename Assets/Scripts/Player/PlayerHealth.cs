@@ -61,6 +61,6 @@ public class PlayerHealth : MonoBehaviour
     }
     public void Dead()
     {
-        EventManager.Instance.TriggerEvent(StringConstant.EVENT.PLAYER_DEAD);
+        EventManager.Instance.TriggerEvent(StringConstant.EVENT.DEFEAT);
     }
 }

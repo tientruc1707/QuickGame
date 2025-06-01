@@ -8,62 +8,77 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer sprite;
+
 
     [SerializeField] private ParticleSystem _smokeEffect;
     [Header("Movement")]
     [SerializeField] private float _moveSpeed = 250f;
-    private float _inputHorizontal;
+    private float inputHorizontal;
 
     [Header("Jump")]
-    [SerializeField] private float _jumpForce = 210f;
-    private bool _onGrounded;
+    [SerializeField] private float _jumpForce = 2f;
+
+    //_onGround for double jump
+    [SerializeField] private bool isOnGrounded = false;
+    [SerializeField] private bool jumping = false;
+
+
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        _onGrounded = true;
+        sprite = GetComponent<SpriteRenderer>();
         _smokeEffect = GetComponentInChildren<ParticleSystem>();
     }
+
     private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space) && OnGrounded())
+        {
+            jumping = true;
+            isOnGrounded = false;
+        }
     }
+
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(_inputHorizontal * _moveSpeed * Time.deltaTime, rb.velocity.y);
-        animator.SetFloat("Speed", Mathf.Abs(_inputHorizontal));
-        if (_inputHorizontal > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else if (_inputHorizontal < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        animator.SetBool("Jump", !_onGrounded);
+        Jump();
+        Move();
     }
-    public void Move(InputAction.CallbackContext context)
+    //Run
+    private void Move()
     {
-        _inputHorizontal = context.ReadValue<Vector2>().x;
+        
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(inputHorizontal * _moveSpeed * Time.deltaTime, rb.velocity.y);
+
+        if (inputHorizontal > 0)
+        {
+            sprite.flipX = false;
+        }
+        else if (inputHorizontal < 0)
+        {
+            sprite.flipX = true;
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));
         _smokeEffect.Play();
         AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_RUN);
     }
-    public void Jump(InputAction.CallbackContext context)
+    // Jump
+    private void Jump()
     {
-        if (OnGrounded())
+        animator.SetBool("Jump", !isOnGrounded);
+        if (jumping)
         {
-            _onGrounded = false;
-            if (context.performed)
+            if (OnGrounded())
             {
-                //Hold the jump button to jump higher
-                rb.velocity = new Vector2(rb.velocity.x, _jumpForce * Time.deltaTime);
+                rb.velocity = new Vector2(rb.velocity.x, _jumpForce);
             }
-            else if (context.canceled)
-            {
-                //Light tap of jump button to jump lower (double jump)
-                rb.velocity = new Vector2(rb.velocity.x, _jumpForce * 0.5f * Time.deltaTime);
-            }
+            jumping = false;
         }
     }
     // Check if the player is near the ground
@@ -85,12 +100,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawRay(rootPosition, Vector2.down * rayLenght, rayColor);
         return hit.collider != null;
     }
-    // Check if the player is on the ground
+    // Check if the player has collider with somethings
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag(StringConstant.TAGS.GROUND))
         {
-            _onGrounded = true;
+            isOnGrounded = true;
         }
         if (other.gameObject.CompareTag(StringConstant.TAGS.ITEM))
         {
@@ -103,4 +118,5 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
 }

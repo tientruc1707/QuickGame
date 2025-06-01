@@ -1,28 +1,27 @@
-using System;
+
 using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
 public class Boss_Health : MonoBehaviour
 {
-    private int _currentLevel;
-    private Animator _animator;
+    private int currentLevel;
+    private Animator animator;
+    private bool isOnPowerMode = false;
+    private bool isVulnerable = true;
+    private PowerMode _powerMode;
     [SerializeField] private Slider _healthBar;
-    [SerializeField] private PowerMode _powerMode;
-    private bool _isOnPowerMode = false;
-    public int _health;
-    bool _isVulnerable = true;
+    [SerializeField] private GroundEffect _effect;
+    public int health;
 
 
     void Start()
     {
-        _currentLevel = DataManager.Instance.GetLevel();
-        _animator = GetComponent<Animator>();
+        currentLevel = DataManager.Instance.GetLevel();
+        animator = GetComponent<Animator>();
         _powerMode = GetComponentInChildren<PowerMode>(true);
-        _healthBar.maxValue = _health;
+        _healthBar.maxValue = health;
     }
 
     // Update is called once per frame
@@ -30,54 +29,73 @@ public class Boss_Health : MonoBehaviour
     {
         UpdateHealthBar();
     }
+
     public void TakeDamage(int damage)
     {
-        if (!_isVulnerable)
+        if (!isVulnerable)
         {
             return;
         }
-        _health -= damage;
-        if (_health <= 200 && !_isOnPowerMode)
+        health -= damage;
+        if (health <= 200 && !isOnPowerMode)
         {
-            ActivatePowerMode();
-            StartCoroutine(ModeOK(6));
+            StartCoroutine(SetVulnerable(2f));
         }
-        _animator.SetTrigger("Hurt");
-        if (_health <= 0)
+        animator.SetTrigger("Hurt");
+        if (health <= 0)
         {
             Die();
         }
     }
+
     private void UpdateHealthBar()
     {
-        _healthBar.value = _health;
+        _healthBar.value = health;
     }
+
     private void Die()
     {
-        Debug.Log("Boss is dead");
-        AudioManager.Instance.StopBackgroundSound();
-        Destroy(gameObject);
+        animator.SetTrigger("Dead");
+        StartCoroutine(WaitForTime(animator.GetCurrentAnimatorStateInfo(0).length));
     }
+    //call to addition effect
     public void ActivatePowerMode()
     {
         _powerMode.OnPowerMode();
-        _isVulnerable = false;
-        _isOnPowerMode = true;
+        isVulnerable = false;
+        isOnPowerMode = true;
     }
+    //enter the the effect
     public void OnPowerMode()
     {
-        _animator.SetTrigger("OnPowerMode");
+        animator.SetTrigger("OnPowerMode");
         AudioManager.Instance.StopBackgroundSound();
         AudioManager.Instance.PlayBackgroundSound(StringConstant.SOUND.BOSSHIDAN);
     }
+
     public void KnockBack(Vector3 currentPos, float knockBackForce)
     {
         Vector3 direction = (transform.position - currentPos).normalized;
         transform.position += direction * knockBackForce * Time.deltaTime;
     }
-    private IEnumerator ModeOK(float time)
+
+    private IEnumerator SetVulnerable(float time)
     {
+        ActivatePowerMode();
         yield return new WaitForSeconds(time);
-        _isVulnerable = true;
+        isVulnerable = true;
     }
+
+    IEnumerator WaitForTime(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+
+        _effect.gameObject.SetActive(true);
+    }
+
+    public int GetHealth()
+    {
+        return health;
+    }
+
 }

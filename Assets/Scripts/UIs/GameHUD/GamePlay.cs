@@ -27,8 +27,8 @@ public class GamePlay : MonoBehaviour
         _healthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
         _healthSlider.value = _healthSlider.maxValue;
 
-        EventManager.Instance.StartListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
-        EventManager.Instance.StartListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
+        EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
+        EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
     }
 
     private void Update()
@@ -68,13 +68,13 @@ public class GamePlay : MonoBehaviour
         //UIManager.Instance.GamePause();
     }
 
-    public void GetCheckPoint()
+    public void OnVictory()
     {
         _uiManager.LoadNextLevel();
         //UIManager.Instance.LoadNextLevel();
     }
 
-    private void OnPlayerDead()
+    private void OnDefeat()
     {
         _uiManager.GameOver();
         //UIManager.Instance.GameOver();
@@ -82,7 +82,7 @@ public class GamePlay : MonoBehaviour
 
     private void OnDestroy()
     {
-        EventManager.Instance.StopListening(StringConstant.EVENT.PLAYER_DEAD, OnPlayerDead);
-        EventManager.Instance.StopListening(StringConstant.EVENT.CHECKPOINT_REACHED, GetCheckPoint);
+        EventManager.Instance.StopListening(StringConstant.EVENT.DEFEAT, OnDefeat);
+        EventManager.Instance.StopListening(StringConstant.EVENT.VICTORY, OnVictory);
     }
 }
