@@ -55,10 +55,6 @@ public class PlayerHealth : MonoBehaviour
         _currentHP = Mathf.Clamp(_currentHP, 0, _playerHP);
     }
 
-    public void Regen()
-    {
-        _currentHP = _playerHP;
-    }
     public void Dead()
     {
         EventManager.Instance.TriggerEvent(StringConstant.EVENT.DEFEAT);

@@ -56,7 +56,7 @@ public class GameManager : Singleton<GameManager>
 
     public void OnLoadScene(string name)
     {
-        PoolManager.Instance.ClearAllPools();
+        EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHANGE_SCENE);
         SceneManager.LoadScene(name);
     }
 }

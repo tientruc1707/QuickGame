@@ -13,7 +13,7 @@ public class PowerMode : MonoBehaviour
 
     public void ChangeMode()
     {
-        GetComponentInParent<Boss_Health>().OnPowerMode();
+        GetComponentInParent<IPowerMode>().OnPowerMode();
     }
 
     public void SetInActive()

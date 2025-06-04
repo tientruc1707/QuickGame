@@ -7,26 +7,6 @@ public static class StringConstant
         public static int SPEED = 100;
         public static int JUMP_FORCE = 5;
     }
-    public static class ENEMY_DETAIL
-    {
-        public static class BOAR
-        {
-            public static int HEALTH = 50;
-            public static int DAMAGE = 10;
-            public static int SPEED = 5;
-            public static int VALUE = 5;
-            public static int ATTACK_RANGE = 2;
-        }
-
-        public static class BEE
-        {
-            public static int HEALTH = 30;
-            public static int DAMAGE = 15;
-            public static int SPEED = 7;
-            public static int VALUE = 8;
-            public static int ATTACK_RANGE = 2;
-        }
-    }
     public static class TAGS
     {
         public static string PLAYER = "Player";
@@ -38,18 +18,10 @@ public static class StringConstant
         public static string BOSS = "Boss";
         public static string WEAPON = "Weapon";
     }
-    public static class LAYER
-    {
-        public static string PLAYER = "Player";
-        public static string ENEMY = "Enemy";
-        public static string COIN = "Coin";
-        public static string TRAP = "Trap";
-        public static string CHECKPOINT = "Checkpoint";
-    }
     public static class EVENT
     {
         public static string DEFEAT = "Defeat";
-        public static string ENEMY_DEAD = "EnemyDead";
+        public static string CHANGE_SCENE = "OnSceneChange";
         public static string VICTORY = "Victory";
     }
     public static class SOUND

@@ -1,70 +1,64 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-//I need to add chasing and attacking player
+using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
-    private EnemyHealth _enemyHealth;
-    private Vector3 _startPosition;
-
-    private int _speed;
-    private int _range;
-
+    public EnemyData enemyData;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private EnemyHealth enemyHealth;
+    private Vector3 startPosition;
+    private float activeRange;
+    private float speed;
 
 
     void Start()
     {
-        _animator = GetComponent<Animator>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _startPosition = transform.position;
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        enemyHealth = GetComponent<EnemyHealth>();
 
-        _enemyHealth = GetComponent<EnemyHealth>();
-        _speed = _enemyHealth._enemyDetail.Speed;
-        _range = _enemyHealth._enemyDetail.MovingRange;
-
+        startPosition = transform.position;
+        activeRange = enemyData.activeRange;
+        speed = enemyData.speed;
     }
 
     void Update()
     {
-        OnMoving();
+        AutoMoveSystem();
     }
 
-    private void OnMoving()
+    private void AutoMoveSystem()
     {
 
-        if (transform.position.x > _startPosition.x + _range)
+        if (transform.position.x > startPosition.x + activeRange)
         {
             MoveLeft();
         }
-        else if (transform.position.x < _startPosition.x - _range)
+        else if (transform.position.x < startPosition.x - activeRange)
         {
             MoveRight();
         }
         else
         {
-            if (_spriteRenderer.flipX)
+            if (spriteRenderer.flipX)
                 MoveRight();
             else
                 MoveLeft();
         }
-        _animator.SetBool("Move", true);
+        animator.SetBool("Move", true);
     }
 
     private void MoveLeft()
     {
-        transform.Translate(Vector2.left * _speed * Time.deltaTime);
-        _spriteRenderer.flipX = false;
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        spriteRenderer.flipX = false;
     }
 
     private void MoveRight()
     {
-        transform.Translate(Vector2.right * _speed * Time.deltaTime);
-        _spriteRenderer.flipX = true;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        spriteRenderer.flipX = true;
     }
 
     public void KnockBack(Vector3 currentPos, float knockBackForce)

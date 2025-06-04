@@ -1,22 +1,48 @@
 
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PoolManager : Singleton<PoolManager>
 {
-    private Dictionary<GameObject, ObjectPool> _dicPools = new Dictionary<GameObject, ObjectPool>();
+    private readonly Dictionary<GameObject, ObjectPool> dicPools = new();
+    public List<GameObject> objectToPoolList = new();
+
+    public override void Awake()
+    {
+        foreach (GameObject obj in objectToPoolList)
+        {
+            dicPools.Add(obj, new ObjectPool(obj));
+            dicPools[obj].CreatePool(30);
+        }
+    }
+
+    public void OnEnable()
+    {
+        EventManager.Instance.StartListening(StringConstant.EVENT.CHANGE_SCENE, CollectToPools);
+    }
+
+    public void OnDisable()
+    {
+        EventManager.Instance.StopListening(StringConstant.EVENT.CHANGE_SCENE, CollectToPools);
+    }
+
+    private void CollectToPools()
+    {
+        foreach (ObjectPool pool in dicPools.Values)
+        {
+            pool.SetActiveAll();
+        }
+    }
 
     public GameObject GetFromPool(GameObject obj)
     {
-        if (!_dicPools.ContainsKey(obj))
+        if (!dicPools.ContainsKey(obj))
         {
-            _dicPools.Add(obj, new ObjectPool(obj));
+            Debug.Log("Miss the pool of this object, bro!");
+            dicPools.Add(obj, new ObjectPool(obj));
         }
-        return _dicPools[obj].Get();
+        return dicPools[obj].Get();
     }
-    public void ClearAllPools()
-    {
-        _dicPools.Clear();
-    }
+
 }

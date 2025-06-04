@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
-    private int _direction = 1;
+    private SpriteRenderer spriteRenderer;
+    private int direction = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
     // -1 is left, 1 is right
@@ -18,18 +18,18 @@ public class Boss : MonoBehaviour
     {
         if (player.position.x < transform.position.x)
         {
-            _spriteRenderer.flipX = true;
-            _direction = -1;
+            spriteRenderer.flipX = true;
+            direction = -1;
         }
         else
         {
-            _spriteRenderer.flipX = false;
-            _direction = 1;
+            spriteRenderer.flipX = false;
+            direction = 1;
         }
     }
     public int GetDirection()
     {
-        return _direction;
+        return direction;
     }
 
 }

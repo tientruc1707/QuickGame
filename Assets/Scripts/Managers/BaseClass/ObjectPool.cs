@@ -5,32 +5,55 @@ using UnityEngine;
 public class ObjectPool
 {
     private Stack<GameObject> _myPool = new Stack<GameObject>();
-    private GameObject _baseObject;
-    private GameObject _tmp;
-    private ReturnToPool _returnToPool;
+    private GameObject baseObject;
+    private GameObject tmp;
+    private ReturnToPool returnToPool;
 
 
-    public ObjectPool(GameObject _baseObj)
+    public ObjectPool(GameObject baseObj)
     {
-        this._baseObject = _baseObj;
+        this.baseObject = baseObj;
+    }
+
+    public void CreatePool(int poolSize)
+    {
+        for (int i = 0; i < poolSize; i++)
+        {
+            tmp = Object.Instantiate(baseObject);
+            returnToPool = tmp.AddComponent<ReturnToPool>();
+            returnToPool.pool = this;
+            tmp.SetActive(false);
+            AddToPool(tmp);
+        }
     }
 
     public GameObject Get()
     {
         if (_myPool.Count > 0)
         {
-            _tmp = _myPool.Pop();
-            _tmp.SetActive(true);
-            return _tmp;
+            tmp = _myPool.Pop();
+            tmp.SetActive(true);
+            return tmp;
         }
-        _tmp = GameObject.Instantiate(_baseObject);
-        _returnToPool = _tmp.AddComponent<ReturnToPool>();
-        _returnToPool.pool = this;
-        return _tmp;
+        tmp = GameObject.Instantiate(baseObject);
+        returnToPool = tmp.AddComponent<ReturnToPool>();
+        returnToPool.pool = this;
+        return tmp;
     }
 
     public void AddToPool(GameObject gameObject)
     {
         _myPool.Push(gameObject);
+    }
+
+    public void SetActiveAll()
+    {
+        foreach (GameObject obj in _myPool)
+        {
+            if (obj.activeSelf)
+            {
+                obj.SetActive(false);
+            }
+        }
     }
 }

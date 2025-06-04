@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
-public class Boss_Health : MonoBehaviour
+public class Boss_Health : MonoBehaviour, IPowerMode
 {
     private int currentLevel;
     private Animator animator;
     private bool isOnPowerMode = false;
     private bool isVulnerable = true;
-    private PowerMode _powerMode;
+    private PowerMode powerMode;
+    private Boss_Attack boss_Attack;
     [SerializeField] private Slider _healthBar;
     [SerializeField] private GroundEffect _effect;
     public int health;
@@ -20,7 +21,8 @@ public class Boss_Health : MonoBehaviour
     {
         currentLevel = DataManager.Instance.GetLevel();
         animator = GetComponent<Animator>();
-        _powerMode = GetComponentInChildren<PowerMode>(true);
+        boss_Attack = GetComponent<Boss_Attack>();
+        powerMode = GetComponentInChildren<PowerMode>(true);
         _healthBar.maxValue = health;
     }
 
@@ -37,11 +39,11 @@ public class Boss_Health : MonoBehaviour
             return;
         }
         health -= damage;
+        animator.SetTrigger("Hurt");
         if (health <= 200 && !isOnPowerMode)
         {
             StartCoroutine(SetVulnerable(2f));
         }
-        animator.SetTrigger("Hurt");
         if (health <= 0)
         {
             Die();
@@ -61,7 +63,8 @@ public class Boss_Health : MonoBehaviour
     //call to addition effect
     public void ActivatePowerMode()
     {
-        _powerMode.OnPowerMode();
+        powerMode.OnPowerMode();
+        boss_Attack.IncreseAttackSpeed(2);
         isVulnerable = false;
         isOnPowerMode = true;
     }

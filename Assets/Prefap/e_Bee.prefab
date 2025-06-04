@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ae0758863c39042a962597f5de24d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyType: 1
+  enemyData: {fileID: 11400000, guid: c83872c515ecadc4584abe4446767098, type: 2}
 --- !u!114 &1247407487108415321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a041b77868f9ece4f91e4d238f8ef753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: c83872c515ecadc4584abe4446767098, type: 2}
 --- !u!114 &3965123511881011286
 MonoBehaviour:
   m_ObjectHideFlags: 0

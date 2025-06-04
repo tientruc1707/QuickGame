@@ -44,14 +44,7 @@ public class PlayerAction : MonoBehaviour
         {
             _count = 1;
         }
-        PerformAttack(_count);
-        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
-        _lastHit = Time.time;
-        _count++;
-    }
-    private void PerformAttack(int count)
-    {
-        switch (count)
+        switch (_count)
         {
             case 1:
                 _animator.SetTrigger("Attack1");
@@ -63,6 +56,9 @@ public class PlayerAction : MonoBehaviour
                 _animator.SetTrigger("Attack3");
                 break;
         }
+        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_HIT);
+        _lastHit = Time.time;
+        _count++;
     }
     public void DealDamage()
     {
