@@ -21,6 +21,7 @@ public static class StringConstant
     public static class EVENT
     {
         public static string DEFEAT = "Defeat";
+        //save pool through scenes
         public static string CHANGE_SCENE = "OnSceneChange";
         public static string VICTORY = "Victory";
     }
@@ -33,7 +34,7 @@ public static class StringConstant
         public static string GAME_OVER = "GameOver";
         public static string GAME_WIN = "GameWin";
         public static string PLAYER_RUN = "PlayerRun";
-        public static string SKILL1 = "KatonGokakyoNoJutsu";
+        public static string GOKAKYO = "KatonGokakyoNoJutsu";
         public static string BOSSHIDAN = "BossHidan";
 
     }

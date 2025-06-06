@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-    override public void Awake()
+    public void OnEnable()
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);

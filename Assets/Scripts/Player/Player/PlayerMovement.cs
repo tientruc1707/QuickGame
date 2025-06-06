@@ -1,27 +1,23 @@
-using System;
-using Unity.VisualScripting;
+
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    public PlayerData playerData;
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
+    private ParticleSystem smokeEffect;
 
 
-    [SerializeField] private ParticleSystem _smokeEffect;
-    [Header("Movement")]
-    [SerializeField] private float _moveSpeed = 250f;
+    private float moveSpeed;
+    private float jumpForce;
     private float inputHorizontal;
 
-    [Header("Jump")]
-    [SerializeField] private float _jumpForce = 2f;
-
     //_onGround for double jump
-    [SerializeField] private bool isOnGrounded = false;
-    [SerializeField] private bool jumping = false;
+    private bool isOnGrounded = false;
+    private bool jumping = false;
 
 
 
@@ -31,7 +27,10 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        _smokeEffect = GetComponentInChildren<ParticleSystem>();
+        smokeEffect = GetComponentInChildren<ParticleSystem>(true);
+
+        moveSpeed = playerData.speed;
+        jumpForce = playerData.jumpForce;
     }
 
     private void Update()
@@ -51,9 +50,9 @@ public class PlayerMovement : MonoBehaviour
     //Run
     private void Move()
     {
-        
+
         inputHorizontal = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(inputHorizontal * _moveSpeed * Time.deltaTime, rb.velocity.y);
+        rb.velocity = new Vector2(inputHorizontal * moveSpeed * Time.deltaTime, rb.velocity.y);
 
         if (inputHorizontal > 0)
         {
@@ -65,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));
-        _smokeEffect.Play();
+        smokeEffect.Play();
         AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_RUN);
     }
     // Jump
@@ -76,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (OnGrounded())
             {
-                rb.velocity = new Vector2(rb.velocity.x, _jumpForce);
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
             jumping = false;
         }
@@ -100,22 +99,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawRay(rootPosition, Vector2.down * rayLenght, rayColor);
         return hit.collider != null;
     }
-    // Check if the player has collider with somethings
+    // Check if the player has collider with ground
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag(StringConstant.TAGS.GROUND))
         {
             isOnGrounded = true;
-        }
-        if (other.gameObject.CompareTag(StringConstant.TAGS.ITEM))
-        {
-            IIItem item = other.gameObject.GetComponent<IIItem>();
-            if (item != null)
-            {
-                item.OnItemPickup();
-                AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.ITEM_PICKUP);
-                item.ReturnItemToPool();
-            }
         }
     }
 

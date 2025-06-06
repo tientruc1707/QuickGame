@@ -10,10 +10,11 @@ public class PoolManager : Singleton<PoolManager>
 
     public override void Awake()
     {
+        base.Awake();
         foreach (GameObject obj in objectToPoolList)
         {
             dicPools.Add(obj, new ObjectPool(obj));
-            dicPools[obj].CreatePool(30);
+            dicPools[obj].CreatePool(10, this.gameObject);
         }
     }
 

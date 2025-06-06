@@ -10,14 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 9205925378908821930}
   - component: {fileID: 1262914664788847442}
-  - component: {fileID: 8794645152898649693}
   m_Layer: 0
-  m_Name: DashJutsu
+  m_Name: Skill Q
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9205925378908821930
 Transform:
   m_ObjectHideFlags: 0
@@ -85,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8794645152898649693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5288224434385884406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b782c3b2d5a1dd4c96be2d0523dd273, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 6609873930104359356}
-  _playerTransform: {fileID: 438879627599746981}
 --- !u!1 &6342653684938653331
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,9 +4926,8 @@ GameObject:
   - component: {fileID: 2227955177395353712}
   - component: {fileID: 1713435368616696669}
   - component: {fileID: 2017867893246374393}
-  - component: {fileID: 6731325456597165786}
   m_Layer: 0
-  m_Name: KatonGokakyoNoJutsu
+  m_Name: Skill W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5121,19 +5105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2024ccf91454aeb47a1c84f2de419efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6731325456597165786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6761217526865222681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1098c55f3bf87f8418311bed9ae95972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 6609873930104359356}
 --- !u!1 &8804549322441783151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,6 +5121,7 @@ GameObject:
   - component: {fileID: 1692986779866039638}
   - component: {fileID: 2103440424465529984}
   - component: {fileID: 648151066103408137}
+  - component: {fileID: 5400353667760294920}
   - component: {fileID: 6034551006849157371}
   m_Layer: 0
   m_Name: Jiraiya
@@ -5345,6 +5317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859f7a38748f1d444afaa61a5ad3182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: e73b0956f3f359c4c93ab3821b7927eb, type: 2}
 --- !u!114 &648151066103408137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5357,11 +5330,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb12337ef1e422d4dada3c10857ca572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _smokeEffect: {fileID: 2729303101818945340}
-  _moveSpeed: 250
-  _jumpForce: 5
-  isOnGrounded: 0
-  jumping: 0
+  playerData: {fileID: 11400000, guid: e73b0956f3f359c4c93ab3821b7927eb, type: 2}
+--- !u!114 &5400353667760294920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804549322441783151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c84383cb7d51c44b24917c679f1d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill_Q_Data: {fileID: 11400000, guid: 4a67b5c875922f04b8fb595a7bda3acd, type: 2}
+  skill_W_Data: {fileID: 11400000, guid: 9222dcf967d09c649965774af8f23694, type: 2}
 --- !u!114 &6034551006849157371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5374,7 +5357,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34682e289f560bb44bd3f0d5b402cd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skills:
-  - {fileID: 8794645152898649693}
-  - {fileID: 6731325456597165786}
-  _animator: {fileID: 6609873930104359356}

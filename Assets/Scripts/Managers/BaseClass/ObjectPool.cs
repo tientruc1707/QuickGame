@@ -15,7 +15,7 @@ public class ObjectPool
         this.baseObject = baseObj;
     }
 
-    public void CreatePool(int poolSize)
+    public void CreatePool(int poolSize, GameObject obj)
     {
         for (int i = 0; i < poolSize; i++)
         {
@@ -23,6 +23,7 @@ public class ObjectPool
             returnToPool = tmp.AddComponent<ReturnToPool>();
             returnToPool.pool = this;
             tmp.SetActive(false);
+            tmp.transform.SetParent(obj.transform);
             AddToPool(tmp);
         }
     }

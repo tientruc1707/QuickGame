@@ -9,6 +9,7 @@ public class DataManager : Singleton<DataManager>
 
     override public void Awake()
     {
+        base.Awake();
         if (!PlayerPrefs.HasKey(LevelKey))
         {
             PlayerPrefs.SetInt(LevelKey, 1);

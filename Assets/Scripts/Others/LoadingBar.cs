@@ -21,6 +21,7 @@ public class LoadingBar : MonoBehaviour
         _loadingBar.value = Mathf.Clamp01(_asyncOperation.progress / 0.9f);
         if (_asyncOperation.progress >= 0.9f)
         {
+            EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHANGE_SCENE);
             _loadingBar.value = 1f;
             _asyncOperation.allowSceneActivation = true;
         }

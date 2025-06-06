@@ -1,31 +1,35 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
+//CD stands for cooldown
+
 public class GamePlay : MonoBehaviour
 {
-    [SerializeField] private Text _scoreText;
-    [SerializeField] private Text _coinText;
-    [SerializeField] private Slider _healthSlider, _dashCooldownSlider, _gokakyoCooldownSlider;
-    [SerializeField] private UIManager _uiManager;
-    [SerializeField] private PlayerHealth _playerHealth;
-    [SerializeField] private DashJutsu _dashJutsu;
-    [SerializeField] private GokakyoNoJutsu _gokakyoNoJutsu;
+    [SerializeField] private Text coinText;
+    [SerializeField] private Slider health_Slider;
+    private UIManager uiManager;
+    private PlayerHealth playerHealth;
 
+
+    public SkillData[] skills_CD;
+    public Slider[] skills_CD_Slider;
 
 
     private void Start()
     {
         UpdateCoinText();
 
-        _dashCooldownSlider.maxValue = 1f;
+        uiManager = GetComponentInParent<UIManager>();
+        playerHealth = GameObject.FindGameObjectWithTag(StringConstant.TAGS.PLAYER).GetComponent<PlayerHealth>();
+        
+        foreach (Slider slider in skills_CD_Slider)
+        {
+            slider.maxValue = 1;
+        }
 
-        _gokakyoCooldownSlider.maxValue = 1f;
-
-        _healthSlider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
-        _healthSlider.value = _healthSlider.maxValue;
+        health_Slider.maxValue = StringConstant.PLAYER_DETAIL.HEALTH;
+        health_Slider.value = health_Slider.maxValue;
 
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
@@ -48,35 +52,37 @@ public class GamePlay : MonoBehaviour
 
     private void UpdateCoinText()
     {
-        _coinText.text = DataManager.Instance.GetCoin().ToString();
+        coinText.text = DataManager.Instance.GetCoin().ToString();
     }
 
     private void UpdateHealthSlider()
     {
-        _healthSlider.value = _playerHealth.CurrentHealth();
+        health_Slider.value = playerHealth.CurrentHealth();
     }
 
     private void UpdateSkillCooldown()
     {
-        _dashCooldownSlider.value = _dashJutsu.GetCoolDownTime();
-        _gokakyoCooldownSlider.value = _gokakyoNoJutsu.GetCoolDownTime();
+        for (int i = 0; i < skills_CD_Slider.Length; ++i)
+        {
+            skills_CD_Slider[i].value = skills_CD[i].GetCooldownTimer();
+        }
     }
 
     public void PauseGame()
     {
-        _uiManager.GamePause();
+        uiManager.PauseGame();
         //UIManager.Instance.GamePause();
     }
 
     public void OnVictory()
     {
-        _uiManager.LoadNextLevel();
+        uiManager.OnWinGame();
         //UIManager.Instance.LoadNextLevel();
     }
 
     private void OnDefeat()
     {
-        _uiManager.GameOver();
+        uiManager.OnLoseGame();
         //UIManager.Instance.GameOver();
     }
 

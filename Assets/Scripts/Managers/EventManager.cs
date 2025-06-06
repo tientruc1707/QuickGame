@@ -12,6 +12,7 @@ public class EventManager : Singleton<EventManager>
     }
     void Init()
     {
+        base.Awake();
         if (eventDictionary == null)
         {
             eventDictionary = new Dictionary<string, UnityEvent>();

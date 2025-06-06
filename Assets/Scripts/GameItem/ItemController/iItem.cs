@@ -1,5 +1,5 @@
 
-public interface IIItem
+public interface IItem
 {
     void OnItemPickup();
     void ReturnItemToPool();

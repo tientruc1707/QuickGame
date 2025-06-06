@@ -10,14 +10,17 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _gameWinPanel;
     [SerializeField] private GameObject _gamePausePanel;
     [SerializeField] private GameObject _gamePlayPanel;
-    [SerializeField] private GameObject _canvas;
 
     private int _currentLevel;
+
+
+
     private void Start()
     {
         _currentLevel = DataManager.Instance.GetLevel();
         InitializePanels();
     }
+
     private void InitializePanels()
     {
         _gameOverPanel.SetActive(false);
@@ -25,7 +28,8 @@ public class UIManager : MonoBehaviour
         _gamePausePanel.SetActive(false);
         _gamePlayPanel.SetActive(true);
     }
-    public void GameOver()
+
+    public void OnLoseGame()
     {
         AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GAME_OVER);
         _gameOverPanel.SetActive(true);
@@ -34,7 +38,8 @@ public class UIManager : MonoBehaviour
         _gamePausePanel.SetActive(false);
         Time.timeScale = 0;
     }
-    public void GameWin()
+
+    public void OnWinGame()
     {
         AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GAME_WIN);
         _gameWinPanel.SetActive(true);
@@ -42,7 +47,8 @@ public class UIManager : MonoBehaviour
         _gameOverPanel.SetActive(false);
         _gamePausePanel.SetActive(false);
     }
-    public void GamePause()
+
+    public void PauseGame()
     {
         _gamePausePanel.SetActive(true);
         _gamePlayPanel.SetActive(false);
@@ -50,12 +56,14 @@ public class UIManager : MonoBehaviour
         _gameWinPanel.SetActive(false);
         Time.timeScale = 0;
     }
+
     public void ResumeGame()
     {
         _gamePausePanel.SetActive(false);
         _gamePlayPanel.SetActive(true);
         Time.timeScale = 1;
     }
+
     public void RestartGame()
     {
         Time.timeScale = 1;
@@ -66,14 +74,17 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.OnLoadScene("Level" + _currentLevel);
         //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
     }
+
     public void MainMenu()
     {
         Time.timeScale = 1;
         GameManager.Instance.OnLoadScene(StringConstant.SCENES.MAIN_MENU);
     }
+
     public void LoadNextLevel()
     {
         DataManager.Instance.SetLevel(_currentLevel + 1);
         GameManager.Instance.OnLoadScene("Level" + (_currentLevel + 1));
     }
+
 }

@@ -34,7 +34,7 @@ public class Boss_Attack : MonoBehaviour
         {
             if (hit.CompareTag(StringConstant.TAGS.PLAYER))
             {
-                hit.GetComponent<PlayerHealth>().TakeDamage(damage);
+                hit.GetComponent<PlayerController>().TakeDamage(damage);
             }
         }
         nextHit = Time.time + 1 / AttackSpeed;
@@ -48,7 +48,7 @@ public class Boss_Attack : MonoBehaviour
         {
             if (hit.CompareTag(StringConstant.TAGS.PLAYER))
             {
-                hit.GetComponent<PlayerHealth>().TakeDamage(onPowerModeDamage);
+                hit.GetComponent<PlayerController>().TakeDamage(onPowerModeDamage);
             }
         }
         nextHit = Time.time + 1 / AttackSpeed;

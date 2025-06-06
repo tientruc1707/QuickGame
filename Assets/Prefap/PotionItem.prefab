@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4281533057512988430}
   - component: {fileID: 7171023938211168111}
   - component: {fileID: 5986173226918462102}
-  - component: {fileID: 3885527018735953577}
+  - component: {fileID: 1969328935683176424}
   m_Layer: 0
-  m_Name: HealthItem
+  m_Name: PotionItem
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.33
---- !u!114 &3885527018735953577
+--- !u!114 &1969328935683176424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2899061348366509033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b5162312528bc8418bd28159bd60bdd, type: 3}
+  m_Script: {fileID: 11500000, guid: ebe16f7c12d606a4f8986965af1f8913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerHealth: {fileID: 2103440424465529984, guid: dfc76b914d6f1254196e3a5e1e4259f3, type: 3}
+  potion: {fileID: 0}

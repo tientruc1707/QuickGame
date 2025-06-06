@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
         health = enemyData.health;
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
         _animator.SetTrigger("Hit");
