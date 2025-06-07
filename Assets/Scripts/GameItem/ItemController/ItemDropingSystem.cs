@@ -12,6 +12,7 @@ public class ItemDropingSystem : MonoBehaviour
     [System.Serializable]
     public class ItemDropInfor
     {
+        public GameObject itemPrefab;
         public ItemType itemType;
         [Range(0, 100)]
         public int dropChance;
@@ -26,7 +27,7 @@ public class ItemDropingSystem : MonoBehaviour
         {
             if (randomValue <= item.dropChance)
             {
-                GameObject dropItem = PoolManager.Instance.GetFromPool(this.gameObject);
+                GameObject dropItem = PoolManager.Instance.GetFromPool(item.itemPrefab);
                 dropItem.transform.position = transform.position + Vector3.up;
                 //if wanna drop only one item, uncomment break
                 //break;

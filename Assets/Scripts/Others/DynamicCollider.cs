@@ -6,6 +6,7 @@ public class DynamicCollider : MonoBehaviour
     private BoxCollider2D boxCollider;
     private SpriteRenderer spriteRenderer;
     private PolygonCollider2D polygonCollider;
+
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -33,7 +34,7 @@ public class DynamicCollider : MonoBehaviour
 
     public void UpdateWithPolygonCollider()
     {
-        if(spriteRenderer == null)
+        if (spriteRenderer == null)
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
@@ -46,7 +47,7 @@ public class DynamicCollider : MonoBehaviour
         {
             List<Vector2> pathPoint = new List<Vector2>();
             currentSprite.GetPhysicsShape(i, pathPoint);
-            if(spriteRenderer.flipX)
+            if (spriteRenderer.flipX)
             {
                 for (int j = 0; j < pathPoint.Count; j++)
                 {
@@ -60,5 +61,11 @@ public class DynamicCollider : MonoBehaviour
         {
             polygonCollider.SetPath(i, paths[i].ToArray());
         }
+    }
+
+    public void SetInactiveObject()
+    {
+        this.GetComponent<Animator>().ResetTrigger("ActiveSkill");
+        this.gameObject.SetActive(false);
     }
 }

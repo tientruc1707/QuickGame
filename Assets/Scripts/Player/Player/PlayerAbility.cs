@@ -5,10 +5,17 @@ using UnityEngine;
 
 public class PlayerAbility : MonoBehaviour
 {
+    private Animator animator;
     public Skill_Q_Data skill_Q_Data;
     public Skill_W_Data skill_W_Data;
     //public Skill_E_Data skill_E_Data;
 
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        skill_Q_Data.ResetCooldown();
+        skill_W_Data.ResetCooldown();
+    }
 
     public void Execute_Skill_Q()
     {
@@ -16,16 +23,17 @@ public class PlayerAbility : MonoBehaviour
         {
             Vector3 Pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Pos.z = 0;
+            animator.SetTrigger("Skill Q");
             this.gameObject.transform.position = Pos;
             skill_Q_Data.UpdateCooldown();
         }
     }
 
-    public void Execute_Skill_W(GameObject player)
+    public void Execute_Skill_W()
     {
         if (skill_W_Data.GetCooldownTimer() <= 0)
         {
-            player.GetComponent<Animator>().SetTrigger("Skill W");
+            this.GetComponent<Animator>().SetTrigger("Skill W");
             //should edit here if it has player choosen 
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GOKAKYO);
 
@@ -38,10 +46,21 @@ public class PlayerAbility : MonoBehaviour
 
     }
 
+    public void Active_Skill_W(GameObject obj)
+    {
+        ActiveDamagableSkill(obj);
+        StartCoroutine(ApplyContinuousDamage(obj, skill_W_Data.baseDamage));
+    }
+
+    public void Active_Skill_E()
+    {
+
+    }
+
     public void ActiveDamagableSkill(GameObject skillObject)
     {
-        skillObject.SetActive(true);
         Animator anim = skillObject.GetComponent<Animator>();
+        skillObject.SetActive(true);
         anim.SetTrigger("ActiveSkill");
     }
 
@@ -57,25 +76,18 @@ public class PlayerAbility : MonoBehaviour
             {
                 //EnemyController enemy = hit.GetComponent<EnemyController>();
                 EnemyHealth enemy = hit.GetComponent<EnemyHealth>();
-                enemy.TakeDamage(damage * Time.deltaTime);
+                enemy.TakeDamage(damage);
             }
         }
     }
 
-    public void Active_Skill_W(GameObject obj)
-    {
-        ActiveDamagableSkill(obj);
-        StartCoroutine(ApplyContinuousDamage(obj, skill_W_Data.baseDamage));
-    }
-
     IEnumerator ApplyContinuousDamage(GameObject obj, float damage)
     {
-        ApplyDamage(obj, damage);
-        yield return new WaitForSeconds(1f);
+        while (true)
+        {
+            ApplyDamage(obj, damage);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
-    public void ActiveSkill_E()
-    {
-
-    }
 }

@@ -30,15 +30,8 @@ public class ObjectPool
 
     public GameObject Get()
     {
-        if (_myPool.Count > 0)
-        {
-            tmp = _myPool.Pop();
-            tmp.SetActive(true);
-            return tmp;
-        }
-        tmp = GameObject.Instantiate(baseObject);
-        returnToPool = tmp.AddComponent<ReturnToPool>();
-        returnToPool.pool = this;
+        tmp = _myPool.Pop();
+        tmp.SetActive(true);
         return tmp;
     }
 

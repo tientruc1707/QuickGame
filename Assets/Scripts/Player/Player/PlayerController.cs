@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     private float damage;
 
     [Header("Skills")]
+    private GameObject skillQ;
     private GameObject skillW;
-    private GameObject skillE;
 
     void Start()
     {
@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour
         playerAbility = GetComponent<PlayerAbility>();
         animator = GetComponent<Animator>();
 
-        GameObject skillW = this.transform.GetChild(0).gameObject;
-        GameObject skillE = this.transform.GetChild(1).gameObject;
+        skillQ = this.transform.GetChild(0).gameObject;
+        skillW = this.transform.GetChild(1).gameObject;
         damage = playerHealth.playerData.damage;
     }
 
@@ -33,11 +33,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            //skillList[0].ExecuteSkill(this.gameObject);
+            playerAbility.Execute_Skill_Q();
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            // skillList[1].ExecuteSkill();
+            playerAbility.Execute_Skill_W();
         }
         if (Input.GetMouseButtonDown(1))
         {

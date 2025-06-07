@@ -51,7 +51,7 @@ public class OnBossMove : StateMachineBehaviour
         }
 
         boss.LookAtPlayer(player);
-        
+
         if (ObstacleDetection(boss.GetDirection()))
         {
             rb.velocity = new Vector2(rb.velocity.x + boss.GetDirection(), 6f);
@@ -63,7 +63,9 @@ public class OnBossMove : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Attack");
+        animator.ResetTrigger("Attack1");
+        animator.ResetTrigger("Attack2");
+        animator.ResetTrigger("Attack3");
     }
 
     //Check if have any ground in front 

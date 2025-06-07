@@ -28,7 +28,7 @@ AnimationClip:
       value: {fileID: -1221762879, guid: b6fb9a467a8c9e843a0ac66deb52b75e, type: 3}
     - time: 5
       value: {fileID: 118378520, guid: b6fb9a467a8c9e843a0ac66deb52b75e, type: 3}
-    - time: 9
+    - time: 9.5
       value: {fileID: 118378520, guid: b6fb9a467a8c9e843a0ac66deb52b75e, type: 3}
     attribute: m_Sprite
     path: 
@@ -62,7 +62,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 9.083333
+    m_StopTime: 9.583333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,13 +84,6 @@ AnimationClip:
   m_Events:
   - time: 5
     functionName: ActiveSkill_W
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 5.5
-    functionName: UnfreezeAllObjects
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

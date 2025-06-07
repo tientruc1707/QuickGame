@@ -9,6 +9,7 @@ public class ReturnToPool : MonoBehaviour
     void OnDisable()
     {
         pool.AddToPool(this.gameObject);
+        Debug.Log("Returned to pool");
     }
 
 }

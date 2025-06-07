@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CoinItem : MonoBehaviour, IItem
 {
-    CoinData coin;
+    public CoinData coin;
 
     public void OnItemPickup()
     {

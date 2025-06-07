@@ -161,4 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe16f7c12d606a4f8986965af1f8913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potion: {fileID: 0}
+  potion: {fileID: 11400000, guid: 97c7feab91157ef4e83165cd1f00f177, type: 2}

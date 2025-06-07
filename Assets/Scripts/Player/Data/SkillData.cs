@@ -13,8 +13,15 @@ public abstract class SkillData : ScriptableObject
     {
         return Math.Clamp(nextExecution - Time.time, 0, cooldown) / cooldown;
     }
-    public virtual float UpdateCooldown()
+
+    public virtual void UpdateCooldown()
     {
-        return Time.time + cooldown;
+        nextExecution = Time.time + cooldown;
     }
+
+    public void ResetCooldown()
+    {
+        nextExecution = 0f;
+    }
+    
 }

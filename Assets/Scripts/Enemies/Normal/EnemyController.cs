@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     private Vector3 startPosition;
     private float activeRange;
     private float speed;
-
+    private float damage;
 
     void Start()
     {
@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
         startPosition = transform.position;
         activeRange = enemyData.activeRange;
         speed = enemyData.speed;
+        damage = enemyData.damage;
     }
 
     void Update()
@@ -61,9 +62,24 @@ public class EnemyController : MonoBehaviour
         spriteRenderer.flipX = true;
     }
 
-    public void KnockBack(Vector3 currentPos, float knockBackForce)
+    public void KnockBack(Vector3 targetPos, float knockBackForce)
     {
-        Vector3 direction = (transform.position - currentPos).normalized;
+        Vector3 direction = (transform.position - targetPos).normalized;
         transform.position += direction * knockBackForce * Time.deltaTime;
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag(StringConstant.TAGS.PLAYER))
+        {
+            PlayerController player = GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.TakeDamage(damage);
+                this.KnockBack(player.transform.position, 2f);
+            }
+        }
+
+    }
+
 }

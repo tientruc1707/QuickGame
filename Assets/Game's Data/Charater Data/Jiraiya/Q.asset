@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Teleport
   cooldown: 10
-  nextExecution: 0
-  player: {fileID: 0}
+  nextExecution: 82.29523
