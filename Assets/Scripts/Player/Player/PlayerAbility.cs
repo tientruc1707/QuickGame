@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerAbility : MonoBehaviour
 {
     private Animator animator;
+    private PlayerMovement playerMovement;
     public Skill_Q_Data skill_Q_Data;
     public Skill_W_Data skill_W_Data;
     //public Skill_E_Data skill_E_Data;
@@ -13,6 +14,7 @@ public class PlayerAbility : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
         skill_Q_Data.ResetCooldown();
         skill_W_Data.ResetCooldown();
     }
@@ -33,7 +35,9 @@ public class PlayerAbility : MonoBehaviour
     {
         if (skill_W_Data.GetCooldownTimer() <= 0)
         {
-            this.GetComponent<Animator>().SetTrigger("Skill W");
+            playerMovement.ChangeMoveSpeed(0);
+            GameManager.Instance.FreezeAllObjects(this.gameObject);
+            animator.SetTrigger("Skill W");
             //should edit here if it has player choosen 
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GOKAKYO);
 
@@ -74,8 +78,7 @@ public class PlayerAbility : MonoBehaviour
         {
             if (hit.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
             {
-                //EnemyController enemy = hit.GetComponent<EnemyController>();
-                EnemyHealth enemy = hit.GetComponent<EnemyHealth>();
+                EnemyController enemy = hit.GetComponent<EnemyController>();
                 enemy.TakeDamage(damage);
             }
         }

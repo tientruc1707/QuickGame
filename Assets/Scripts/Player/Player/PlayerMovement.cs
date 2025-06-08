@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IMovable
 {
 
     public PlayerData playerData;
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         Jump();
         Move();
     }
-    //Run
+
     private void Move()
     {
 
@@ -65,9 +65,8 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));
         smokeEffect.Play();
-        AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.PLAYER_RUN);
     }
-    // Jump
+
     private void Jump()
     {
         animator.SetBool("Jump", !isOnGrounded);
@@ -80,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             jumping = false;
         }
     }
+
     // Check if the player is near the ground
     private bool OnGrounded()
     {
@@ -99,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawRay(rootPosition, Vector2.down * rayLenght, rayColor);
         return hit.collider != null;
     }
+
     // Check if the player has collider with ground
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -108,4 +109,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void ChangeMoveSpeed(float value)
+    {
+        moveSpeed = playerData.speed;
+        moveSpeed *= value;
+    }
+
+    public void FreezeObject()
+    {
+        animator.speed = 0;
+        ChangeMoveSpeed(0);
+    }
+
+    public void UnFreezeObject()
+    {
+        animator.speed = 1;
+        ChangeMoveSpeed(1);
+    }
 }

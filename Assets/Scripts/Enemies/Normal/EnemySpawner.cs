@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject _eBoar;
     [SerializeField] private GameObject _eBee;
 
-    void Start()
+    void OnEnable()
     {
         _spawnZone = GameObject.FindGameObjectWithTag("SpawnZone");
         _sprite = _spawnZone.GetComponent<SpriteRenderer>();

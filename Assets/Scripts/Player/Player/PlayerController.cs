@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private GameObject skillQ;
     private GameObject skillW;
 
+
+
     void Start()
     {
         playerHealth = GetComponent<PlayerHealth>();
@@ -82,6 +84,7 @@ public class PlayerController : MonoBehaviour
     {
         playerHealth.IncreaseHealth(amount);
     }
+
     //added on animation
     public void DealDamage()
     {
@@ -90,8 +93,8 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.CompareTag(StringConstant.TAGS.ENEMY))
             {
-                EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
-                enemyHealth.TakeDamage(damage);
+                EnemyController enemy = hit.GetComponent<EnemyController>();
+                enemy.TakeDamage(damage);
             }
         }
     }
@@ -113,7 +116,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    //add on animation
     public void UnfreezeAllObjects()
     {
         GameManager.Instance.UnfreezeAllObjects();

@@ -1,22 +1,28 @@
 
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IEnemy, IMovable
 {
     public EnemyData enemyData;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    private EnemyHealth enemyHealth;
+    private ItemDropingSystem itemDropingSystem;
+    private EnemyHealth health;
+
     private Vector3 startPosition;
     private float activeRange;
     private float speed;
     private float damage;
 
+
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        enemyHealth = GetComponent<EnemyHealth>();
+        itemDropingSystem = GetComponent<ItemDropingSystem>();
+        health = GetComponent<EnemyHealth>();
 
         startPosition = transform.position;
         activeRange = enemyData.activeRange;
@@ -62,10 +68,27 @@ public class EnemyController : MonoBehaviour
         spriteRenderer.flipX = true;
     }
 
-    public void KnockBack(Vector3 targetPos, float knockBackForce)
+    public void TakeDamage(float damage)
+    {
+        health.DeacreaseHealth(damage);
+        animator.SetTrigger("Hit");
+        if (health.GetCurrentHealth() <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void KnockBack(Vector3 targetPos, float force)
     {
         Vector3 direction = (transform.position - targetPos).normalized;
-        transform.position += direction * knockBackForce * Time.deltaTime;
+        transform.position += direction * force * Time.deltaTime;
+    }
+
+    public void Die()
+    {
+
+        itemDropingSystem.DropItem();
+        this.gameObject.SetActive(false);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -82,4 +105,21 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    public void ChangeMoveSpeed(float value)
+    {
+        speed = enemyData.speed;
+        speed *= value;
+    }
+
+    public void FreezeObject()
+    {
+        animator.speed = 0;
+        ChangeMoveSpeed(0);
+    }
+
+    public void UnFreezeObject()
+    {
+        animator.speed = 1;
+        ChangeMoveSpeed(1);
+    }
 }

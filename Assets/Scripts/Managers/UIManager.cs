@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     {
         _currentLevel = DataManager.Instance.GetLevel();
         InitializePanels();
+        EventManager.Instance.TriggerEvent(StringConstant.EVENT.START_LEVEL);
     }
 
     private void InitializePanels()
@@ -72,7 +73,6 @@ public class UIManager : MonoBehaviour
         _gamePausePanel.SetActive(false);
         _gameWinPanel.SetActive(false);
         GameManager.Instance.OnLoadScene("Level" + _currentLevel);
-        //EventManager.Instance.TriggerEvent(StringConstant.EVENT.RESTART_GAME);
     }
 
     public void MainMenu()

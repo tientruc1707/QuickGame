@@ -1,57 +1,64 @@
 
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
 
+    private List<Animator> anims = new();
+
     public void OnEnable()
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
+        EventManager.Instance.StartListening(StringConstant.EVENT.START_LEVEL, StartLevel);
     }
+
     private void OnDestroy()
     {
         EventManager.Instance.StopListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StopListening(StringConstant.EVENT.VICTORY, OnVictory);
+        EventManager.Instance.StopListening(StringConstant.EVENT.START_LEVEL, StartLevel);
     }
+
     private void OnDefeat()
     {
         DataManager.Instance.SaveGameData();
     }
+
     private void OnVictory()
     {
         DataManager.Instance.SaveGameData();
     }
 
+    private void StartLevel()
+    {
+        if (anims.Count > 0)
+            anims.Clear();
+        anims = FindObjectsOfType<Animator>().ToList();
+    }
+
     public void FreezeAllObjects(GameObject exception)
     {
-        Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
-        foreach (Rigidbody rb in allRigidbodies)
+        foreach (var anim in anims)
         {
-            if (rb.gameObject != exception)
+            if (anim.gameObject != exception)
             {
-                rb.constraints = RigidbodyConstraints.FreezeAll;
+                anim.GetComponent<IMovable>().FreezeObject();
             }
         }
-    }
-    public void FreezeObject(GameObject gameObject)
-    {
-        gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
     public void UnfreezeAllObjects()
     {
-        Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
-        foreach (Rigidbody rb in allRigidbodies)
+        foreach (var anim in anims)
         {
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
+            anim.GetComponent<IMovable>().UnFreezeObject();
+            Debug.Log("Unfreeze done!");
         }
-    }
-    public void UnfreezeObject(GameObject gameObject)
-    {
-        gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void OnLoadScene(string name)
@@ -59,4 +66,5 @@ public class GameManager : Singleton<GameManager>
         EventManager.Instance.TriggerEvent(StringConstant.EVENT.CHANGE_SCENE);
         SceneManager.LoadScene(name);
     }
+
 }

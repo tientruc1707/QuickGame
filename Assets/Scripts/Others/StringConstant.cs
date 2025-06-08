@@ -21,9 +21,10 @@ public static class StringConstant
     public static class EVENT
     {
         public static string DEFEAT = "Defeat";
-        //save pool through scenes
+        //Event for save pool through scenes
         public static string CHANGE_SCENE = "OnSceneChange";
         public static string VICTORY = "Victory";
+        public static string START_LEVEL = "StartLevel";
     }
     public static class SOUND
     {
