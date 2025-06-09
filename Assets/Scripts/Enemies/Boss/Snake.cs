@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
-    public Boss boss;
+    public BossMovement boss;
     private SpriteRenderer sprite;
 
     private void OnEnable()

@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class Boss_Attack : MonoBehaviour
+public class BossColtroller : MonoBehaviour
 {
     [SerializeField] private IEnemySkill[] _skillList;
 
@@ -9,7 +9,7 @@ public class Boss_Attack : MonoBehaviour
     public int onPowerModeDamage = StringConstant.BOSS.DAMAGE * 2;
 
     private Vector3 pos;
-    private Boss boss;
+    private BossMovement boss;
     private SpriteRenderer sprite;
 
     public float AttackSpeed;
@@ -17,7 +17,7 @@ public class Boss_Attack : MonoBehaviour
 
     private void Start()
     {
-        boss = GetComponent<Boss>();
+        boss = GetComponent<BossMovement>();
         sprite = GetComponent<SpriteRenderer>();
         _skillList = GetComponentsInChildren<IEnemySkill>();
     }

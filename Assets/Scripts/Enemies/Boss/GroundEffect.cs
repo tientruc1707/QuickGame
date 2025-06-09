@@ -6,7 +6,7 @@ public class GroundEffect : MonoBehaviour
 {
     private Snake snake;
     private Animator anim;
-    public Boss_Health boss;
+    public BossHealth boss;
 
     private void OnEnable()
     {

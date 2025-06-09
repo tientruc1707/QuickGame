@@ -2,16 +2,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using Vector3 = UnityEngine.Vector3;
 
-public class Boss_Health : MonoBehaviour, IPowerMode
+
+public class BossHealth : MonoBehaviour, IPowerMode
 {
     private int currentLevel;
     private Animator animator;
     private bool isOnPowerMode = false;
     private bool isVulnerable = true;
     private PowerMode powerMode;
-    private Boss_Attack boss_Attack;
+    private BossColtroller boss_Attack;
     [SerializeField] private Slider _healthBar;
     [SerializeField] private GroundEffect _effect;
     public int health;
@@ -21,7 +21,7 @@ public class Boss_Health : MonoBehaviour, IPowerMode
     {
         currentLevel = DataManager.Instance.GetLevel();
         animator = GetComponent<Animator>();
-        boss_Attack = GetComponent<Boss_Attack>();
+        boss_Attack = GetComponent<BossColtroller>();
         powerMode = GetComponentInChildren<PowerMode>(true);
         _healthBar.maxValue = health;
     }
@@ -32,13 +32,13 @@ public class Boss_Health : MonoBehaviour, IPowerMode
         UpdateHealthBar();
     }
 
-    public void TakeDamage(int damage)
+    public void DecreaseHealth(int value)
     {
         if (!isVulnerable)
         {
             return;
         }
-        health -= damage;
+        health -= value;
         animator.SetTrigger("Hurt");
         if (health <= 200 && !isOnPowerMode)
         {
