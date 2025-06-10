@@ -80,6 +80,7 @@ public class PlayerAbility : MonoBehaviour
             {
                 EnemyController enemy = hit.GetComponent<EnemyController>();
                 enemy.TakeDamage(damage);
+                enemy.KnockBack(transform.position, 2f);
             }
         }
     }

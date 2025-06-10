@@ -38,7 +38,10 @@ public class Snake : MonoBehaviour
     //use on Animation
     public void CreateBoss()
     {
-        StartCoroutine(DelayStarting(2));
+        boss.transform.position = this.transform.position + new Vector3(0, sprite.bounds.extents.y, 0);
+        Vector3 pos = boss.transform.position;
+        boss.gameObject.SetActive(true);
+        boss.transform.position = Vector3.MoveTowards(pos, pos + 5 * Vector3.right, 2);
     }
     //use on Animation
     public void DenyEffect()
@@ -60,17 +63,6 @@ public class Snake : MonoBehaviour
         yield return new WaitForFixedUpdate();
 
         obj.SetActive(false);
-    }
-
-    IEnumerator DelayStarting(float time)
-    {
-        boss.transform.position = this.transform.position + new Vector3(0, sprite.bounds.extents.y, 0);
-        Vector3 pos = boss.transform.position;
-        boss.gameObject.SetActive(true);
-        boss.transform.position = Vector3.MoveTowards(pos, pos + 5 * Vector3.right, 2);
-
-        yield return new WaitForSeconds(time);
-
     }
 
 }

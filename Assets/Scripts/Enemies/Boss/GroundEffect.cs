@@ -14,13 +14,15 @@ public class GroundEffect : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetTrigger("Active");
     }
+
     public void Summon()
     {
-        if (boss.GetHealth() != 0)
+        if (boss.GetCurrentHealth() > 0)
             snake.SummonBoss();
         else
             snake.UnSummonBoss();
     }
+    
     public void SetInactive()
     {
         this.gameObject.SetActive(false);

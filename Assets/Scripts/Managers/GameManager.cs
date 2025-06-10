@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-    private List<Animator> anims = new();
-
+    private Animator[] anims;
+    private List<GameObject> characters = new();
     public void OnEnable()
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
@@ -36,28 +36,36 @@ public class GameManager : Singleton<GameManager>
 
     private void StartLevel()
     {
-        if (anims.Count > 0)
-            anims.Clear();
-        anims = FindObjectsOfType<Animator>().ToList();
+        if (anims.Length > 0)
+            Array.Clear(anims, 0, anims.Length);
+        if (characters.Count > 0)
+            characters.Clear();
+        anims = FindObjectsOfType<Animator>(true);
+        foreach (var anim in anims)
+        {
+            if (anim.GetComponent<IMovable>() != null)
+            {
+                characters.Add(anim.gameObject);
+            }
+        }
     }
 
     public void FreezeAllObjects(GameObject exception)
     {
-        foreach (var anim in anims)
+        foreach (var character in characters)
         {
-            if (anim.gameObject != exception)
+            if (character != exception)
             {
-                anim.GetComponent<IMovable>().FreezeObject();
+                character.GetComponent<IMovable>().FreezeObject();
             }
         }
     }
 
     public void UnfreezeAllObjects()
     {
-        foreach (var anim in anims)
+        foreach (var character in characters)
         {
-            anim.GetComponent<IMovable>().UnFreezeObject();
-            Debug.Log("Unfreeze done!");
+            character.GetComponent<IMovable>().FreezeObject();
         }
     }
 

@@ -1,5 +1,5 @@
 
-using System;
+
 using UnityEngine;
 
 
@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
     private int count = 1;
     private float damage;
 
-    [Header("Skills")]
     private GameObject skillQ;
     private GameObject skillW;
 
@@ -95,6 +94,7 @@ public class PlayerController : MonoBehaviour
             {
                 EnemyController enemy = hit.GetComponent<EnemyController>();
                 enemy.TakeDamage(damage);
+                enemy.KnockBack(transform.position, 2f);
             }
         }
     }
