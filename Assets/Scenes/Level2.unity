@@ -1201,7 +1201,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 4e7b17ad61962ef488b06611cebd8838, type: 2}
   player: {fileID: 1521809646}
+  groundEffect: {fileID: 5950408158699588242}
   AttackSpeed: 0.5
+  PowerMode: {fileID: 1650853150}
 --- !u!1001 &853158619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4892,7 +4894,7 @@ GameObject:
   - component: {fileID: 1650853153}
   - component: {fileID: 1650853152}
   m_Layer: 0
-  m_Name: JashinMode
+  m_Name: PowerMode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4992,7 +4994,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.775, y: 0.575}
+  m_Size: {x: 1.85, y: 0.775}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5138,6 +5140,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181176734b3b2a8438482aa0754a6451, type: 3}
+--- !u!114 &5950408158699588242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5715955879472511395, guid: 181176734b3b2a8438482aa0754a6451, type: 3}
+  m_PrefabInstance: {fileID: 5950408158699588241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a9b53fbd269e243884057bb9b699b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

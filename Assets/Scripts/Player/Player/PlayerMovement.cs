@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour, IMovable
     private float moveSpeed;
     private float jumpForce;
     private float inputHorizontal;
-
+    public int direction;
     //_onGround for double jump
     private bool isOnGrounded = false;
     private bool jumping = false;
@@ -57,10 +57,12 @@ public class PlayerMovement : MonoBehaviour, IMovable
         if (inputHorizontal > 0)
         {
             sprite.flipX = false;
+            direction = 1;
         }
         else if (inputHorizontal < 0)
         {
             sprite.flipX = true;
+            direction = -1;
         }
 
         animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));

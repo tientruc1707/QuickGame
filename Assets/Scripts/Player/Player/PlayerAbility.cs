@@ -1,11 +1,13 @@
 
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAbility : MonoBehaviour
 {
     private Animator animator;
+    private SpriteRenderer sprite;
     private PlayerMovement playerMovement;
     public Skill_Q_Data skill_Q_Data;
     public Skill_W_Data skill_W_Data;
@@ -14,7 +16,9 @@ public class PlayerAbility : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
         playerMovement = GetComponent<PlayerMovement>();
+
         skill_Q_Data.ResetCooldown();
         skill_W_Data.ResetCooldown();
     }
@@ -35,8 +39,8 @@ public class PlayerAbility : MonoBehaviour
     {
         if (skill_W_Data.GetCooldownTimer() <= 0)
         {
+            GameManager.Instance.FreezeAllObjects(this.GameObject());
             playerMovement.ChangeMoveSpeed(0);
-            GameManager.Instance.FreezeAllObjects(this.gameObject);
             animator.SetTrigger("Skill W");
             //should edit here if it has player choosen 
             AudioManager.Instance.PlaySoundEffect(StringConstant.SOUND.GOKAKYO);
@@ -52,6 +56,8 @@ public class PlayerAbility : MonoBehaviour
 
     public void Active_Skill_W(GameObject obj)
     {
+        obj.transform.position = transform.position + new Vector3(sprite.bounds.extents.x * playerMovement.direction, sprite.bounds.extents.y);
+        obj.GetComponent<SpriteRenderer>().flipX = sprite.flipX;
         ActiveDamagableSkill(obj);
         StartCoroutine(ApplyContinuousDamage(obj, skill_W_Data.baseDamage));
     }
@@ -71,14 +77,13 @@ public class PlayerAbility : MonoBehaviour
     private void ApplyDamage(GameObject obj, float damage)
     {
         Collider2D collider = obj.GetComponent<Collider2D>();
-
+        
         Collider2D[] hits = Physics2D.OverlapBoxAll(obj.transform.position, collider.bounds.size, 0);
-
         foreach (Collider2D hit in hits)
         {
             if (hit.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
             {
-                EnemyController enemy = hit.GetComponent<EnemyController>();
+                IEnemy enemy = hit.GetComponent<IEnemy>();
                 enemy.TakeDamage(damage);
                 enemy.KnockBack(transform.position, 2f);
             }
@@ -90,7 +95,7 @@ public class PlayerAbility : MonoBehaviour
         while (true)
         {
             ApplyDamage(obj, damage);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
     }
 

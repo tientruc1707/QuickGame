@@ -8,20 +8,18 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-    private Animator[] anims;
+    private List<Animator> anims = new();
     private List<GameObject> characters = new();
     public void OnEnable()
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
-        EventManager.Instance.StartListening(StringConstant.EVENT.START_LEVEL, StartLevel);
     }
 
     private void OnDestroy()
     {
         EventManager.Instance.StopListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StopListening(StringConstant.EVENT.VICTORY, OnVictory);
-        EventManager.Instance.StopListening(StringConstant.EVENT.START_LEVEL, StartLevel);
     }
 
     private void OnDefeat()
@@ -34,16 +32,16 @@ public class GameManager : Singleton<GameManager>
         DataManager.Instance.SaveGameData();
     }
 
-    private void StartLevel()
+    public void StartLevel()
     {
-        if (anims.Length > 0)
-            Array.Clear(anims, 0, anims.Length);
+        if (anims.Count > 0)
+            anims.Clear();
         if (characters.Count > 0)
             characters.Clear();
-        anims = FindObjectsOfType<Animator>(true);
+        anims = FindObjectsOfType<Animator>(true).ToList();
         foreach (var anim in anims)
         {
-            if (anim.GetComponent<IMovable>() != null)
+            if (anim.GetComponent<IMovable>() != null && anim.gameObject.activeSelf)
             {
                 characters.Add(anim.gameObject);
             }
@@ -65,7 +63,7 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (var character in characters)
         {
-            character.GetComponent<IMovable>().FreezeObject();
+            character.GetComponent<IMovable>().UnFreezeObject();
         }
     }
 

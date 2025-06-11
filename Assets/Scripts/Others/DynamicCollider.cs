@@ -22,7 +22,7 @@ public class DynamicCollider : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (boxCollider != null && spriteRenderer != null)
         {

@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.CompareTag(StringConstant.TAGS.ENEMY))
             {
-                EnemyController enemy = hit.GetComponent<EnemyController>();
+                IEnemy enemy = hit.GetComponent<IEnemy>();
                 enemy.TakeDamage(damage);
                 enemy.KnockBack(transform.position, 2f);
             }

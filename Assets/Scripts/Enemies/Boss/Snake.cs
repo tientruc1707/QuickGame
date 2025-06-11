@@ -42,6 +42,7 @@ public class Snake : MonoBehaviour
         Vector3 pos = boss.transform.position;
         boss.gameObject.SetActive(true);
         boss.transform.position = Vector3.MoveTowards(pos, pos + 5 * Vector3.right, 2);
+        GameManager.Instance.StartLevel();
     }
     //use on Animation
     public void DenyEffect()

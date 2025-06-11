@@ -1,5 +1,6 @@
 
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossColtroller : MonoBehaviour, IEnemy
@@ -12,8 +13,7 @@ public class BossColtroller : MonoBehaviour, IEnemy
     private BossMovement movement;
     private SpriteRenderer sprite;
     private Animator animator;
-    private PowerMode effectWhenStartPowerMode;
-
+    public GroundEffect groundEffect;
 
     private float deathHealth;
     private float damage;
@@ -24,7 +24,7 @@ public class BossColtroller : MonoBehaviour, IEnemy
     public float AttackSpeed;
     private bool attackable = true;
 
-
+    public GameObject PowerMode;
 
     private void Start()
     {
@@ -32,12 +32,10 @@ public class BossColtroller : MonoBehaviour, IEnemy
         movement = GetComponent<BossMovement>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        effectWhenStartPowerMode = GetComponentInChildren<PowerMode>(true);
-
 
         isVulnerable = true;
         isOnPowerMode = false;
-        deathHealth = enemyData.health / 3;
+        deathHealth = enemyData.health / 2;
         damage = enemyData.damage;
         attackRange = enemyData.activeRange;
     }
@@ -48,6 +46,21 @@ public class BossColtroller : MonoBehaviour, IEnemy
         if (Vector3.Distance(transform.position, player.transform.position) <= attackRange && attackable)
         {
             StartCoroutine(Attack(1 / AttackSpeed));
+        }
+
+        if (health.GetCurrentHealth() <= deathHealth && !isOnPowerMode)
+        {
+            GameManager.Instance.FreezeAllObjects(this.gameObject);
+            movement.ChangeMoveSpeed(0f);
+            isOnPowerMode = true;
+            isVulnerable = false;
+            OnPowerMode();
+            StartCoroutine(ChangedToPowerMode(5f));
+        }
+
+        if (health.GetCurrentHealth() <= 0)
+        {
+            Die();
         }
     }
 
@@ -97,19 +110,6 @@ public class BossColtroller : MonoBehaviour, IEnemy
         {
             health.DecreaseHealth(value);
             animator.SetTrigger("Hurt");
-
-            if (health.GetCurrentHealth() <= deathHealth && !isOnPowerMode)
-            {
-                isOnPowerMode = true;
-                isVulnerable = false;
-                ChangeMode();
-                StartCoroutine(BackToVulnerableMode(3f));
-            }
-
-            if (health.GetCurrentHealth() <= 0)
-            {
-                Die();
-            }
         }
     }
 
@@ -119,20 +119,12 @@ public class BossColtroller : MonoBehaviour, IEnemy
         transform.position += direction * knockBackForce * Time.deltaTime;
     }
 
-    //Buff when change mode
-    private void ChangeMode()
-    {
-        ChangeAttackSpeed(2f);
-        ChangeDamage(2f);
-        movement.ChangeMoveSpeed(1.5f);
-
-        //active effect when change mode 
-        effectWhenStartPowerMode.OnPowerMode();
-    }
-
     //animation when change mode
     public void OnPowerMode()
     {
+        PowerMode.SetActive(true);
+        PowerMode.GetComponent<Animator>().SetTrigger("OnPowerMode");
+
         animator.SetBool("OnPowerMode", true);
         AudioManager.Instance.StopBackgroundSound();
 
@@ -142,7 +134,9 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
     private void Die()
     {
-        animator.SetTrigger("Dead");
+        animator.SetTrigger("Die");
+        groundEffect.gameObject.SetActive(true);
+        groundEffect.Summon();
         Destroy(this, 3f);
     }
 
@@ -157,11 +151,17 @@ public class BossColtroller : MonoBehaviour, IEnemy
         damage *= value;
     }
 
-    IEnumerator BackToVulnerableMode(float time)
+    IEnumerator ChangedToPowerMode(float time)
     {
 
         yield return new WaitForSeconds(time);
 
+        ChangeAttackSpeed(2f);
+        ChangeDamage(2f);
+        movement.ChangeMoveSpeed(1.5f);
+
+        PowerMode.SetActive(false);
+        GameManager.Instance.UnfreezeAllObjects();
         isVulnerable = true;
     }
 
