@@ -63,9 +63,4 @@ public class DynamicCollider : MonoBehaviour
         }
     }
 
-    public void SetInactiveObject()
-    {
-        this.GetComponent<Animator>().ResetTrigger("ActiveSkill");
-        this.gameObject.SetActive(false);
-    }
 }

@@ -14,18 +14,22 @@ public class CameraColtroller : MonoBehaviour
         boss = FindObjectOfType<BossMovement>(true);
         if (boss != null)
         {
-            TargetToFollow = boss.gameObject;
             StartCoroutine(BackToPlayer(7f));
         }
         else
         {
-            TargetToFollow = player.gameObject;
+            FocusOn(player.gameObject);
+            EventManager.Instance.TriggerEvent(StringConstant.EVENT.START_LEVEL);
         }
     }
 
     void LateUpdate()
     {
-        FocusOn(TargetToFollow);
+        if (TargetToFollow == player.gameObject)
+        {
+            FocusOn(TargetToFollow);
+        }
+
         if (transform.position.x <= 0)
         {
             transform.position = new Vector3(0, transform.position.y, -10);
@@ -43,7 +47,13 @@ public class CameraColtroller : MonoBehaviour
 
     IEnumerator BackToPlayer(float time)
     {
+        FocusOn(boss.gameObject);
+        TargetToFollow = boss.gameObject;
+
         yield return new WaitForSecondsRealtime(time);
+
+        FocusOn(player.gameObject);
         TargetToFollow = player.gameObject;
+        EventManager.Instance.TriggerEvent(StringConstant.EVENT.START_LEVEL);
     }
 }

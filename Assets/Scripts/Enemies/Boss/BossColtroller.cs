@@ -55,7 +55,6 @@ public class BossColtroller : MonoBehaviour, IEnemy
             isOnPowerMode = true;
             isVulnerable = false;
             OnPowerMode();
-            StartCoroutine(ChangedToPowerMode(5f));
         }
 
         if (health.GetCurrentHealth() <= 0)
@@ -130,6 +129,7 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
         //if it has more than 1 boss, add a IF function this to check the boss's name
         AudioManager.Instance.PlayBackgroundSound(StringConstant.SOUND.BOSSHIDAN);
+        StartCoroutine(ChangedToPowerMode(6f));
     }
 
     private void Die()
@@ -162,6 +162,7 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
         PowerMode.SetActive(false);
         GameManager.Instance.UnfreezeAllObjects();
+        Debug.Log("UnfreezeOK!");
         isVulnerable = true;
     }
 

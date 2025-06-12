@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour, IMovable
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
-    private ParticleSystem smokeEffect;
 
 
     private float moveSpeed;
@@ -27,7 +26,6 @@ public class PlayerMovement : MonoBehaviour, IMovable
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        smokeEffect = GetComponentInChildren<ParticleSystem>(true);
 
         moveSpeed = playerData.speed;
         jumpForce = playerData.jumpForce;
@@ -66,7 +64,6 @@ public class PlayerMovement : MonoBehaviour, IMovable
         }
 
         animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));
-        smokeEffect.Play();
     }
 
     private void Jump()

@@ -18,7 +18,6 @@ public class Snake : MonoBehaviour
         gameObject.SetActive(true);
         GraduallyTransition(this.transform, 1);
         anim.SetTrigger("StartEffect");
-        StartCoroutine(TransitionEffect(anim.GetCurrentAnimatorStateInfo(0).length * 4, this.gameObject));
     }
 
     public void UnSummonBoss()
@@ -27,7 +26,6 @@ public class Snake : MonoBehaviour
         gameObject.SetActive(true);
         GraduallyTransition(this.transform, 1);
         anim.SetTrigger("EndEffect");
-        StartCoroutine(TransitionEffect(anim.GetCurrentAnimatorStateInfo(0).length * 4, this.gameObject));
     }
 
     public void GraduallyTransition(Transform obj, int direction)
@@ -35,6 +33,7 @@ public class Snake : MonoBehaviour
         Vector3 destination = transform.position + new Vector3(0, 2 * sprite.bounds.extents.y, 0) * direction;
         transform.position = Vector3.Lerp(transform.position, destination, 1);
     }
+
     //use on Animation
     public void CreateBoss()
     {
@@ -44,26 +43,21 @@ public class Snake : MonoBehaviour
         boss.transform.position = Vector3.MoveTowards(pos, pos + 5 * Vector3.right, 2);
         GameManager.Instance.StartLevel();
     }
+
     //use on Animation
     public void DenyEffect()
     {
         this.GetComponentInParent<GroundEffect>().SetInactive();
     }
+
     //use on Animation
     public void DenyBoss()
     {
         EventManager.Instance.TriggerEvent(StringConstant.EVENT.VICTORY);
     }
 
-    IEnumerator TransitionEffect(float time, GameObject obj)
+    IEnumerator ActiveBoss(float time)
     {
-        yield return new WaitForSeconds(time);
-        //down
-        GraduallyTransition(obj.transform, -1);
-
-        yield return new WaitForFixedUpdate();
-
-        obj.SetActive(false);
+        yield return new WaitForSecondsRealtime(time);
     }
-
 }

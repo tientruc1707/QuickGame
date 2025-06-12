@@ -1,6 +1,4 @@
 
-using System;
-using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -59,7 +57,6 @@ public class PlayerAbility : MonoBehaviour
         obj.transform.position = transform.position + new Vector3(sprite.bounds.extents.x * playerMovement.direction, sprite.bounds.extents.y);
         obj.GetComponent<SpriteRenderer>().flipX = sprite.flipX;
         ActiveDamagableSkill(obj);
-        StartCoroutine(ApplyContinuousDamage(obj, skill_W_Data.baseDamage));
     }
 
     public void Active_Skill_E()
@@ -72,31 +69,6 @@ public class PlayerAbility : MonoBehaviour
         Animator anim = skillObject.GetComponent<Animator>();
         skillObject.SetActive(true);
         anim.SetTrigger("ActiveSkill");
-    }
-
-    private void ApplyDamage(GameObject obj, float damage)
-    {
-        Collider2D collider = obj.GetComponent<Collider2D>();
-        
-        Collider2D[] hits = Physics2D.OverlapBoxAll(obj.transform.position, collider.bounds.size, 0);
-        foreach (Collider2D hit in hits)
-        {
-            if (hit.gameObject.CompareTag(StringConstant.TAGS.ENEMY))
-            {
-                IEnemy enemy = hit.GetComponent<IEnemy>();
-                enemy.TakeDamage(damage);
-                enemy.KnockBack(transform.position, 2f);
-            }
-        }
-    }
-
-    IEnumerator ApplyContinuousDamage(GameObject obj, float damage)
-    {
-        while (true)
-        {
-            ApplyDamage(obj, damage);
-            yield return new WaitForSeconds(1f);
-        }
     }
 
 }

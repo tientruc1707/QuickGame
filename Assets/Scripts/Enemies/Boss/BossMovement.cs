@@ -10,9 +10,9 @@ public class BossMovement : MonoBehaviour, IMovable
     private Rigidbody2D rb;
     private GameObject player;
 
-    public bool Movable { get; set; }
+
     private int direction = 1;
-    private float speed;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +21,21 @@ public class BossMovement : MonoBehaviour, IMovable
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag(StringConstant.TAGS.PLAYER);
-        speed = enemyData.speed;
+        StartCoroutine(SetUpSpeed(3f));
     }
 
-    public void SetMovable()
+    IEnumerator SetUpSpeed(float time)
     {
-        Movable = true;
+        ChangeMoveSpeed(0);
+        yield return new WaitForSecondsRealtime(time);
+        ChangeMoveSpeed(1);
     }
 
     private void Update()
     {
-        if (Movable)
+        if (speed > 0)
         {
+            animator.SetFloat("Move", speed);
             LookAtPlayer();
             ChasePlayer();
         }

@@ -13,12 +13,18 @@ public class UIManager : MonoBehaviour
 
     private int _currentLevel;
 
-
+    private void OnEnable()
+    {
+        EventManager.Instance.StartListening(StringConstant.EVENT.START_LEVEL, InitializePanels);
+    }
+    private void OnDisable()
+    {
+        EventManager.Instance.StopListening(StringConstant.EVENT.START_LEVEL, InitializePanels);
+    }
 
     private void Start()
     {
         _currentLevel = DataManager.Instance.GetLevel();
-        InitializePanels();
         GameManager.Instance.StartLevel();
     }
 
