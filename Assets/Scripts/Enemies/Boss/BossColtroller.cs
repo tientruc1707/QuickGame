@@ -19,8 +19,8 @@ public class BossColtroller : MonoBehaviour, IEnemy
     private float damage;
     private float attackRange;
     private Vector3 pos;
-    private bool isVulnerable;
-    private bool isOnPowerMode;
+    private bool isVulnerable = true;
+    private bool isOnPowerMode = false;
     public float AttackSpeed;
     private bool attackable = true;
 
@@ -33,15 +33,13 @@ public class BossColtroller : MonoBehaviour, IEnemy
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
-        isVulnerable = true;
-        isOnPowerMode = false;
         deathHealth = enemyData.health / 2;
         damage = enemyData.damage;
         attackRange = enemyData.activeRange;
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= attackRange && attackable)
         {
@@ -50,10 +48,11 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
         if (health.GetCurrentHealth() <= deathHealth && !isOnPowerMode)
         {
-            GameManager.Instance.FreezeAllObjects(this.gameObject);
-            movement.ChangeMoveSpeed(0f);
+            movement.Moveable = false;
+            movement.ChangeMoveSpeed(0);
             isOnPowerMode = true;
             isVulnerable = false;
+            GameManager.Instance.FreezeAllObjects(this.gameObject);
             OnPowerMode();
         }
 
@@ -105,11 +104,9 @@ public class BossColtroller : MonoBehaviour, IEnemy
         {
             return;
         }
-        else
-        {
-            health.DecreaseHealth(value);
-            animator.SetTrigger("Hurt");
-        }
+
+        health.DecreaseHealth(value);
+        animator.SetTrigger("Hurt");
     }
 
     public void KnockBack(Vector3 currentPos, float knockBackForce)
@@ -129,7 +126,6 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
         //if it has more than 1 boss, add a IF function this to check the boss's name
         AudioManager.Instance.PlayBackgroundSound(StringConstant.SOUND.BOSSHIDAN);
-        StartCoroutine(ChangedToPowerMode(6f));
     }
 
     private void Die()
@@ -151,15 +147,16 @@ public class BossColtroller : MonoBehaviour, IEnemy
         damage *= value;
     }
 
-    IEnumerator ChangedToPowerMode(float time)
+    //added on animation
+    public void PowerModeDone()
     {
-
-        yield return new WaitForSeconds(time);
-
         ChangeAttackSpeed(2f);
         ChangeDamage(2f);
         movement.ChangeMoveSpeed(1.5f);
+        movement.Moveable = true;
+        health.Regen();
 
+        Debug.Log(movement.speed + " " + damage);
         PowerMode.SetActive(false);
         GameManager.Instance.UnfreezeAllObjects();
         Debug.Log("UnfreezeOK!");

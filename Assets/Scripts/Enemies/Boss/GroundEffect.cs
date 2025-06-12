@@ -15,6 +15,7 @@ public class GroundEffect : MonoBehaviour
         anim.SetTrigger("Active");
     }
 
+    //added on animation and called when boss die
     public void Summon()
     {
         if (boss.GetCurrentHealth() > 0)
@@ -22,7 +23,7 @@ public class GroundEffect : MonoBehaviour
         else
             snake.UnSummonBoss();
     }
-    
+
     public void SetInactive()
     {
         this.gameObject.SetActive(false);

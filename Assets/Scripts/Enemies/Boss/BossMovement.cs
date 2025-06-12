@@ -10,7 +10,7 @@ public class BossMovement : MonoBehaviour, IMovable
     private Rigidbody2D rb;
     private GameObject player;
 
-
+    public bool Moveable { get; set; }
     private int direction = 1;
     public float speed;
 
@@ -22,27 +22,32 @@ public class BossMovement : MonoBehaviour, IMovable
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag(StringConstant.TAGS.PLAYER);
         StartCoroutine(SetUpSpeed(3f));
+        speed = enemyData.speed;
     }
 
     IEnumerator SetUpSpeed(float time)
     {
-        ChangeMoveSpeed(0);
+        Moveable = false;
         yield return new WaitForSecondsRealtime(time);
-        ChangeMoveSpeed(1);
+        Moveable = true;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (speed > 0)
+        animator.SetFloat("Move", speed);
+        if (Moveable)
         {
-            animator.SetFloat("Move", speed);
-            LookAtPlayer();
             ChasePlayer();
         }
+
     }
 
-    // -1 is left, 1 is right
-    public void LookAtPlayer()
+    public int GetDirection()
+    {
+        return direction;
+    }
+
+    private void ChasePlayer()
     {
         if (player.transform.position.x < transform.position.x)
         {
@@ -54,15 +59,6 @@ public class BossMovement : MonoBehaviour, IMovable
             spriteRenderer.flipX = false;
             direction = 1;
         }
-    }
-
-    public int GetDirection()
-    {
-        return direction;
-    }
-
-    private void ChasePlayer()
-    {
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         if (ObstacleDetection())
         {

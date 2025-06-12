@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
     private int currentLevel;
-
+    public EnemyData enemyData;
     [SerializeField] private Slider _healthBar;
+    [SerializeField] private Text heathText;
+    private float health = 200;
 
-    public float health;
 
-
-    void Start()
+    void Awake()
     {
         currentLevel = DataManager.Instance.GetLevel();
         _healthBar.maxValue = health;
@@ -32,6 +32,7 @@ public class BossHealth : MonoBehaviour
     private void UpdateHealthBar()
     {
         _healthBar.value = health;
+        heathText.text = $"{_healthBar.value}/{_healthBar.maxValue}";
     }
 
     public float GetCurrentHealth()
@@ -39,4 +40,8 @@ public class BossHealth : MonoBehaviour
         return health;
     }
 
+    public void Regen()
+    {
+        health = enemyData.health;
+    }
 }
