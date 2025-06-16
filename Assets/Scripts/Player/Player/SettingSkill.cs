@@ -44,9 +44,12 @@ public class SettingSkill : MonoBehaviour
     }
 
     //added on animation
-    public void InActiveSkill()
+    //each animation has a function to cancel it
+    public void InActiveSkill_W()
     {
         animator.ResetTrigger("ActiveSkill");
+        //GetComponentInParent<Animator>().ResetTrigger("Skill W");
         gameObject.SetActive(false);
     }
+
 }

@@ -556,6 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab8f123559a93c4db56a71c998cf194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPotionData: {fileID: 11400000, guid: 97c7feab91157ef4e83165cd1f00f177, type: 2}
+  coinData: {fileID: 11400000, guid: b326e75087ee1f64dad0cc2b468edbcd, type: 2}
 --- !u!114 &788244456
 MonoBehaviour:
   m_ObjectHideFlags: 0

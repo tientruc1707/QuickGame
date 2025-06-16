@@ -36,8 +36,8 @@ public class BossColtroller : MonoBehaviour, IEnemy
         deathHealth = enemyData.health / 2;
         damage = enemyData.damage;
         attackRange = enemyData.activeRange;
+        AttackSpeed = 1f;
     }
-
 
     private void FixedUpdate()
     {
@@ -107,6 +107,7 @@ public class BossColtroller : MonoBehaviour, IEnemy
 
         health.DecreaseHealth(value);
         animator.SetTrigger("Hurt");
+        //StartCoroutine(movement.HoldSpeedASecond(1));
     }
 
     public void KnockBack(Vector3 currentPos, float knockBackForce)
@@ -150,16 +151,15 @@ public class BossColtroller : MonoBehaviour, IEnemy
     //added on animation
     public void PowerModeDone()
     {
-        ChangeAttackSpeed(2f);
-        ChangeDamage(2f);
-        movement.ChangeMoveSpeed(1.5f);
-        movement.Moveable = true;
-        health.Regen();
-
-        Debug.Log(movement.speed + " " + damage);
         PowerMode.SetActive(false);
         GameManager.Instance.UnfreezeAllObjects();
-        Debug.Log("UnfreezeOK!");
+
+        movement.ChangeMoveSpeed(2);
+        ChangeAttackSpeed(2);
+        ChangeDamage(2);
+        health.Regen();
+        movement.Moveable = true;
+
         isVulnerable = true;
     }
 

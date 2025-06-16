@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossMovement : MonoBehaviour, IMovable
@@ -21,14 +20,16 @@ public class BossMovement : MonoBehaviour, IMovable
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag(StringConstant.TAGS.PLAYER);
-        StartCoroutine(SetUpSpeed(3f));
-        speed = enemyData.speed;
+        StartCoroutine(HoldSpeedASecond(3f));
+
     }
 
-    IEnumerator SetUpSpeed(float time)
+    public IEnumerator HoldSpeedASecond(float time)
     {
         Moveable = false;
+        ChangeMoveSpeed(0);
         yield return new WaitForSecondsRealtime(time);
+        ChangeMoveSpeed(1);
         Moveable = true;
     }
 
@@ -92,6 +93,7 @@ public class BossMovement : MonoBehaviour, IMovable
     {
         speed = enemyData.speed;
         speed *= value;
+        Debug.Log($"Speed now is {speed}");
     }
 
     public void FreezeObject()

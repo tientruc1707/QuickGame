@@ -909,13 +909,14 @@ GameObject:
   - component: {fileID: 830714046}
   - component: {fileID: 830714047}
   - component: {fileID: 830714053}
+  - component: {fileID: 830714054}
   m_Layer: 0
   m_Name: Hidan Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &830714043
 Animator:
   serializedVersion: 5
@@ -1033,6 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 4e7b17ad61962ef488b06611cebd8838, type: 2}
+  maxHealth: 500
   _healthBar: {fileID: 377690767}
   heathText: {fileID: 1287586925}
 --- !u!50 &830714049
@@ -1205,6 +1207,25 @@ MonoBehaviour:
   groundEffect: {fileID: 5950408158699588242}
   AttackSpeed: 0.5
   PowerMode: {fileID: 1650853150}
+--- !u!114 &830714054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830714042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbacd6d5a197e04a9663ac39831993a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemDropList:
+  - itemPrefab: {fileID: 2899061348366509033, guid: b9156a8c6e6028145b9bf9cd4252fd79, type: 3}
+    itemType: 0
+    dropChance: 100
+  - itemPrefab: {fileID: 8417654003730464372, guid: 50cfe1fb83f27a545b7aec674f9abefc, type: 3}
+    itemType: 2
+    dropChance: 100
 --- !u!1001 &853158619
 PrefabInstance:
   m_ObjectHideFlags: 0

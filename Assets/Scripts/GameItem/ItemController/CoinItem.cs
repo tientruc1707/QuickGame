@@ -7,7 +7,7 @@ public class CoinItem : MonoBehaviour, IItem
 
     public void OnItemPickup()
     {
-        coin.OnItemPickedUp();
+        DataManager.Instance.SetCoin(DataManager.Instance.GetCoin() + coin.value);
     }
 
     public void ReturnItemToPool()

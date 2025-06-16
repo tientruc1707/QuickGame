@@ -7,6 +7,11 @@ public class DataManager : Singleton<DataManager>
     private const string LevelKey = "Level";
     private const string CoinKey = "Coin";
 
+    public HealthPotionData healthPotionData;
+    public CoinData coinData;
+
+
+    
     override public void Awake()
     {
         base.Awake();

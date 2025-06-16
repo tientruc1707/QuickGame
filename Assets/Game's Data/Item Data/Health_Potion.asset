@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b5162312528bc8418bd28159bd60bdd, type: 3}
-  m_Name: Item_Potion
+  m_Name: Health_Potion
   m_EditorClassIdentifier: 
   itemType: 0
   sprite: {fileID: 363549005, guid: ba2cd677e8a20a84b9a53cb24d0dab02, type: 3}

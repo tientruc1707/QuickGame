@@ -2,11 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemType
-{
-    POTION,
-    COIN
-}
 public class ItemDropingSystem : MonoBehaviour
 {
     [System.Serializable]

@@ -7,13 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-
+    private Inventory inventory;
     private List<Animator> anims = new();
     private List<GameObject> characters = new();
     public void OnEnable()
     {
         EventManager.Instance.StartListening(StringConstant.EVENT.DEFEAT, OnDefeat);
         EventManager.Instance.StartListening(StringConstant.EVENT.VICTORY, OnVictory);
+
+        inventory = new Inventory();
+
     }
 
     private void OnDestroy()
@@ -45,6 +48,16 @@ public class GameManager : Singleton<GameManager>
             {
                 characters.Add(anim.gameObject);
             }
+        }
+
+        GameObject uiInventory = GameObject.Find("Inventory");
+        if (uiInventory != null)
+        {
+            uiInventory.GetComponent<UI_Inventory>().SetInventory(inventory);
+        }
+        else
+        {
+            Debug.Log("Missing UI Inventory");
         }
     }
 

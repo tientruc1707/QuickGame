@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9154f2e5679b44ba5af458bbb20ad1, type: 3}
   m_Name: Boss_Hidan
   m_EditorClassIdentifier: 
-  health: 200
+  health: 500
   damage: 10
   speed: 2
   activeRange: 3

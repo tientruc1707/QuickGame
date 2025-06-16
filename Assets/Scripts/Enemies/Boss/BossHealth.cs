@@ -8,15 +8,16 @@ public class BossHealth : MonoBehaviour
 {
     private int currentLevel;
     public EnemyData enemyData;
+    public float maxHealth;
     [SerializeField] private Slider _healthBar;
     [SerializeField] private Text heathText;
-    private float health = 200;
+    private float currentHealth = 500;
 
 
     void Awake()
     {
         currentLevel = DataManager.Instance.GetLevel();
-        _healthBar.maxValue = health;
+        _healthBar.maxValue = maxHealth;
     }
 
     void Update()
@@ -26,22 +27,22 @@ public class BossHealth : MonoBehaviour
 
     public void DecreaseHealth(float value)
     {
-        health -= value;
+        currentHealth -= value;
     }
 
     private void UpdateHealthBar()
     {
-        _healthBar.value = health;
+        _healthBar.value = currentHealth;
         heathText.text = $"{_healthBar.value}/{_healthBar.maxValue}";
     }
 
     public float GetCurrentHealth()
     {
-        return health;
+        return currentHealth;
     }
 
     public void Regen()
     {
-        health = enemyData.health;
+        currentHealth = maxHealth;
     }
 }

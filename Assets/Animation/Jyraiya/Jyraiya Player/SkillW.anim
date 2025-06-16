@@ -185,7 +185,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 2.8333333
-    functionName: InActiveSkill
+    functionName: InActiveSkill_W
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
